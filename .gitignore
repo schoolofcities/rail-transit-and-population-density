@@ -1,6 +1,11 @@
 node_modules
-data
 gis
+
+#
+data/*
+!data/pop_tiles
+!data/cities.gpkg
+!data/cities_dens.gpkg
 
 # Output
 .output
