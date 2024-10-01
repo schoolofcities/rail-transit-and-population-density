@@ -33,7 +33,7 @@ def binary_search_lon(src, max_idx, lon_val):
         return low
     return high
 
-def binary_search_lat(src, max_idx, lon_val):
+def binary_search_lat(src, max_idx, lat_val):
     """ Given the raster mapping (src) and the number of pixels (max_idx),
     return the index which is closest to the target lat_val. 
     """
@@ -42,15 +42,14 @@ def binary_search_lat(src, max_idx, lon_val):
 
     while low <= high:
         mid = (high + low) // 2
-
-        if src.xy(mid,0)[1] > lon_val:
+        if src.xy(mid,0)[1] > lat_val:
             low = mid + 1
-        elif src.xy(mid,0)[1] < lon_val:
+        elif src.xy(mid,0)[1] < lat_val:
             high = mid - 1
 
     # Return the one of low/high index which reports a closer number
     low_val, high_val = src.xy(low,0)[1], src.xy(high,0)[1]
-    if abs(lon_val - low_val) < abs(lon_val - high_val):
+    if abs(lat_val - low_val) < abs(lat_val - high_val):
         return low
     return high
 
@@ -172,7 +171,6 @@ def get_city_pop_tiles(src, band1, lon_max, lat_max, cities_gdf, radius):
 def compute_city_density(cities_gdf, pop_floor):
     """ Compute raw density, density with a floor, for each city, and save. 
     """
-    # NOTE: The 'geometry' is not the center point here
     cities_gdf[['raw_total_pop', 'floor_total_pop', 'raw_total_area', 'floor_total_area', 'raw_dens', 'floor_dens']] = np.nan
 
     for i, row_i in tqdm(cities_gdf.iterrows(), total=cities_gdf.shape[0]):
@@ -189,6 +187,9 @@ def compute_city_density(cities_gdf, pop_floor):
             if row_j['pop_count'] > pop_floor:
                 floor_polys.append(poly)
             raw_polys.append(poly)
+
+            if row_j['is_center']:
+                cities_gdf.at[i,'geometry'] = Point(x, y)
 
         raw_total_pop = coords_gdf['pop_count'].sum()
         floor_total_pop = coords_gdf[coords_gdf['pop_count'] > pop_floor]['pop_count'].sum()
