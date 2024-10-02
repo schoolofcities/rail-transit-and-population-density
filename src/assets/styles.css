@@ -93,16 +93,6 @@ main {
 	
 }
 
-.top-image {
-	padding-top: 100px;
-	max-width: 1200px;
-	margin: 0 auto;
-}
-.top-image img {
-	max-width: 100%;
-	height: auto;
-}
-
 
 h1 {
     font-family: TradeGothicBold;

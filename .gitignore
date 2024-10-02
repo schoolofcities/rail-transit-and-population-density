@@ -6,6 +6,7 @@ data/*
 !data/pop_tiles
 !data/cities.gpkg
 !data/cities_dens.gpkg
+!data/cities_dens.json
 
 # Output
 .output
