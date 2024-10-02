@@ -1,0 +1,159 @@
+@font-face {
+	font-family: TradeGothicBold;
+	src: url("Trade Gothic LT Bold.ttf");
+}
+
+@font-face {
+	font-family: TradeGothicLTLightOblique;
+	src: url("Trade Gothic LT Light Oblique.ttf");
+}
+
+@font-face {
+	font-family: TradeGothicLTLight;
+	src: url("Trade Gothic LT Light.ttf");
+}
+
+@font-face {
+	font-family: RobotoRegular;
+	src: url("roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+	font-family: RobotoBold;
+	src: url("roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+	font-family: SourceSerif;
+	src: url("source-serif-pro/SourceSerifPro-Regular.otf");
+}
+
+
+:root {
+	font-family: -apple-system, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+	--brandBlack: #000000;
+	--brandWhite: #ffffff;
+	--brandGray: #D0D1C9;
+	--brandGray70: #4d4d4d;
+	--brandGray80: #333333;
+	--brandGray90: #191919;
+	--brandDarkBlue: #1E3765;
+	--brandMedBlue: #007FA3;
+	--brandLightBlue: #6FC7EA;
+	--brandPurple: #6D247A;
+	--brandDarkGreen: #0D534D;
+	--brandMedGreen: #00A189;
+	--brandLightGreen: #8DBF2E;
+	--brandRed: #DC4633; 
+	--brandYellow: #F1C500;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	background-color: var(--brandWhite);
+}
+
+main {
+	margin: 0 auto;
+	padding: 0px;
+	width: calc(100%);
+	min-width: 360px;
+	max-width: 1200px;
+	/* margin-bottom: 100px; */
+	position: relative;
+}
+
+.title {
+    background-color: none;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    /* border-bottom: solid 1px var(--brandBlack); */
+    position: relative;
+	padding-left: 15px;
+    padding-right: 15px;
+}
+
+.title p {
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.text {
+    background-color: none;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+	border-top: solid 1px var(--brandGray80);
+	margin-top: 20px;
+	
+}
+
+.top-image {
+	padding-top: 100px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.top-image img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+h1 {
+    font-family: TradeGothicBold;
+    font-size: 42px;
+	font-weight: normal;
+    color: var(--brandBlack);
+    border-bottom: solid 1px var(--brandGray);
+    text-decoration: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 0px;
+}
+
+h2 {
+    text-align: left;
+    font-family: TradeGothicBold;
+    font-size: 32px;
+    border-bottom: solid 1px var(--brandBlack);
+    margin-top: 0px;
+    color: var(--brandBlack);
+}
+
+h3 {
+    text-align: left;
+    font-family: TradeGothicBold;
+    font-size: 23px;
+    border-bottom: solid 1px var(--brandGray);
+    color: var(--brandBlack);
+}
+
+h4 {
+	text-align: left;
+    font-family: TradeGothicBold;
+    font-size: 23px;
+    color: var(--brandBlack);
+}
+
+p {
+    font-family: SourceSerif;
+    color: var(--brandBlack);
+    text-align: left;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+a {
+	text-decoration: underline;
+	color: var(--brandMedBlue);
+}
+
+a:hover {
+	color: var(--brandMedGreen);
+}
