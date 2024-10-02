@@ -209,12 +209,16 @@ def compute_city_density(cities_gdf, pop_floor):
     
     cities_gdf.to_file("./data/cities_dens.gpkg", driver="GPKG")
 
+    # Save as JSON format as well for web processing
+    cities_gdf = cities_gdf.drop(columns='geometry')
+    cities_gdf = cities_gdf.drop_duplicates(subset='NAME').reset_index(drop=True)
+    cities_gdf = cities_gdf.set_index('NAME')
+    cities_gdf.to_json('./data/cities_dens.json', orient='index')
+
 def get_urban_density():
     """ Save the data points of (lat, long, density) for a 50km range for each
     of the cities. Each city should be its own csv. 
     """
-    # process_raster_file()
-
     # Load the raster file and methods for querying
     src, band1, lon_max, lat_max = load_raster_file()
 
