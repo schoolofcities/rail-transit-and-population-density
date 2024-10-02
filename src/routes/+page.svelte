@@ -13,6 +13,33 @@
 <TopSofC />
 
 <main>
-    <h1>Welcome to SvelteKit</h1>
-    <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+	<div class="title">
+		<h1>Comparing Transit-Oriented Density</h1>
+		<p>
+			Aniket Kali, Jeff Allen
+		</p>
+		<p>
+			Published TBD
+		</p>
+	</div>
+
+    <div class="text">
+        <p>Info/background on project...</p>
+        <h3>Compare Cities</h3>
+        ... comparison ...
+        <p>Info on method...</p>
+        <p>Commentary...</p>
+    </div>
+
+    <div class="text">
+        <h3>Rank Cities</h3>
+        <p>Info/background...</p>
+        ... ranking ...
+    </div>
+
+    <div class="text">
+        <h3>Appendix</h3>
+        <p>Footnotes on methods etc...</p>
+        <p>Link to code/data...</p>
+    </div>
 </main>
