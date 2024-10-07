@@ -1,29 +1,32 @@
 <script>
     import '../assets/styles.css'; 
+
     import TopSofC from "../lib/TopSofC.svelte";
+    import CityDisplay from '../lib/CityDisplay.svelte';
+    import CityMetricsDisplay from '../lib/CityMetricsDisplay.svelte';
+    import CityMetricsRanking from '../lib/CityMetricsRanking.svelte';
+
+    import citiesDens from "../data/cities_dens.json"
+
+    const cities = Object.keys(citiesDens);
 
     let curCityOne = "Toronto";
     let curCityTwo = "Chicago";
 
-    let curMetric = "Overall density";
-
-    const cities = [
-        "Chicago",
-        "Delhi",
-        "Tokyo",
-        "Toronto",
-    ];
-
     const metrics = [
         "Overall density",
         "Modified density",
-        "Transit density"
+        // "Transit density"
     ];
 
-    function handleCityOneChange(event) {
-        const selectedValue = event.target.value;
+    const metricsKeys = [
+        "raw_dens",
+        "floor_dens",
+        // "transit_dens"
+    ];
 
-    }
+    let curMetric = "Overall density";
+    $: curMetricKey = metricsKeys[metrics.indexOf(curMetric)];
 </script>
 
 <svelte:head>
@@ -49,25 +52,12 @@
     <div class="text">
         <p>Info/background on project...</p>
         <h3>Compare Cities</h3>
-        <div class="city-compare">
-            <select bind:value={curCityOne}>
-                {#each cities as value}
-                    <option {value}>{value}</option>
-                {/each}
-            </select>
 
-            {curCityOne}
-        </div>
+        <CityDisplay cities={cities} bind:curCity={curCityOne} />
 
-        <div class="city-compare">
-            <select bind:value={curCityTwo}>
-                {#each cities as value}
-                    <option {value}>{value}</option>
-                {/each}
-            </select>
+        <CityDisplay cities={cities} bind:curCity={curCityTwo} />
 
-            {curCityTwo}
-        </div>
+        <CityMetricsDisplay citiesDens={citiesDens} cityOne={curCityOne} cityTwo={curCityTwo} />
 
         <p>Info on method...</p>
         <p>Commentary...</p>
@@ -82,6 +72,8 @@
                 <option {value}>{value}</option>
             {/each}
         </select>
+
+        <CityMetricsRanking curMetric={curMetric} curMetricKey={curMetricKey} citiesDens={citiesDens} />
     </div>
 
     <div class="text">
@@ -92,11 +84,6 @@
 </main>
 
 <style>
-    .city-compare {
-        width: 49.5%;
-        display: inline-block;
-    }
-
     select {
         width: 100%;
     }
