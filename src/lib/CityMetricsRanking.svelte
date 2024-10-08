@@ -3,8 +3,9 @@
     export let curMetricKey;
     export let citiesDens;
 
+    // https://github.com/sveltejs/svelte/issues/13446#issuecomment-2382939034
     let dens = Object.entries(citiesDens);
-    $: dens.sort(function(a,b) {return a[1][curMetricKey] <= b[1][curMetricKey]});
+    $: sortedDens = dens.toSorted(function(a,b) {return a[1][curMetricKey] <= b[1][curMetricKey]})
 </script>
 
 <div class="table-container">
@@ -18,7 +19,7 @@
                     {curMetric}
                 </div>
             </div>
-            {#each dens as [city, cityInfo]}
+            {#each sortedDens as [city, cityInfo]}
             <div class="resp-table-row"> 
                 <div class="table-body-cell">
                     {city}
