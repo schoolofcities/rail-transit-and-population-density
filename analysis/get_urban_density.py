@@ -1,5 +1,4 @@
 import os 
-
 import numpy as np
 import pandas as pd
 from tqdm import tqdm
@@ -10,6 +9,10 @@ import geopy.distance
 from shapely.geometry import Point
 from shapely.geometry import Polygon
 
+from geog import propagate
+
+# tqdm.pandas()
+# np.seterr(all='raise')
 
 # === HELPERS ===
 def binary_search_lon(src, max_idx, lon_val):
@@ -118,6 +121,53 @@ def get_city_coords_gdf(src, band1, lon_center_idx, lat_center_idx, radius_idxs)
     
     return gdf
 
+def get_transit_density(src, band1, lon_max, lat_max, row):
+    """ Return the area and population contained within a 1km radius of an
+    inputted transit station. The population is the weighted sum derived from 
+    intersections of each tiles with the circle around the station. 
+    """
+    lon_station = row['geometry'].x
+    lat_station = row['geometry'].y
+
+    # 1a. Identify the tile that the station belongs to
+    lon_station_idx = binary_search_lon(src, lon_max, lon_station)
+    lat_station_idx = binary_search_lat(src, lat_max, lat_station)
+    
+    # 1b. Obtain the 5x5 grid around the tile
+    bound_idxs = find_radius_bounds(src, lon_station_idx, lat_station_idx, 3)
+    radius_idxs = collect_idxs_in_radius(src, lon_station_idx, lat_station_idx, bound_idxs, 3)   
+
+    # 2a. Create a 1sqkm circle Polygon using geog
+    p = [lon_station, lat_station]
+    n_points = 50
+    d = 1000 # meters
+    angles = np.linspace(0, 360, n_points)
+    poly_station = Polygon(propagate(p, angles, d))
+    area_station = gpd.GeoSeries([poly_station], crs=4326).to_crs(3857).area.sum() / (10 ** 6)
+
+    # 2b. Intersect it with each tile, and store the percent overlap and population
+    tile_info = []  # [(pct_intersect, pop)]
+    for i,j in radius_idxs:
+        cur_coords = src.xy(i,j)
+        x, y = cur_coords[0], cur_coords[1]
+        offset = 1 / 240  # 0.004166666666666667
+        L = [(x+offset,y+offset), (x-offset,y+offset), (x-offset,y-offset), (x+offset,y-offset), (x+offset,y+offset)]
+        poly_tile = Polygon(L)
+        pop_tile = band1[i,j]
+
+        prop_intersect = poly_tile.intersection(poly_station).area / poly_tile.area
+        if prop_intersect > 0 and pop_tile > 0:
+            tile_info.append((prop_intersect, pop_tile))
+
+    # 2c. Compute the population within the circle -- population of tiles weighted by percent intersection
+    # print(tile_info)
+    pop_station = 0
+    for prop, pop in tile_info:
+        pop_station += pop * prop
+    
+    # 2d. Compute the density -- population over area
+    return pop_station, area_station, pop_station / area_station
+
 # === MAIN ===
 def load_raster_file():
     """
@@ -144,39 +194,53 @@ def get_city_pop_tiles(src, band1, lon_max, lat_max, cities_gdf, radius):
             continue
 
         # Identify the pair of indices that has the center point
-        # print(lon_max, lat_max)
-        # print(coords)
-
         lon_center_idx = binary_search_lon(src, lon_max, coords.x)
         lat_center_idx = binary_search_lat(src, lat_max, coords.y)
 
-        # print(f'lon idx: {lon_center_idx}')
-        # print(f'lat idx: {lat_center_idx}')
-        # print(src.xy(lat_center_idx,lon_center_idx))
-
         # Identify the indices that are +- 50km from the center point
         bound_idxs = find_radius_bounds(src, lon_center_idx, lat_center_idx, radius)
-        # print(bound_idxs)
 
         # Iterate through all indices in that range, record those which are <= 50km 
         radius_idxs = collect_idxs_in_radius(src, lon_center_idx, lat_center_idx, bound_idxs, radius)
-        # print(len(radius_idxs))
 
         # Create a gdf, sort, and save. 
         coords_gdf = get_city_coords_gdf(src, band1, lon_center_idx, lat_center_idx, radius_idxs)
         coords_gdf = coords_gdf.sort_values(['row_idx', 'col_idx'])
-        # print(gdf)
         coords_gdf.to_file(f'./data/pop_tiles/{city}_coords.gpkg', driver="GPKG")
 
-def compute_city_density(cities_gdf, pop_floor):
+def compute_city_density(src, band1, lon_max, lat_max, cities_gdf, pop_floor):
     """ Compute raw density, density with a floor, for each city, and save. 
     """
-    cities_gdf[['raw_total_pop', 'floor_total_pop', 'raw_total_area', 'floor_total_area', 'raw_dens', 'floor_dens']] = np.nan
+    cities_gdf[['raw_total_pop', 'floor_total_pop', 'transit_total_pop', 
+                'raw_total_area', 'floor_total_area', 'transit_total_area', 
+                'raw_dens', 'floor_dens', 'transit_dens']] = np.nan
 
     for i, row_i in tqdm(cities_gdf.iterrows(), total=cities_gdf.shape[0]):
         city = row_i['NAME'].lower()
-        coords_gdf = gpd.read_file(f'./data/pop_tiles/{city}_coords.gpkg')
+        # if city != 'kabul':
+        #     continue
 
+        try:
+            # Get transit density
+            # TOD: Compute the population density within 1sqkm of a station
+            # Iterate through the set of stations for a given city, and obtain lat/long
+            stations_gdf = gpd.read_file(f'./data/osm_data/{city}_station_osm.geojson')
+            stations_gdf['stats'] = stations_gdf.apply(lambda x: get_transit_density(src, band1, lon_max, lat_max, x), axis=1)
+            stations_gdf[['pop', 'area', 'dens']] = pd.DataFrame(stations_gdf['stats'].tolist(), index=stations_gdf.index)
+
+            # Take the mean density for all stations, which is TOD for a city.
+            cities_gdf.at[i,'transit_total_pop'] = stations_gdf['pop'].sum()
+            cities_gdf.at[i,'transit_total_area'] = stations_gdf['area'].sum()
+            cities_gdf.at[i,'transit_dens'] = stations_gdf['dens'].mean()
+
+            # print(stations_gdf['pop'].sum(), stations_gdf['area'].sum(), stations_gdf['dens'].mean())
+        except:  # Usually due to no transit in that city
+            print(f'failed on: {city}')
+
+        # Get non-transit density
+        # NOTE: Consider refactoring below into a helper function for simplicity
+        coords_gdf = gpd.read_file(f'./data/pop_tiles/{city}_coords.gpkg')
+        
         raw_polys, floor_polys = [], []
         for j, row_j in coords_gdf.iterrows():
             x, y = row_j['geometry'].x, row_j['geometry'].y
@@ -206,12 +270,16 @@ def compute_city_density(cities_gdf, pop_floor):
         cities_gdf.at[i,'floor_total_area'] = floor_total_area
         cities_gdf.at[i,'raw_dens'] = raw_dens
         cities_gdf.at[i,'floor_dens'] = floor_dens
+
+        # print(print(cities_gdf.loc[[i]]))
     
+    # print(cities_gdf)
+
+    cities_gdf = cities_gdf.drop_duplicates(subset='NAME').reset_index(drop=True)
     cities_gdf.to_file("./data/cities_dens.gpkg", driver="GPKG")
 
     # Save as JSON format as well for web processing
     cities_gdf = cities_gdf.drop(columns='geometry')
-    cities_gdf = cities_gdf.drop_duplicates(subset='NAME').reset_index(drop=True)
     cities_gdf = cities_gdf.set_index('NAME')
     cities_gdf.to_json('./data/cities_dens.json', orient='index')
 
@@ -226,10 +294,10 @@ def get_urban_density():
     cities_gdf = gpd.read_file('./data/cities.gpkg')
 
     # Identify the data points of (lat, long, density) for a 50km radius around the city coordinate, and save them 
-    get_city_pop_tiles(src, band1, lon_max, lat_max, cities_gdf, 50)
+    # get_city_pop_tiles(src, band1, lon_max, lat_max, cities_gdf, 50)
 
     # Compute the urban density using different metrics for each of these cities 
-    compute_city_density(cities_gdf, 100)
+    compute_city_density(src, band1, lon_max, lat_max, cities_gdf, 100)
 
 
 if __name__ == "__main__":
