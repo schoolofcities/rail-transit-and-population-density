@@ -7,6 +7,11 @@
     import CityMetricsRanking from '../lib/CityMetricsRanking.svelte';
 
     import citiesDens from "../data/cities_dens.json"
+    for (const city in citiesDens) {
+        for (const metric in citiesDens[city]) {
+            if (citiesDens[city][metric] === null) citiesDens[city][metric] = 0;
+        }
+    }
 
     const cities = Object.keys(citiesDens);
 
@@ -16,13 +21,13 @@
     const metrics = [
         "Overall density",
         "Modified density",
-        // "Transit density"
+        "Transit density"
     ];
 
     const metricsKeys = [
         "raw_dens",
         "floor_dens",
-        // "transit_dens"
+        "transit_dens"
     ];
 
     let curMetric = "Overall density";

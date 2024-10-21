@@ -30,5 +30,16 @@
                 {citiesDens[cityTwo]['floor_dens'].toFixed(2)}
             </div>
         </div>
+        <div class="resp-table-row"> 
+            <div class="table-body-cell">
+                {citiesDens[cityOne]['transit_dens'].toFixed(2)}
+            </div>
+            <div class="table-body-cell">
+                Transit Density
+            </div>
+            <div class="table-body-cell">
+                {citiesDens[cityTwo]['transit_dens'].toFixed(2)}
+            </div>
+        </div>
     </div>
 </div>
