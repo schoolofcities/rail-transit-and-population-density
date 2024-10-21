@@ -121,6 +121,11 @@ def get_city_coords_gdf(src, band1, lon_center_idx, lat_center_idx, radius_idxs)
     
     return gdf
 
+def get_poly_tile(x, y):
+    offset = 1 / 240  # 0.004166666666666667
+    L = [(x+offset,y+offset), (x-offset,y+offset), (x-offset,y-offset), (x+offset,y-offset), (x+offset,y+offset)]
+    return Polygon(L)
+
 def get_transit_density(src, band1, lon_max, lat_max, row):
     """ Return the area and population contained within a 1km radius of an
     inputted transit station. The population is the weighted sum derived from 
@@ -133,11 +138,11 @@ def get_transit_density(src, band1, lon_max, lat_max, row):
     lon_station_idx = binary_search_lon(src, lon_max, lon_station)
     lat_station_idx = binary_search_lat(src, lat_max, lat_station)
     
-    # 1b. Obtain the 5x5 grid around the tile
+    # 1b. Obtain the tiles within 3km of the station
     bound_idxs = find_radius_bounds(src, lon_station_idx, lat_station_idx, 3)
     radius_idxs = collect_idxs_in_radius(src, lon_station_idx, lat_station_idx, bound_idxs, 3)   
 
-    # 2a. Create a 1sqkm circle Polygon using geog
+    # 2a. Create a 1km radius circle Polygon using geog
     p = [lon_station, lat_station]
     n_points = 50
     d = 1000 # meters
@@ -150,9 +155,7 @@ def get_transit_density(src, band1, lon_max, lat_max, row):
     for i,j in radius_idxs:
         cur_coords = src.xy(i,j)
         x, y = cur_coords[0], cur_coords[1]
-        offset = 1 / 240  # 0.004166666666666667
-        L = [(x+offset,y+offset), (x-offset,y+offset), (x-offset,y-offset), (x+offset,y-offset), (x+offset,y+offset)]
-        poly_tile = Polygon(L)
+        poly_tile = get_poly_tile(x, y)
         pop_tile = band1[i,j]
 
         prop_intersect = poly_tile.intersection(poly_station).area / poly_tile.area
@@ -244,9 +247,7 @@ def compute_city_density(src, band1, lon_max, lat_max, cities_gdf, pop_floor):
         raw_polys, floor_polys = [], []
         for j, row_j in coords_gdf.iterrows():
             x, y = row_j['geometry'].x, row_j['geometry'].y
-            offset = 1 / 240  # 0.004166666666666667
-            L = [(x+offset,y+offset), (x-offset,y+offset), (x-offset,y-offset), (x+offset,y-offset), (x+offset,y+offset)]
-            poly = Polygon(L)
+            poly = get_poly_tile(x, y)
 
             if row_j['pop_count'] > pop_floor:
                 floor_polys.append(poly)
