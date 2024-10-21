@@ -225,8 +225,8 @@ def compute_city_density(src, band1, lon_max, lat_max, cities_gdf, pop_floor):
 
         try:
             # Get transit density
-            # TOD: Compute the population density within 1sqkm of a station
-            # Iterate through the set of stations for a given city, and obtain lat/long
+            # TOD: Compute the population density within a 1km radius of a station
+            # Iterate through the set of stations for a given city, and compute density using the lat and long
             stations_gdf = gpd.read_file(f'./data/osm_data/{city}_station_osm.geojson')
             stations_gdf['stats'] = stations_gdf.apply(lambda x: get_transit_density(src, band1, lon_max, lat_max, x), axis=1)
             stations_gdf[['pop', 'area', 'dens']] = pd.DataFrame(stations_gdf['stats'].tolist(), index=stations_gdf.index)
