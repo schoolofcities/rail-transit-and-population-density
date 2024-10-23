@@ -179,7 +179,7 @@ def get_station_density(src, band1, lon_max, lat_max, row):
     # 2d. Compute the density -- population over area
     return pop_station, area_station, pop_station / area_station, poly_station
 
-def get_transit_density(row, mpoly_stations):
+def get_transit_proportions(row, mpoly_stations):
     """ Given a row containing information about a tile within the 50km radius
     of a city (including coordinates and population), return the proportional
     population and the area overlap for the tile. Compute this only if the tile
@@ -301,12 +301,12 @@ def compute_city_density(src, band1, lon_max, lat_max, cities_gdf):
 
         # print(stations_gdf['pop'].sum(), stations_gdf['area'].sum(), stations_gdf['dens'].mean())
 
-        # 3. Get population proportions near stations
+        # 3. Get population and area proportions near stations
         if not stations_gdf.empty:
             # Merge the station circles for this city into one big MultiPolygon
             mpoly_stations = unary_union(stations_gdf['poly_station'].to_list())
 
-            coords_gdf['stats'] = coords_gdf.apply(lambda x: get_transit_density(x, mpoly_stations), axis=1)
+            coords_gdf['stats'] = coords_gdf.apply(lambda x: get_transit_proportions(x, mpoly_stations), axis=1)
             coords_gdf[['pop', 'area']] = pd.DataFrame(coords_gdf['stats'].tolist(), index=coords_gdf.index)
             
             # Compute their proportions
