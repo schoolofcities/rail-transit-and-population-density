@@ -252,11 +252,6 @@ def compute_city_density(src, band1, lon_max, lat_max, cities_gdf):
         # 1. Get non-transit density
         # NOTE: Consider refactoring below into a helper function for simplicity
         coords_gdf = gpd.read_file(f'./data/pop_tiles/{city}_coords.gpkg')
-        # Compute the total area for the raw tiles
-        
-        # Compute the total area for the urban tiles (>100)
-
-        # Compute and save population counts and density
         
         raw_polys, urban_polys = [], []
         for j, row_j in coords_gdf.iterrows():
@@ -288,9 +283,9 @@ def compute_city_density(src, band1, lon_max, lat_max, cities_gdf):
 
         # 2. Get transit density
         # TOD: Compute the population density within a 1km radius of a station
-        # Iterate through the set of stations for a given city, and compute density using the lat and long
         stations_gdf = gpd.read_file(f'./data/osm_data/{city}_station_osm.geojson')
         if not stations_gdf.empty:  # already has 0 values otherwise
+            # Iterate through the set of stations for a given city, and compute density using the lat and long
             stations_gdf['stats'] = stations_gdf.apply(lambda x: get_station_density(src, band1, lon_max, lat_max, x), axis=1)
             stations_gdf[['pop', 'area', 'dens', 'poly_station']] = pd.DataFrame(stations_gdf['stats'].tolist(), index=stations_gdf.index)
 
@@ -317,7 +312,7 @@ def compute_city_density(src, band1, lon_max, lat_max, cities_gdf):
             cities_gdf.at[i,'transit_area_prop'] = transit_area_prop
             cities_gdf.at[i,'transit_ratio'] = transit_pop_prop / transit_area_prop
 
-        print(cities_gdf.loc[[i]])
+        # print(cities_gdf.loc[[i]])
     
     # print(cities_gdf)
 
