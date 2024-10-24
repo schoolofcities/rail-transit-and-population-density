@@ -2,44 +2,27 @@
     export let citiesDens;
     export let cityOne;
     export let cityTwo;
+
+    export let metrics;
+    export let metricsKeys;
 </script>
 
 <!-- https://stackoverflow.com/a/69528090 -->
 
 <div class="resp-table">
     <div class="resp-table-body">
-        <div class="resp-table-row"> 
-            <div class="table-body-cell">
-                {citiesDens[cityOne]['raw_dens'].toFixed(2)}
+        {#each metrics as metric, i}
+            <div class="resp-table-row"> 
+                <div class="table-body-cell">
+                    {citiesDens[cityOne][metricsKeys[i]].toFixed(2)}
+                </div>
+                <div class="table-body-cell">
+                    {metric}
+                </div>
+                <div class="table-body-cell">
+                    {citiesDens[cityTwo][metricsKeys[i]].toFixed(2)} 
+                </div>
             </div>
-            <div class="table-body-cell">
-                Overall Density
-            </div>
-            <div class="table-body-cell">
-                {citiesDens[cityTwo]['raw_dens'].toFixed(2)} 
-            </div>
-        </div>
-        <div class="resp-table-row"> 
-            <div class="table-body-cell">
-                {citiesDens[cityOne]['floor_dens'].toFixed(2)}
-            </div>
-            <div class="table-body-cell">
-                Modified Density
-            </div>
-            <div class="table-body-cell">
-                {citiesDens[cityTwo]['floor_dens'].toFixed(2)}
-            </div>
-        </div>
-        <div class="resp-table-row"> 
-            <div class="table-body-cell">
-                {citiesDens[cityOne]['transit_dens'].toFixed(2)}
-            </div>
-            <div class="table-body-cell">
-                Transit Density
-            </div>
-            <div class="table-body-cell">
-                {citiesDens[cityTwo]['transit_dens'].toFixed(2)}
-            </div>
-        </div>
+        {/each}
     </div>
 </div>

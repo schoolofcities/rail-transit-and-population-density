@@ -7,11 +7,6 @@
     import CityMetricsRanking from '../lib/CityMetricsRanking.svelte';
 
     import citiesDens from "../data/cities_dens.json"
-    for (const city in citiesDens) {
-        for (const metric in citiesDens[city]) {
-            if (citiesDens[city][metric] === null) citiesDens[city][metric] = 0;
-        }
-    }
 
     const cities = Object.keys(citiesDens);
 
@@ -19,18 +14,24 @@
     let curCityTwo = "Chicago";
 
     const metrics = [
-        "Overall density",
-        "Modified density",
-        "Transit density"
+        "General density",
+        "Urban density",
+        "Station density",
+        "% Urban pop near transit",
+        "% Urban area near transit",
+        "Ratio of population and area"
     ];
 
     const metricsKeys = [
         "raw_dens",
-        "floor_dens",
-        "transit_dens"
+        "urban_dens",
+        "station_dens",
+        "transit_pop_prop",
+        "transit_area_prop",
+        "transit_ratio",
     ];
 
-    let curMetric = "Overall density";
+    let curMetric = metrics[0];
     $: curMetricKey = metricsKeys[metrics.indexOf(curMetric)];
 </script>
 
@@ -62,7 +63,7 @@
 
         <CityDisplay cities={cities} bind:curCity={curCityTwo} />
 
-        <CityMetricsDisplay citiesDens={citiesDens} cityOne={curCityOne} cityTwo={curCityTwo} />
+        <CityMetricsDisplay citiesDens={citiesDens} cityOne={curCityOne} cityTwo={curCityTwo} metrics={metrics} metricsKeys={metricsKeys} />
 
         <p>Info on method...</p>
         <p>Commentary...</p>
