@@ -17,8 +17,16 @@ def save_city_water_polys(row, water_gdf):
     city_geom = row.geometry
     city_point = Point(city_geom.x, city_geom.y)
 
+    max_dist = 300
+
+    edge_cases = ["montréal", "istanbul", "chicago"]
+    if city_name in edge_cases:
+        max_dist = 1000
+    else:
+        return
+
     water_gdf["distance"] = water_gdf["centroid"].distance(city_point) / 1000  # km
-    water_gdf[water_gdf["distance"] <= 300].drop(["centroid", "distance"], axis=1).to_file(f'./data/city_water/{city_name}_water.gpkg', driver="GPKG")
+    water_gdf[water_gdf["distance"] <= max_dist].drop(["centroid", "distance"], axis=1).to_file(f'./data/city_water/{city_name}_water.gpkg', driver="GPKG")
 
 def get_city_water_polys():
     """ Save all polygons whose centerpoint is within 300km of the center of 
