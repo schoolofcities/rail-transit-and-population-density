@@ -305,12 +305,12 @@ def compute_city_density(src, band1, lon_max, lat_max, cities_gdf):
             coords_gdf[['pop', 'area']] = pd.DataFrame(coords_gdf['stats'].tolist(), index=coords_gdf.index)
             
             # Compute their proportions
-            transit_pop_prop = coords_gdf['pop'].sum() / coords_gdf['pop_count'].sum()
-            transit_area_prop = coords_gdf['area'].sum() / raw_total_area
+            transit_pop_pct = (coords_gdf['pop'].sum() / coords_gdf['pop_count'].sum()) * 100
+            transit_area_pct = (coords_gdf['area'].sum() / raw_total_area) * 100
 
-            cities_gdf.at[i,'transit_pop_prop'] = transit_pop_prop
-            cities_gdf.at[i,'transit_area_prop'] = transit_area_prop
-            cities_gdf.at[i,'transit_ratio'] = transit_pop_prop / transit_area_prop
+            cities_gdf.at[i,'transit_pop_pct'] = transit_pop_pct
+            cities_gdf.at[i,'transit_area_pct'] = transit_area_pct
+            cities_gdf.at[i,'transit_ratio'] = transit_pop_pct / transit_area_pct
 
         # print(cities_gdf.loc[[i]])
     

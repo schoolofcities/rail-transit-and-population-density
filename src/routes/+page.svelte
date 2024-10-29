@@ -19,15 +19,15 @@
         "Station density",
         "% Urban pop near transit",
         "% Urban area near transit",
-        "Ratio of population and area"
+        "Ratio of urban population and area near transit"
     ];
 
     const metricsKeys = [
         "raw_dens",
         "urban_dens",
         "station_dens",
-        "transit_pop_prop",
-        "transit_area_prop",
+        "transit_pop_pct",
+        "transit_area_pct",
         "transit_ratio",
     ];
 
