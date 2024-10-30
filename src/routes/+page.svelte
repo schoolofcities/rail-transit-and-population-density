@@ -1,11 +1,12 @@
 <script>
     import '../assets/styles.css'; 
-
+    
     import TopSofC from "../lib/TopSofC.svelte";
+
     import CityDisplay from '../lib/CityDisplay.svelte';
     import CityMetricsDisplay from '../lib/CityMetricsDisplay.svelte';
     import CityMetricsRanking from '../lib/CityMetricsRanking.svelte';
-
+    
     import citiesDens from "../data/cities_dens.json"
 
     const cities = Object.keys(citiesDens);
@@ -56,7 +57,12 @@
     </div>
 
     <div class="text">
-        <p>Info/background on project...</p>
+        <p>Transit is a key part of many cities - but there's a lot of variation in how and where lines and stations are placed. Ideally, they serve the most amount of people covering an efficient amount of area.</p>
+
+        <p>Below, you can compare how well transit systems serve their populations for 298 of the most populated cities around the globe. We've computed a number of different metrics examining this, including ranking which cities perform highest on them. </p>
+
+        <p>Each map below displays population density overlayed with transit. We show density in 1 sqkm tiles, covering a 50 km radius. Transit lines and stations are shown in purple, and only include regional rail, subways, and LRT.</p>
+
         <h3>Compare Cities</h3>
 
         <CityDisplay cities={cities} bind:curCity={curCityOne} />
@@ -65,13 +71,13 @@
 
         <CityMetricsDisplay citiesDens={citiesDens} cityOne={curCityOne} cityTwo={curCityTwo} metrics={metrics} metricsKeys={metricsKeys} />
 
-        <p>Info on method...</p>
-        <p>Commentary...</p>
+        <p>Let's define a few variables first. TODO</p>
+        
+        <p>We compute our metrics using the following equations: TODO</p>
     </div>
 
     <div class="text">
         <h3>Rank Cities</h3>
-        <p>Info/background...</p>
 
         <select bind:value={curMetric}>
             {#each metrics as value}
@@ -84,8 +90,11 @@
 
     <div class="text">
         <h3>Appendix</h3>
-        <p>Footnotes on methods etc...</p>
-        <p>Link to code/data...</p>
+        <p>We obtained railway and station data from <a href="https://www.openstreetmap.org/">OpenStreetMap</a> (OSM) using <a href="https://overpass-turbo.eu/">overpass turbo</a> with <a href="https://github.com/schoolofcities/world-city-transit-density/blob/main/analysis/query_osm.py">this query</a>. Many cities have missing or incorrect data - let us know if you update OSM, and we'll aim to update our webpage.</p>
+        
+        <p>We sourced geographic population density from <a href="https://hub.worldpop.org/geodata/summary?id=24777">WorldPop</a>, and population counts and center points from <a href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/">Natural Earth</a>. Our water layer is from <a href="https://www.arcgis.com/home/item.html?id=e750071279bf450cbd510454a80f2e63">World Water Bodies</a>, and we applied the Douglas-Peucker algorithm to reduce file size.</p>
+
+        <p>All code and relevant data is available on our <a href="https://github.com/schoolofcities/world-city-transit-density/tree/main">GitHub repository</a>.</p>
     </div>
 </main>
 
