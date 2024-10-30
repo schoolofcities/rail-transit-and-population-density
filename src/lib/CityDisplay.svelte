@@ -2,10 +2,6 @@
     export let curCity;
     export let cities;
     cities.sort()
-
-    // const cityImage = import('../assets/city_image/toronto.png');
-
-    import cityImage from '../assets/city_image/tokyo.png';
 </script>
 
 <div class="city-compare">
@@ -15,7 +11,9 @@
         {/each}
     </select>
 
-    <img alt="Urban density overlayed with transit" src={cityImage} />
+    {#await import(`../assets/city_image/${curCity.toLowerCase()}.png`) then { default: src }}
+        <img {src} alt="" />
+    {/await}
 </div>
 
 <style>
