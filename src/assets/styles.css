@@ -83,7 +83,7 @@ main {
 
 .text {
     background-color: none;
-    max-width: 700px;
+    max-width: 1000px;
     margin: 0 auto;
     position: relative;
     padding-left: 15px;

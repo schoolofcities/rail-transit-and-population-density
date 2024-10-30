@@ -2,6 +2,10 @@
     export let curCity;
     export let cities;
     cities.sort()
+
+    // const cityImage = import('../assets/city_image/toronto.png');
+
+    import cityImage from '../assets/city_image/tokyo.png';
 </script>
 
 <div class="city-compare">
@@ -11,7 +15,7 @@
         {/each}
     </select>
 
-    {curCity} map here
+    <img alt="Urban density overlayed with transit" src={cityImage} />
 </div>
 
 <style>
@@ -23,4 +27,10 @@
     select {
         width: 100%;
     }
+
+	img {
+		width: 100%;
+		height: 100%;
+        border-radius: 50%;
+	}
 </style>
