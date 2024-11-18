@@ -6,8 +6,20 @@
     import CityDisplay from '../lib/CityDisplay.svelte';
     import CityMetricsDisplay from '../lib/CityMetricsDisplay.svelte';
     import CityMetricsRanking from '../lib/CityMetricsRanking.svelte';
+    import HorizontalBarChart from '../lib/HorizontalBarChart.svelte';
     
     import citiesDens from "../data/cities_dens.json"
+
+	async function loadData() {
+		try {
+			// const response = await fetch('../recovery_rankings.csv');
+			const response = await fetch("../data/cities_dens.json");
+			const csvData = await response.text();
+			data = csvParse(csvData);
+		} catch (error) {
+			console.error('Error loading CSV data:', error);
+		}
+	}
 
     const cities = Object.keys(citiesDens);
 
@@ -32,8 +44,18 @@
         "transit_ratio",
     ];
 
+    const metricValues = [
+        10000,
+        10000,
+        50000,
+        100,
+        100,
+        25,
+    ]
+
     let curMetric = metrics[0];
     $: curMetricKey = metricsKeys[metrics.indexOf(curMetric)];
+    $: maxMetricValue = metricValues[metrics.indexOf(curMetric)];
 </script>
 
 <svelte:head>
@@ -84,6 +106,8 @@
                 <option {value}>{value}</option>
             {/each}
         </select>
+        
+        <HorizontalBarChart curMetric={curMetric} curMetricKey={curMetricKey} citiesDens={citiesDens} maxMetricValue={maxMetricValue} />
 
         <CityMetricsRanking curMetric={curMetric} curMetricKey={curMetricKey} citiesDens={citiesDens} />
     </div>
@@ -92,7 +116,7 @@
         <h3>Appendix</h3>
         <p>We obtained railway and station data from <a href="https://www.openstreetmap.org/">OpenStreetMap</a> (OSM) using <a href="https://overpass-turbo.eu/">overpass turbo</a> with <a href="https://github.com/schoolofcities/world-city-transit-density/blob/main/analysis/query_osm.py">this query</a>. Many cities have missing or incorrect data - let us know if you update OSM, and we'll aim to update our webpage.</p>
         
-        <p>We sourced geographic population density from <a href="https://hub.worldpop.org/geodata/summary?id=24777">WorldPop</a>, and population counts and center points from <a href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/">Natural Earth</a>. Our water layer is from <a href="https://www.arcgis.com/home/item.html?id=e750071279bf450cbd510454a80f2e63">World Water Bodies</a>, and we applied the Douglas-Peucker algorithm to reduce file size.</p>
+        <p>We sourced geographic population density from <a href="https://hub.worldpop.org/geodata/summary?id=24777">WorldPop</a>, and center points from <a href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/">Natural Earth</a>. Our water layer is from <a href="https://www.arcgis.com/home/item.html?id=e750071279bf450cbd510454a80f2e63">World Water Bodies</a>, and we applied the Douglas-Peucker algorithm to reduce file size.</p>
 
         <p>All code and relevant data is available on our <a href="https://github.com/schoolofcities/world-city-transit-density/tree/main">GitHub repository</a>.</p>
     </div>
