@@ -106,7 +106,7 @@
             {/each}
         </select>
         
-        <HorizontalBarChart curMetric={curMetric} curMetricKey={curMetricKey} citiesDens={citiesDens} maxMetricValue={maxMetricValue} />
+        <HorizontalBarChart curMetric={curMetric} curMetricKey={curMetricKey} data={citiesDens} maxMetricValue={maxMetricValue} />
     </div>
 
     <div class="text">

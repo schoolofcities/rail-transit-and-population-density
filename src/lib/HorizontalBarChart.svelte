@@ -2,16 +2,17 @@
     export let curMetric;
     export let curMetricKey;
     export let maxMetricValue;
-    export let citiesDens;
+    export let data;
 
     // https://github.com/sveltejs/svelte/issues/13446#issuecomment-2382939034
-    let dens = Object.entries(citiesDens);
-    $: sortedDens = dens.toSorted(function(a,b) {return a[1][curMetricKey] <= b[1][curMetricKey]});
+    let dataObj = Object.entries(data);
+    $: sortedData = dataObj.toSorted(function(a,b) {return a[1][curMetricKey] <= b[1][curMetricKey]});
 
+    // CHART VARIABLES //
     // Define chart dimensions 
     let chartWidth;
 	let chartHeight = 100;
-	$: chartHeight = 24 * sortedDens.length + 50;  // Responsive to the subset chosen
+	$: chartHeight = 24 * sortedData.length + 50;  // Responsive to the subset chosen
 
     // Define chart parameters
     let xAxisTop = 34;
@@ -20,14 +21,15 @@
     let regionStart = 0;
     let rankStart = 8;
     let barStart = xAxisStart + 1;
-    let cityLabelStart = xAxisStart + 5;
+    let barLabelStart = xAxisStart + 5;
 
     let barTop = 52;
     let rankTop = 56;
-    let cityLabelTop = 56;
+    let barLabelTop = 56;
 
     let barGap = 24;
     let chartEndGap = 60;
+    ////
 
     // Create the chart scaffolding
     $: showPct = curMetric.includes('pct');
@@ -89,7 +91,7 @@
         {/each}
 
         <!-- Graph the data onto the chart -->
-        {#each sortedDens as [city, cityInfo], i}
+        {#each sortedData as [city, cityInfo], i}
             <line class="bar-data"
                 x1={barStart}
                 y1={barTop + (i * barGap)}
@@ -114,8 +116,8 @@
             >{i + 1}</text>
 
             <text class="bar-label"
-                x={cityLabelStart}
-                y={cityLabelTop + (i * barGap)}
+                x={barLabelStart}
+                y={barLabelTop + (i * barGap)}
             >{city}</text>
         {/each}
     </svg>
