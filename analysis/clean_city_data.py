@@ -56,6 +56,7 @@ REGIONS = {
     'Taiwan': 'East Asia',
     'Thailand': 'South East Asia & Oceania',
     'Peru': 'Latin America & Caribbean',
+    'Bolivia': 'Latin America & Caribbean',
     'Kingdom of Spain': 'Europe',
     'Vietnam': 'South East Asia & Oceania',
     'Canada': 'US & Canada',
@@ -101,6 +102,7 @@ REGIONS = {
     'Paraguay': 'Latin America & Caribbean',
     'Australia': 'South East Asia & Oceania',
     'Lebanon': 'Middle East & North Africa',
+    'Libya': 'Middle East & North Africa',
     'Belarus': 'Europe',
     'Belgium': 'Europe',
     'Madagascar': 'Sub Saharan Africa',
@@ -109,6 +111,7 @@ REGIONS = {
     'Honduras': 'Latin America & Caribbean',
     'Zimbabwe': 'Sub Saharan Africa',
     'Uruguay': 'Latin America & Caribbean',
+    'Malaysia': 'South East Asia & Oceania',
 }
 
 
@@ -122,8 +125,10 @@ def clean_city_data():
     """
     # Load data
     gdf_places = gpd.read_file('./data/ne_10m_populated_places/ne_10m_populated_places.shp')
-    gdf_places = gdf_places.drop_duplicates(subset='NAME', keep='first').reset_index(drop=True)
-    gdf_places_ascii = gdf_places.drop_duplicates(subset='NAMEASCII', keep='first').reset_index(drop=True)
+    gdf_places = gdf_places.sort_values(by='POP_MAX', ascending=False)
+
+    gdf_places_ascii = gdf_places.drop_duplicates(subset='NAMEASCII', keep='first', ignore_index=True)
+    gdf_places = gdf_places.drop_duplicates(subset='NAME', keep='first', ignore_index=True)
     gdf_cities_dens = gpd.read_file("./data/cities_dens_old.gpkg")
 
     # ASCII
