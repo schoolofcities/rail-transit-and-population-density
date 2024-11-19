@@ -23,7 +23,7 @@
     let cityLabelStart = xAxisStart + 5;
 
     let barTop = 52;
-    let rankTop = 57;
+    let rankTop = 56;
     let cityLabelTop = 56;
 
     let barGap = 24;
@@ -37,19 +37,19 @@
 
 <div id="chart-wrapper" bind:offsetWidth={chartWidth}>
     <svg height={chartHeight} width={chartWidth} id="chart">
-        <polygon id="diamond" points="0,-6 6,0 0,6 -6,0" fill="black" stroke="white" stroke-width="2" />
-        <polygon points="0,-6 6,0 0,6 -6,0" fill="#191919" stroke="#191919" stroke-width="4" />
+        <!-- <polygon id="diamond" points="0,-6 6,0 0,6 -6,0" fill="black" stroke="white" stroke-width="2" /> -->
+        <!-- <polygon points="0,-6 6,0 0,6 -6,0" fill="#191919" stroke="#191919" stroke-width="4" /> -->
         
         <!-- Create the chart background -->
         {#each xAxisIntervals as xInterval, i}
-            <line class="grid"
+            <line class="grid-primary"
                 x1 = {xAxisStart + (i * xAxisIntervalSpacing)}
                 y1 = {xAxisTop}
                 x2 = {xAxisStart + (i * xAxisIntervalSpacing)}
                 y2 = {chartHeight}
             ></line>
 
-            <line class="grid-white"
+            <line class="grid-secondary"
                 x1 = {xAxisStart + (i * xAxisIntervalSpacing)}
                 y1 = {xAxisTop}
                 x2 = {xAxisStart + (i * xAxisIntervalSpacing)}
@@ -69,7 +69,7 @@
         {/each}
 
         {#each xAxisIntervals as xInterval, i}
-            <line class="grid"
+            <line class="grid-primary"
                 x1 = {xAxisStart + (i * xAxisIntervalSpacing)}
                 y1 = {xAxisTop}
                 x2 = {xAxisStart + (i * xAxisIntervalSpacing)}
@@ -78,7 +78,7 @@
             ></line>
 
             {#if i === 0}
-                <line class="grid-white"
+                <line class="grid-secondary"
                     x1 = {xAxisStart + (i * xAxisIntervalSpacing)}
                     y1 = {xAxisTop}
                     x2 = {xAxisStart + (i * xAxisIntervalSpacing)}
@@ -90,27 +90,20 @@
 
         <!-- Graph the data onto the chart -->
         {#each sortedDens as [city, cityInfo], i}
-            <line class="bar"
+            <line class="bar-data"
                 x1={barStart}
                 y1={barTop + (i * barGap)}
                 x2={((chartWidth - chartEndGap) * (cityInfo[curMetricKey] / maxMetricValue)) + xAxisStart}  
                 y2={barTop + (i * barGap)}
-                style="
-                    stroke: white;
-                    stroke-width: 16;
-                    stroke-opacity: 0.08
-                "
             ></line>
 
-            <line class="bar"
+            <line class="bar-classifier"
                 x1={regionStart}
                 y1={barTop + (i * barGap)}
                 x2={regionStart + 4}
                 y2={barTop + (i * barGap)}
                 style="
                     stroke: yellow;
-                    stroke-width: 16;
-                    stroke-opacity: 1
                 "
             ></line>
 
@@ -123,9 +116,6 @@
             <text class="bar-label"
                 x={cityLabelStart}
                 y={cityLabelTop + (i * barGap)}
-                style="
-                    fill: white;
-                "
             >{city}</text>
         {/each}
     </svg>
@@ -135,9 +125,9 @@
 	#chart-wrapper {
 		margin: 0 auto;
 		max-width: 1080px;
-		min-width: 375px;
-		border-top: solid 1px var(--brandDarkBlue);
-		border-bottom: solid 1px var(--brandDarkBlue);
+		min-width: 300px;
+		/* border-top: solid 1px var(--brandDarkBlue);
+		border-bottom: solid 1px var(--brandDarkBlue); */
 		padding-bottom: 10px;
 		margin-bottom: 10px;
 		padding-left: 10px;
@@ -146,27 +136,38 @@
 	#chart {
 		margin-top: 10px;
 		margin-bottom: 10px;
-		background-color: var(--brandGray90);
+		background-color: var(--brandWhite);
 	}
 
-	.grid {
-		stroke: var(--brandDarkBlue);
+	.grid-primary {
+		stroke: var(--brandLightBlue);
 		stroke-width: 1px;
 	}
 
-	.grid-white {
-		stroke: var(--brandWhite);
+	.grid-secondary {
+		stroke: var(--brandDarkBlue);
 		stroke-width: 1px;
 	}
 
 	.axis-label {
         stroke: 'grey';
-		fill: var(--brandGray);
+		fill: var(--brandBlack);
 		font-size: 14px;
 	}
 
+    .bar-data {
+        stroke: var(--brandBlack);
+        stroke-width: 16;
+        stroke-opacity: 0.08;
+    }
+
+    .bar-classifier {
+        stroke-width: 16;
+        stroke-opacity: 1;
+    }
+
 	.bar-label {
-		fill: var(--brandWhite); 
+		fill: var(--brandBlack); 
 		font-size: 13px;
 	}
 </style>
