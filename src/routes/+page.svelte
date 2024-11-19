@@ -5,7 +5,6 @@
 
     import CityDisplay from '../lib/CityDisplay.svelte';
     import CityMetricsDisplay from '../lib/CityMetricsDisplay.svelte';
-    import CityMetricsRanking from '../lib/CityMetricsRanking.svelte';
     import HorizontalBarChart from '../lib/HorizontalBarChart.svelte';
     
     import citiesDens from "../data/cities_dens.json"
