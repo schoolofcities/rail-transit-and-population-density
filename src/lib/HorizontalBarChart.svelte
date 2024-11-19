@@ -14,12 +14,25 @@
 	$: chartHeight = 24 * sortedDens.length + 50;  // Responsive to the subset chosen
 
     // Define chart parameters
-    let barStart = 29;
+    let xAxisTop = 34;
+    let xAxisStart = 37;
+
+    let regionStart = 0;
+    let rankStart = 8;
+    let barStart = xAxisStart + 1;
+    let cityLabelStart = xAxisStart + 5;
+
+    let barTop = 52;
+    let rankTop = 57;
+    let cityLabelTop = 56;
+
+    let barGap = 24;
+    let chartEndGap = 60;
 
     // Create the chart scaffolding
     $: showPct = curMetric.includes('pct');
     $: xAxisIntervals = [...Array(6).keys()].map(x => (x/5) * maxMetricValue);
-	$: xAxisIntervalSpacing = (chartWidth - 50) / (xAxisIntervals.length - 1);
+	$: xAxisIntervalSpacing = (chartWidth - chartEndGap) / (xAxisIntervals.length - 1);
 </script>
 
 <div id="chart-wrapper" bind:offsetWidth={chartWidth}>
@@ -30,22 +43,22 @@
         <!-- Create the chart background -->
         {#each xAxisIntervals as xInterval, i}
             <line class="grid"
-                x1 = {29 + i * xAxisIntervalSpacing}
-                y1 = 34
-                x2 = {29 + i * xAxisIntervalSpacing}
+                x1 = {xAxisStart + (i * xAxisIntervalSpacing)}
+                y1 = {xAxisTop}
+                x2 = {xAxisStart + (i * xAxisIntervalSpacing)}
                 y2 = {chartHeight}
             ></line>
 
             <line class="grid-white"
-                x1 = {29 + i * xAxisIntervalSpacing}
-                y1 = 34
-                x2 = {29 + i * xAxisIntervalSpacing}
-                y2 = 38
+                x1 = {xAxisStart + (i * xAxisIntervalSpacing)}
+                y1 = {xAxisTop}
+                x2 = {xAxisStart + (i * xAxisIntervalSpacing)}
+                y2 = {xAxisTop + 4}
             ></line>
 
             <text class="axis-label"
-                x = {35 + i * xAxisIntervalSpacing}
-                y = 30
+                x = {(xAxisStart + 6) + (i * xAxisIntervalSpacing)}
+                y = {xAxisTop - 4}
                 text-anchor="end"
             >
                 {xInterval}
@@ -55,33 +68,33 @@
             </text>
         {/each}
 
-        <!-- {#each xAxisIntervals as xInterval, i}
+        {#each xAxisIntervals as xInterval, i}
             <line class="grid"
-                x1 = {29 + i * xAxisIntervalSpacing}
-                y1 = 34
-                x2 = {29 + i * xAxisIntervalSpacing}
+                x1 = {xAxisStart + (i * xAxisIntervalSpacing)}
+                y1 = {xAxisTop}
+                x2 = {xAxisStart + (i * xAxisIntervalSpacing)}
                 y2 = {chartHeight}
                 stroke-opacity="0.91"
             ></line>
 
             {#if i === 0}
                 <line class="grid-white"
-                    x1 = {29 + i * xAxisIntervalSpacing}
-                    y1 = 34
-                    x2 = {29 + i * xAxisIntervalSpacing}
+                    x1 = {xAxisStart + (i * xAxisIntervalSpacing)}
+                    y1 = {xAxisTop}
+                    x2 = {xAxisStart + (i * xAxisIntervalSpacing)}
                     y2 = {chartHeight}
                     stroke-opacity=0.5
                 ></line>
             {/if}
-        {/each} -->
+        {/each}
 
         <!-- Graph the data onto the chart -->
         {#each sortedDens as [city, cityInfo], i}
             <line class="bar"
-                x1={30}
-                y1={52 + i * 24}
-                x2={((chartWidth - 50) * (cityInfo[curMetricKey] / maxMetricValue)) + 29}  
-                y2={52 + i * 24}
+                x1={barStart}
+                y1={barTop + (i * barGap)}
+                x2={((chartWidth - chartEndGap) * (cityInfo[curMetricKey] / maxMetricValue)) + xAxisStart}  
+                y2={barTop + (i * barGap)}
                 style="
                     stroke: white;
                     stroke-width: 16;
@@ -90,10 +103,10 @@
             ></line>
 
             <line class="bar"
-                x1={0}
-                y1={52 + i * 24}
-                x2={4}
-                y2={52 + i * 24}
+                x1={regionStart}
+                y1={barTop + (i * barGap)}
+                x2={regionStart + 4}
+                y2={barTop + (i * barGap)}
                 style="
                     stroke: yellow;
                     stroke-width: 16;
@@ -102,14 +115,14 @@
             ></line>
 
             <text class="axis-label"
-                x = 8
-                y = {57 + i * 24}
+                x = {rankStart}
+                y = {rankTop + (i * barGap)}
                 text-anchor="start"
             >{i + 1}</text>
 
             <text class="bar-label"
-                x={34}
-                y={56 + i * 24}
+                x={cityLabelStart}
+                y={cityLabelTop + (i * barGap)}
                 style="
                     fill: white;
                 "
@@ -153,7 +166,7 @@
 	}
 
 	.bar-label {
-		/* fill: var(--brandWhite); */
+		fill: var(--brandWhite); 
 		font-size: 13px;
 	}
 </style>
