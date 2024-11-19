@@ -20,6 +20,17 @@
 		}
 	}
 
+    const regionColours = {
+        'US & Canada': '#00A189', 
+        'Europe': '#DC4633', 
+        'Sub Saharan Africa': '#8DBF2E', 
+        'Middle East & North Africa': '#F1C500', 
+        'East Asia': '#0D534D', 
+        'South East Asia & Oceania': '#6FC7EA', 
+        'Latin America & Caribbean': '#007FA3', 
+        'South & Central Asia': '#AB1368',
+    }
+
     const cities = Object.keys(citiesDens);
 
     let curCityOne = "Toronto";
@@ -106,7 +117,13 @@
             {/each}
         </select>
         
-        <HorizontalBarChart curMetric={curMetric} curMetricKey={curMetricKey} data={citiesDens} maxMetricValue={maxMetricValue} />
+        <HorizontalBarChart 
+            curMetric={curMetric} 
+            curMetricKey={curMetricKey} 
+            maxMetricValue={maxMetricValue} 
+            data={citiesDens} 
+            classifierColours={regionColours}
+        />
     </div>
 
     <div class="text">

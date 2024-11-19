@@ -1,13 +1,21 @@
 <script>
+    import SelectClassifiers from "./SelectClassifiers.svelte";
+
     export let curMetric;
     export let curMetricKey;
     export let maxMetricValue;
-    export let data;
 
+    export let data;
+    export let classifierColours;
+
+    // Classifiers and cleaning data
+    let classifiers = Object.keys(classifierColours);
     // https://github.com/sveltejs/svelte/issues/13446#issuecomment-2382939034
     let dataObj = Object.entries(data);
-    $: sortedData = dataObj.toSorted(function(a,b) {return a[1][curMetricKey] <= b[1][curMetricKey]});
-
+    $: sortedData = dataObj
+        .filter(item => classifiers.includes(item[1].region))
+        .sort(function(a,b) {return a[1][curMetricKey] <= b[1][curMetricKey]});
+    
     // CHART VARIABLES //
     // Define chart dimensions 
     let chartWidth;
@@ -38,6 +46,8 @@
 </script>
 
 <div id="chart-wrapper" bind:offsetWidth={chartWidth}>
+    <SelectClassifiers bind:classifiers={classifiers} classifierColours={classifierColours} />
+
     <svg height={chartHeight} width={chartWidth} id="chart">
         <!-- <polygon id="diamond" points="0,-6 6,0 0,6 -6,0" fill="black" stroke="white" stroke-width="2" /> -->
         <!-- <polygon points="0,-6 6,0 0,6 -6,0" fill="#191919" stroke="#191919" stroke-width="4" /> -->
@@ -105,7 +115,7 @@
                 x2={regionStart + 4}
                 y2={barTop + (i * barGap)}
                 style="
-                    stroke: yellow;
+                    stroke: {classifierColours[cityInfo['region']]};
                 "
             ></line>
 
