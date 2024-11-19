@@ -108,8 +108,6 @@
         </select>
         
         <HorizontalBarChart curMetric={curMetric} curMetricKey={curMetricKey} citiesDens={citiesDens} maxMetricValue={maxMetricValue} />
-
-        <CityMetricsRanking curMetric={curMetric} curMetricKey={curMetricKey} citiesDens={citiesDens} />
     </div>
 
     <div class="text">
