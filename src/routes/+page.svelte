@@ -32,6 +32,7 @@
     }
 
     const cities = Object.keys(citiesDens);
+    cities.sort()
 
     let curCityOne = "Toronto";
     let curCityTwo = "Chicago";

@@ -1,7 +1,6 @@
 <script>
     export let curCity;
     export let cities;
-    cities.sort()
 </script>
 
 <div class="city-compare">
@@ -20,6 +19,12 @@
     .city-compare {
         width: 49.5%;
         display: inline-block;
+    }
+
+    @media screen and (max-width: 600px) {
+        .city-compare {
+            width: 100%;
+        }
     }
 
     select {
