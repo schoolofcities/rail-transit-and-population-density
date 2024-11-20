@@ -47,6 +47,12 @@
 		margin-bottom: 5px;
 	}
 
+	@media screen and (max-width: 550px) {
+		.button {
+			width: 90%;
+		}
+	}
+
 	.button:hover {
 		cursor: pointer;
 	}
