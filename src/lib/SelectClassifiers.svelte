@@ -29,14 +29,22 @@
 
 <style>
 	.buttons {
+		/* https://stackoverflow.com/a/73036389 */
 		display: flex;
-		flex-wrap: wrap;
-		/* max-width: 750px; */
+		/* flex-wrap: wrap; */
+		flex-direction: row;
+		justify-content: space-around;
+		flex-flow: wrap;
+		padding-top: 10px;
 	}
 
 	.button {
 		width: 225px;
+		height: 30px;
 		float: left;
+		border: 2px solid var(--brandDarkBlue);
+		margin-top: 5px;
+		margin-bottom: 5px;
 	}
 
 	.button:hover {
@@ -44,17 +52,18 @@
 	}
 
 	.box {
-		height: 15px;
+		height: 30px;
 		width: 15px;
-		border: solid 1px var(--brandDarkBlue);
+		/* border: solid 1px var(--brandDarkBlue); */
 		float: left;
 	}
 
 	.name {
+		font-family: TradeGothicLTLight;
 		overflow: hidden;
-		padding-left: 5px;
+		padding: 6px;
 		color: var(--brandBlack);
-		font-size: 15px;
+		font-size: 14px;
 	}
 
 	.name:hover {
