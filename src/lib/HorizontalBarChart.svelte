@@ -142,7 +142,7 @@
 		border-bottom: solid 1px var(--brandDarkBlue); */
 		padding-bottom: 10px;
 		margin-bottom: 10px;
-		padding-left: 10px;
+		/* padding-left: 10px; */
 	}
 
 	#chart {

@@ -52,7 +52,7 @@
 	}
 
 	.box {
-		height: 30px;
+		height: 100%;
 		width: 15px;
 		/* border: solid 1px var(--brandDarkBlue); */
 		float: left;
