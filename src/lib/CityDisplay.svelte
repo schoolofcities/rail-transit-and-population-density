@@ -19,6 +19,7 @@
     .city-compare {
         width: 49.5%;
         display: inline-block;
+        vertical-align: top;
     }
 
     @media screen and (max-width: 600px) {
