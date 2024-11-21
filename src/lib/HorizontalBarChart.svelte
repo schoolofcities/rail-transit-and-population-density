@@ -14,7 +14,10 @@
     let dataObj = Object.entries(data);
     $: sortedData = dataObj
         .filter(item => classifiers.includes(item[1].region))
-        .sort(function(a,b) {return a[1][curMetricKey] <= b[1][curMetricKey]});
+        .sort(function(a,b) {return b[1][curMetricKey] - a[1][curMetricKey]});  // Subtraction is required for Chrome https://stackoverflow.com/a/1969183
+
+    $: console.log(sortedData);
+    
     
     // CHART VARIABLES //
     // Define chart dimensions 
