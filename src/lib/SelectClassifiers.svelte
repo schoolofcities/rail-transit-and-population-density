@@ -43,6 +43,7 @@
 		height: 30px;
 		float: left;
 		border: 2px solid var(--brandDarkBlue);
+		background-color: #f5fcfc;
 		margin-top: 5px;
 		margin-bottom: 5px;
 	}
