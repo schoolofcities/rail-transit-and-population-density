@@ -130,6 +130,13 @@ h4 {
     color: var(--brandBlack);
 }
 
+h5 {
+	text-align: left;
+    font-family: TradeGothicBold;
+    font-size: 20px;
+    color: var(--brandBlack);
+}
+
 p {
     font-family: SourceSerif;
     color: var(--brandBlack);

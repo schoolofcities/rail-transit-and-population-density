@@ -41,8 +41,8 @@
         "General density",
         "Urban density",
         "Station density",
-        "% Urban pop near transit",
-        "% Urban area near transit",
+        "% Pop urban and near transit",
+        "% Area urban and near transit",
         "Ratio of urban population and area near transit"
     ];
 
@@ -90,11 +90,11 @@
     </div>
 
     <div class="text">
-        <p>Transit is a key part of many cities - but there's a lot of variation in how and where lines and stations are placed. Ideally, they serve the most amount of people covering an efficient amount of area.</p>
+        <p>Transit is a key part of many cities - but there's a lot of variation in how and where lines and stations are placed. Ideally, they serve the most amount of people while covering an efficient amount of area.</p>
 
-        <p>Below, you can compare how well transit systems serve their populations for 298 of the most populated cities around the globe. We've computed a number of different metrics examining this, including ranking which cities perform highest on them. </p>
+        <p>Below, you can compare how well transit systems serve their populations for 275 of the most populated cities around the globe. We've computed a number of different metrics examining this below, including ranking which cities perform highest on them. </p>
 
-        <p>Each map below displays population density overlayed with transit. We show density in 1 sqkm tiles, covering a 50 km radius. Transit lines and stations are shown in purple, and only include regional rail, subways, and LRT.</p>
+        <p>Each map below displays a population density heatmap overlayed with transit. We show density in 1 sqkm tiles, covering a 50 km radius from city centers. Transit lines and stations are shown in purple, and only include regional rail, subways, and LRT.</p>
 
         <h3>Compare Cities</h3>
 
@@ -104,9 +104,17 @@
 
         <CityMetricsDisplay citiesDens={citiesDens} cityOne={curCityOne} cityTwo={curCityTwo} metrics={metrics} metricsKeys={metricsKeys} />
 
-        <p>Let's define a few variables first. TODO</p>
-        
-        <p>We compute our metrics using the following equations: TODO</p>
+        <h5><u>Density metrics</u></h5>
+
+        <p>{metrics[0]}: Total population divided by total area</p>
+        <p>{metrics[1]}: Population divided by area, for 1 sqkm tiles with at least 100 people</p>
+        <p>{metrics[2]}: Average population divided by area, for each 1km radius around a station</p>
+
+        <h5><u>Transit metrics</u></h5>
+
+        <p>{metrics[3]}: Percent of the total population that is urban (> 100 people in a 1 sqkm tile) and within 1 km of a station</p>
+        <p>{metrics[4]}: Percent of the total area that is urban and within 1km of a station</p>
+        <p>{metrics[5]}: {metrics[3]} divided by {metrics[4].toLowerCase()}</p>
     </div>
 
     <div class="text">
@@ -129,16 +137,22 @@
 
     <div class="text">
         <h3>Appendix</h3>
-        <p>We obtained railway and station data from <a href="https://www.openstreetmap.org/">OpenStreetMap</a> (OSM) using <a href="https://overpass-turbo.eu/">overpass turbo</a> with <a href="https://github.com/schoolofcities/world-city-transit-density/blob/main/analysis/query_osm.py">this query</a>. Many cities have missing or incorrect data - let us know if you update OSM, and we'll aim to update our webpage.</p>
+        <p class="appendix-text">We obtained railway and station data from <a href="https://www.openstreetmap.org/">OpenStreetMap</a> (OSM) using <a href="https://overpass-turbo.eu/">overpass turbo</a> with <a href="https://github.com/schoolofcities/world-city-transit-density/blob/main/analysis/query_osm.py">this query</a>. Many cities have missing or incorrect data - let us know if you update OSM for one of our cities, and we'll aim to update our webpage.</p>
         
-        <p>We sourced geographic population density from <a href="https://hub.worldpop.org/geodata/summary?id=24777">WorldPop</a>, and center points from <a href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/">Natural Earth</a>. Our water layer is from <a href="https://www.arcgis.com/home/item.html?id=e750071279bf450cbd510454a80f2e63">World Water Bodies</a>, and we applied the Douglas-Peucker algorithm to reduce file size.</p>
+        <p class="appendix-text">We sourced geographic population density from <a href="https://hub.worldpop.org/geodata/summary?id=24777">WorldPop</a>, and center points from <a href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/">Natural Earth</a>. Our water layer is from <a href="https://www.arcgis.com/home/item.html?id=e750071279bf450cbd510454a80f2e63">World Water Bodies</a>, and we applied the Douglas-Peucker simplification algorithm to reduce file size.</p>
 
-        <p>All code and relevant data is available on our <a href="https://github.com/schoolofcities/world-city-transit-density/tree/main">GitHub repository</a>.</p>
+        <p class="appendix-text">We also obtained our list of cities from Natural Earth, and initially used the 300 most populated cities. We manually removed cases where one city was essentially the suburb of another city at our scale (e.g., Kolkata and Howrah), though left in ambiguous cases (e.g., Hong Kong and Shenzhen). </p>
+
+        <p class="appendix-text">All code and relevant data is available on our <a href="https://github.com/schoolofcities/world-city-transit-density/tree/main">GitHub repository</a>.</p>
     </div>
 </main>
 
 <style>
     select {
         width: 100%;
+    }
+
+    .appendix-text {
+        font-size: 16px;
     }
 </style>
