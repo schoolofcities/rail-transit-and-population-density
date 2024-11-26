@@ -33,6 +33,7 @@
         text-align: center; /* Centers text and inline elements */
         position: relative; /* For flex alignment */
         padding-left: 15px;
+        padding-top: 10px;
     }
 
     select {
@@ -42,12 +43,13 @@
 
     img {
         width: 100%;
+        max-width: 600px;
         height: auto;
         border-radius: 50%;
         border: solid 1px var(--brandLightBlue);
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 880px) {
         .city-compare {
             width: 100%;
             padding-left: 0px;

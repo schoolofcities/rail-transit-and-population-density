@@ -13,7 +13,7 @@
 
 <div class="resp-table" bind:offsetWidth={width}>
     <div class="resp-table-body">
-        {#if width < (600 - 30)}
+        {#if width < (710 - 30)}
             <div class="resp-table-row"> 
                 <div class="table-body-cell-header">
                     {cityOne}
