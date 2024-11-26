@@ -30,7 +30,7 @@
 
 
 :root {
-	font-family: -apple-system, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+	font-family: -apple-system, RobotoRegular, "Open Sans", "Helvetica Neue", sans-serif;
 	--brandBlack: #000000;
 	--brandWhite: #ffffff;
 	--brandGray: #D0D1C9;
@@ -178,16 +178,9 @@ select {
 	padding: 5px;
 	padding-left: 5px;
 	font-size: 16px;   
+	font-family: TradeGothicBold;
 }
 
-
-
-option {
-	/* font-family: TradeGothicLTLight; */
-	/* background-color: var(--brandGray); */
-	/* color: white;
-	stroke: white; */
-}
 
 select:hover {
 	cursor: pointer;
