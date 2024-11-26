@@ -83,36 +83,46 @@ main {
 
 .text {
     background-color: none;
-    max-width: 1000px;
+    max-width: 700px;
     margin: 0 auto;
     position: relative;
     padding-left: 15px;
     padding-right: 15px;
 	border-top: solid 1px var(--brandGray80);
 	margin-top: 20px;
-	
+}
+
+.charts {
+	background-color: none;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+	border-top: solid 1px var(--brandGray80);
+	margin-top: 20px;
 }
 
 
 h1 {
     font-family: TradeGothicBold;
-    font-size: 42px;
+    font-size: 47px;
 	font-weight: normal;
-    color: var(--brandBlack);
+    color: var(--brandDarkBlue);
     border-bottom: solid 1px var(--brandGray);
     text-decoration: none;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     padding: 0px;
 }
 
 h2 {
     text-align: left;
-    font-family: TradeGothicBold;
+    font-family: TradeGothicLTLight;
     font-size: 32px;
-    border-bottom: solid 1px var(--brandBlack);
+    /* border-bottom: solid 1px var(--brandBlack); */
     margin-top: 0px;
-    color: var(--brandBlack);
+    color: var(--brandMedBlue);
 }
 
 h3 {
@@ -139,7 +149,7 @@ h5 {
 
 p {
     font-family: SourceSerif;
-    color: var(--brandBlack);
+    color: var(--brandDarkBlue);
     text-align: left;
     font-size: 18px;
     line-height: 30px;

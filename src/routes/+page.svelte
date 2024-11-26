@@ -3,6 +3,8 @@
     
     import TopSofC from "../lib/TopSofC.svelte";
 
+    import LongCityGraphic from '../lib/LongCityGraphic.svelte';
+
     import CityDisplay from '../lib/CityDisplay.svelte';
     import CityMetricsDisplay from '../lib/CityMetricsDisplay.svelte';
     import HorizontalBarChart from '../lib/HorizontalBarChart.svelte';
@@ -56,8 +58,8 @@
     ];
 
     const metricValues = [
-        10000,
-        10000,
+        7500,
+        7500,
         50000,
         100,
         100,
@@ -79,30 +81,50 @@
 <TopSofC />
 
 <main>
+
+    
+
     <div class="title">
-        <h1>Comparing Transit-Oriented Density</h1>
+
+        <LongCityGraphic/>
+
+
+        <h1>Rapid transit and population density</h1>
+        <h2>Comparing 250+ cities around the world</h2>
         <p>
-            Aniket Kali, Jeff Allen
-        </p>
-        <p>
-            Published TBD
+            Aniket Kali & Jeff Allen | December 2024
         </p>
     </div>
 
     <div class="text">
-        <p>Transit is a key part of many cities - but there's a lot of variation in how and where lines and stations are placed. Ideally, they serve the most amount of people while covering an efficient amount of area.</p>
+        <p>
+            Public transit is important infrastructure in many cities. Ideally, major transit stations they serve the most amount of people while covering an efficient amount of area, but there's a lot of variation in how and where lines and stations are placed relative to where people live.
+        </p>
 
-        <p>Below, you can compare how well transit systems serve their populations for 275 of the most populated cities around the globe. We've computed a number of different metrics examining this below, including ranking which cities perform highest on them. </p>
+        <p>
+            Below, you can compare how well transit systems serve their populations for 250+ of the most populated cities around the globe. We've computed a number of different metrics examining this below, including ranking which cities perform highest on them.
+        </p>
 
-        <p>Each map below displays a population density heatmap overlayed with transit. We show density in 1 sqkm tiles, covering a 50 km radius from city centers. Transit lines and stations are shown in purple, and only include regional rail, subways, and LRT.</p>
+        <p>
+            Each map below displays a population density heatmap overlayed with major transit routes. 
+            <!-- We show density in 1 sqkm tiles, covering a 50 km radius from city centers. Transit lines and stations are shown in purple, and only include regional rail, subways, and LRT. -->
+        </p>
 
         <h3>Compare Cities</h3>
+
+    </div>
+
+    <div class="charts">
 
         <CityDisplay cities={cities} bind:curCity={curCityOne} />
 
         <CityDisplay cities={cities} bind:curCity={curCityTwo} />
 
         <CityMetricsDisplay citiesDens={citiesDens} cityOne={curCityOne} cityTwo={curCityTwo} metrics={metrics} metricsKeys={metricsKeys} />
+
+    </div>
+
+    <div class="text">
 
         <h5><u>Density metrics</u></h5>
 
@@ -115,9 +137,10 @@
         <p>{metrics[3]}: Percent of the total population that is urban (> 100 people in a 1 sqkm tile) and within 1 km of a station</p>
         <p>{metrics[4]}: Percent of the total area that is urban and within 1km of a station</p>
         <p>{metrics[5]}: {metrics[3]} divided by {metrics[4].toLowerCase()}</p>
+
     </div>
 
-    <div class="text">
+    <div class="charts">
         <h3>Rank Cities</h3>
 
         <select bind:value={curMetric}>
