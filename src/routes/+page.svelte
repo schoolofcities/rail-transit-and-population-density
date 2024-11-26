@@ -37,7 +37,7 @@
     cities.sort()
 
     let curCityOne = "Toronto";
-    let curCityTwo = "Chicago";
+    let curCityTwo = "Taipei";
 
     const metrics = [
         "General density",
@@ -98,19 +98,21 @@
 
     <div class="text">
         <p>
-            Public transit is important infrastructure in many cities. Ideally, major transit stations they serve the most amount of people while covering an efficient amount of area, but there's a lot of variation in how and where lines and stations are placed relative to where people live.
+            Public transit is important infrastructure in many cities. Ideally, major transit routes and stations are sited to serve and connect the most amount of people while covering an efficient amount of area. However, there's a lot of variation in how and where lines and stations are placed relative to where people live.
         </p>
 
         <p>
-            Below, you can compare how well transit systems serve their populations for 250+ of the most populated cities around the globe. We've computed a number of different metrics examining this below, including ranking which cities perform highest on them.
+            Below, you can compare how well transit systems serve their populations for 250+ of the most populated cities around the globe. Using these maps, we've computed a number of different metrics examining characteristics of transit oriented development, and ranked how well cities perform relative to each other.
         </p>
 
-        <p>
-            Each map below displays a population density heatmap overlayed with major transit routes. 
+        <!-- <p> -->
+            <!-- Each map below displays a population density heatmap overlayed with major transit routes.  -->
             <!-- We show density in 1 sqkm tiles, covering a 50 km radius from city centers. Transit lines and stations are shown in purple, and only include regional rail, subways, and LRT. -->
-        </p>
+        <!-- </p> -->
 
-        <h3>Compare Cities</h3>
+        <!-- <h3>Compare Cities</h3> -->
+
+        <br>
 
     </div>
 

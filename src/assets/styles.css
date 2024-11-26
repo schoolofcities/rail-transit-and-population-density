@@ -99,7 +99,7 @@ main {
     position: relative;
     padding-left: 15px;
     padding-right: 15px;
-	border-top: solid 1px var(--brandGray80);
+	/* border-top: solid 1px var(--brandGray80); */
 	margin-top: 20px;
 }
 
@@ -167,17 +167,7 @@ a:hover {
 
 
 
-select {
-	padding: 3px;
-	padding-left: 5px;
-	width: 340px;
-	background-color: var(--brandGray);
-	border: 1px solid var(--brandGray);
-	font-size: 14px;
-	border-color: var(--brandDarkBlue);
-	border-radius: 1px;
-	margin-bottom: 8px; 
-}
+
 
 option {
 	/* font-family: TradeGothicLTLight; */
