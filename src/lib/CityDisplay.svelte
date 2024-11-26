@@ -10,15 +10,17 @@
 
 
 <div class="city-compare">
+    
+
+    {#await import(`../assets/city_image/${curCity.toLowerCase()}.png`) then { default: src }}
+        <img {src} alt="" />
+    {/await}
+
     <select bind:value={curCity}>
         {#each cities as value}
             <option {value}>{value}</option>
         {/each}
     </select>
-
-    {#await import(`../assets/city_image/${curCity.toLowerCase()}.png`) then { default: src }}
-        <img {src} alt="" />
-    {/await}
 </div>
 
 
@@ -37,12 +39,12 @@
         display: block;
         margin: 0 auto; /* Horizontally center the select */
         width: 100%;
-        max-width: 300px;
+        max-width: 200px;
         color: var(--brandDarkBlue);
         background-color: white;
         border: solid 1px var(--brandLightBlue);
         border-radius: 5px;
-        margin-bottom: 10px;
+        margin-top: 10px;
         padding: 3px;
 	    padding-left: 5px;
         font-size: 14px;   

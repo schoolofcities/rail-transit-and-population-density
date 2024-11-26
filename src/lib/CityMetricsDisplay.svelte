@@ -44,9 +44,12 @@
 
 <style>
     .resp-table {
+        margin: 0 auto;
         width: 100%;
+        max-width: 680px;
         display: table;
         margin-top: 20px;
+        color: var(--brandDarkBlue);
         /* border: 2px solid var(--brandDarkBlue); */
     }
 
@@ -56,15 +59,17 @@
 
     .resp-table-row {
         display: table-row;
+        /* border-top: solid 1px grey; */
     }
 
     .table-body-cell-value {
-        width: 20%;
-        font-family: TradeGothicLTLight;
+        width: 12%;
+        font-family: TradeGothicBold;
         font-size: 16px;
         display: table-cell;
-        /* border: 2px solid #c4d4e0; */
-        background-color: #ceeff0;
+        text-align: center;
+        border-top: 1px solid var(--brandLightBlue);
+        background-color: #6fc7ea2e;
         padding: 8px;
         line-height: 1.42857143;
         vertical-align: top;
@@ -74,8 +79,9 @@
         font-family: TradeGothicLTLight;
         font-size: 16px;
         display: table-cell;
-        /* border: 2px solid #92abbe; */
-        background-color: #7fd4d9;
+        text-align: center;
+        border-top: 1px solid var(--brandLightBlue);
+        background-color: #ffffff;
         padding: 8px;
         line-height: 1.42857143;
         vertical-align: top;

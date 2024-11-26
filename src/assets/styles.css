@@ -70,7 +70,7 @@ main {
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 0px;
-    /* border-bottom: solid 1px var(--brandBlack); */
+    border-bottom: solid 1px var(--brandLightBlue);
     position: relative;
 	padding-left: 15px;
     padding-right: 15px;
@@ -88,7 +88,7 @@ main {
     position: relative;
     padding-left: 15px;
     padding-right: 15px;
-	border-top: solid 1px var(--brandGray80);
+	/* border-top: solid 1px var(--brandGray80); */
 	margin-top: 20px;
 }
 
@@ -109,8 +109,8 @@ h1 {
     font-size: 47px;
 	font-weight: normal;
     color: var(--brandDarkBlue);
-    border-bottom: solid 1px var(--brandGray);
-    text-decoration: none;
+    /* border-bottom: solid 1px var(--brandGray); */
+    text-decoration: underline;
     margin-top: 40px;
     margin-bottom: 10px;
     padding: 0px;
@@ -119,7 +119,7 @@ h1 {
 h2 {
     text-align: left;
     font-family: TradeGothicLTLight;
-    font-size: 32px;
+    font-size: 29px;
     /* border-bottom: solid 1px var(--brandBlack); */
     margin-top: 0px;
     color: var(--brandMedBlue);

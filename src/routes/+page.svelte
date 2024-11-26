@@ -40,16 +40,16 @@
     let curCityTwo = "Taipei";
 
     const metrics = [
-        "General density",
-        "Urban density",
-        "Station density",
-        "% Pop urban and near transit",
-        "% Area urban and near transit",
-        "Ratio of urban population and area near transit"
+        // "General density",
+        "Population density",
+        "Population density within 1km of rapid transit stations",
+        "% of population in the region that lives 1km from a rapid transit station",
+        "% of the urban area within 1km of rapid transit station",
+        "Concentration ratio (% of population near transit / % of area near transit)"
     ];
 
     const metricsKeys = [
-        "raw_dens",
+        // "raw_dens",
         "urban_dens",
         "station_dens",
         "transit_pop_pct",
@@ -58,7 +58,7 @@
     ];
 
     const metricValues = [
-        7500,
+        // 7500,
         7500,
         50000,
         100,
@@ -90,19 +90,22 @@
 
 
         <h1>Rapid transit and population density</h1>
-        <h2>Comparing 250+ cities around the world</h2>
+        <h2>Comparing and ranking 250+ cities around the world</h2>
         <p>
             Aniket Kali & Jeff Allen | December 2024
         </p>
+        <br>
+
     </div>
 
     <div class="text">
+        
         <p>
             Public transit is important infrastructure in many cities. Ideally, major transit routes and stations are sited to serve and connect the most amount of people while covering an efficient amount of area. However, there's a lot of variation in how and where lines and stations are placed relative to where people live.
         </p>
 
         <p>
-            Below, you can compare how well transit systems serve their populations for 250+ of the most populated cities around the globe. Using these maps, we've computed a number of different metrics examining characteristics of transit oriented development, and ranked how well cities perform relative to each other.
+            We've created maps of rapid transit lines overlaid onto population density for 250+ of the most populated cities around the globe. Click the dropdowns to view and compare how well transit systems serve their populations. Using these maps, we've computed a number of different metrics examining characteristics of transit oriented development, and ranked how well cities perform relative to each other.
         </p>
 
         <!-- <p> -->
@@ -128,7 +131,7 @@
 
     <div class="text">
 
-        <h5><u>Density metrics</u></h5>
+        <!-- <h5><u>Density metrics</u></h5>
 
         <p>{metrics[0]}: Total population divided by total area</p>
         <p>{metrics[1]}: Population divided by area, for 1 sqkm tiles with at least 100 people</p>
@@ -138,11 +141,19 @@
 
         <p>{metrics[3]}: Percent of the total population that is urban (> 100 people in a 1 sqkm tile) and within 1 km of a station</p>
         <p>{metrics[4]}: Percent of the total area that is urban and within 1km of a station</p>
-        <p>{metrics[5]}: {metrics[3]} divided by {metrics[4].toLowerCase()}</p>
+        <p>{metrics[5]}: {metrics[3]} divided by {metrics[4].toLowerCase()}</p> -->
+
+        <p>
+            Lorem ipsum
+        </p>
+        
 
     </div>
 
-    <div class="charts">
+
+
+    <div class="text">
+
         <h3>Rank Cities</h3>
 
         <select bind:value={curMetric}>
@@ -150,6 +161,10 @@
                 <option {value}>{value}</option>
             {/each}
         </select>
+
+    </div>
+
+    <div class="charts">
         
         <HorizontalBarChart 
             curMetric={curMetric} 
