@@ -36,18 +36,8 @@
     }
 
     select {
-        display: block;
-        margin: 0 auto; /* Horizontally center the select */
         width: 100%;
-        max-width: 200px;
-        color: var(--brandDarkBlue);
-        background-color: white;
-        border: solid 1px var(--brandLightBlue);
-        border-radius: 5px;
-        margin-top: 10px;
-        padding: 3px;
-	    padding-left: 5px;
-        font-size: 14px;   
+        max-width: 220px;
     }
 
     img {

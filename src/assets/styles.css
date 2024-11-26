@@ -128,9 +128,9 @@ h2 {
 h3 {
     text-align: left;
     font-family: TradeGothicBold;
-    font-size: 23px;
-    border-bottom: solid 1px var(--brandGray);
-    color: var(--brandBlack);
+    font-size: 25px;
+    /* border-bottom: solid 1px var(--brandGray); */
+    color: var(--brandDarkBlue);
 }
 
 h4 {
@@ -165,7 +165,20 @@ a:hover {
 	color: var(--brandMedGreen);
 }
 
-
+select {
+	display: block;
+	margin: 0 auto; /* Horizontally center the select */
+	width: 100%;
+	max-width: 700px;
+	color: var(--brandDarkBlue);
+	background-color: white;
+	border: solid 1px var(--brandLightBlue);
+	border-radius: 5px;
+	margin-top: 10px;
+	padding: 5px;
+	padding-left: 5px;
+	font-size: 16px;   
+}
 
 
 

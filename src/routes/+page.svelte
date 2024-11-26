@@ -44,7 +44,7 @@
         "Population density",
         "Population density within 1km of rapid transit stations",
         "% of population in the region that lives 1km from a rapid transit station",
-        "% of the urban area within 1km of rapid transit station",
+        "% of the urban area within 1km of a rapid transit station",
         "Concentration ratio (% of population near transit / % of area near transit)"
     ];
 
@@ -66,7 +66,7 @@
         25,
     ]
 
-    let curMetric = metrics[0];
+    let curMetric = metrics[2];
     $: curMetricKey = metricsKeys[metrics.indexOf(curMetric)];
     $: maxMetricValue = metricValues[metrics.indexOf(curMetric)];
 </script>
@@ -144,7 +144,7 @@
         <p>{metrics[5]}: {metrics[3]} divided by {metrics[4].toLowerCase()}</p> -->
 
         <p>
-            Lorem ipsum
+            Brief description on what each metric means / how to intrepet
         </p>
         
 
@@ -154,14 +154,24 @@
 
     <div class="text">
 
-        <h3>Rank Cities</h3>
+        <br>
 
+        <h3>City Rankings</h3>
+
+        <p>
+            Select by metric:
+        </p>
+        
         <select bind:value={curMetric}>
             {#each metrics as value}
                 <option {value}>{value}</option>
             {/each}
         </select>
 
+        <p>
+            Select by region:
+        </p>
+        
     </div>
 
     <div class="charts">
@@ -173,6 +183,7 @@
             data={citiesDens} 
             classifierColours={regionColours}
         />
+
     </div>
 
     <div class="text">
@@ -190,6 +201,7 @@
 <style>
     select {
         width: 100%;
+        max-width: 700px;
     }
 
     .appendix-text {
