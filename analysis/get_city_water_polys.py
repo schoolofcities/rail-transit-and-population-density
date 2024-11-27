@@ -19,7 +19,7 @@ def save_city_water_polys(row, water_gdf):
 
     max_dist = 300
 
-    edge_cases = ["montréal", "istanbul", "chicago"]
+    edge_cases = ["montreal", "istanbul", "chicago"]
     if city_name in edge_cases:
         max_dist = 1000
     else:
