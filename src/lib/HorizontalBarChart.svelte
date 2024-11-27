@@ -9,7 +9,9 @@
     export let classifierColours;
 
     // Classifiers and cleaning data
-    let classifiers = Object.keys(classifierColours);
+    let classifiers = ['US & Canada']
+    
+    // Object.keys(classifierColours);
     // https://github.com/sveltejs/svelte/issues/13446#issuecomment-2382939034
     let dataObj = Object.entries(data);
     $: sortedData = dataObj

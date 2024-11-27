@@ -26,10 +26,10 @@
 		'US & Canada': '#00A189', 
 		'Europe': '#DC4633', 
 		'Sub Saharan Africa': '#8DBF2E', 
-		'Middle East & North Africa': '#F1C500', 
+		'Middle East & North Africa': '#007FA3', 
 		'East Asia': '#0D534D', 
 		'South East Asia & Oceania': '#6FC7EA', 
-		'Latin America & Caribbean': '#007FA3', 
+		'Latin America & Caribbean': '#F1C500', 
 		'South & Central Asia': '#AB1368',
 	}
 
@@ -42,9 +42,9 @@
 	const metrics = [
 		// "General density",
 		"Population density (people / km²)",
-		"Population density within 1km of major transit stations",
-		"% of population in the region that lives 1km from a major transit station",
-		"% of the urban area within 1km of a major transit station",
+		"Population density in the area 1km from all major rail transit stations",
+		"% of total population that lives 1km from a major rail transit station",
+		"% of the urban area within 1km of a major rail transit station",
 		"Concentration ratio (% of population near transit / % of area near transit)"
 	];
 
@@ -117,6 +117,26 @@
 
 		<br>
 
+		<div id="legend">
+			<p >
+				Rail transit line and station
+				<svg width="40" height="15" xmlns="http://www.w3.org/2000/svg">
+					<line x1="0" y1="10" x2="40" y2="10" stroke="#0D534D" stroke-width="1" />
+					<circle cx="18" cy="10" r="3" fill="#0D534D" />
+				</svg>
+			</p>
+			<p style="padding-top: 10px;">						
+				Population density (people / km²)
+			</p>
+			<div id="legend-gradient"></div>
+			<div id="legend-numbers">
+				<p id="legend-numbers-left">0</p>
+				<p id="legend-numbers-right">10,000+</p>
+			</div>
+			
+		</div>
+		
+
 	</div>
 
 	<div class="charts">
@@ -147,33 +167,14 @@
 		<br>
 
 		<p>
-			Brief description on what each metric means / how to intrepet
+			Add some brief description on what each metric means / how to intrepret
 		</p>
 
 		<p>
-			We also obtained our list of cities from <a href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/" target="_blank">Natural Earth</a>, which provides a longitude/latitude point for the centre of the city. For each city, we defined the urban region as a circle with a 50km radius from this centre point. 
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		</p>
 
-		<p>
-			We initially used the 300 most populated cities, and then manually removed cases where one city was essentially the suburb of another city at our scale (e.g. Howrah was removed since it is very close to Kolkata). 
-			<!-- though left in ambiguous cases (e.g., Hong Kong and Shenzhen). -->
-		</p>
-
-		<p>
-			We sourced geographic population density from <a href="https://hub.worldpop.org/geodata/summary?id=24777" target="_blank">WorldPop</a>. The region wide population density metric only includes areas which have a population density of greater than 100km², to account for how some regions have more or less farmland and habitable geography (e.g. mountains, water, etc.).
-		</p>		
-
-		<p>
-			We obtained railway and station data from <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> (OSM) using <a href="https://overpass-turbo.eu/" target="_blank">overpass turbo</a> with <a href="https://github.com/schoolofcities/world-city-transit-density/blob/main/analysis/query_osm.py" target="_blank">this query</a>. We then calculated 1km buffers around each point and then estimated the population within the buffered area via aerial interpolation. While the quality and comprehensiveness of OSM data is quite good in most cities, there are several cities that have missing or incorrect data. As OSM is edited and improved, we'll aim to update our maps and metrics.
-		</p>
-
-		<p>
-			Limitations of transit data, BRT and frequency, and of course connectivity/accessibility
-		</p>
-
-		<p>
-			All code and relevant data is available on our <a href="https://github.com/schoolofcities/world-city-transit-density/tree/main" target="_blank">GitHub repository</a>. Below is a chart ranking all cities for each of the five metrics. You can also download this data here.
-		</p>
+		
 
 		<!-- Our water layer is from <a href="https://www.arcgis.com/home/item.html?id=e750071279bf450cbd510454a80f2e63">World Water Bodies</a>, and we applied the Douglas-Peucker simplification algorithm to reduce file size. -->
 		
@@ -216,6 +217,41 @@
 
 	</div>
 
+	<div class="text">
+
+		<h3>Data sources</h3>
+
+		<p>
+			Cities included are from a dataset by <a href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/" target="_blank">Natural Earth</a>, which includes point coordinates for the centre of each city. For each city, we then defined the urban region shown on the maps as a circle with a 50km radius from this centre point.  We chose to use a standard circle size for all regions to account for idiosyncrasies in how different parts of the world define metro areas. 50km is approximately the outer range that someone would commute to/from a city centre along a major rail corridor.
+		</p>
+
+		<p>
+			We started with a list of the 300 most populated cities, but then manually removed cases where one city was essentially the suburb of another city at our scale (e.g. Howrah was removed since it is very close to Kolkata). We also only included cities with rail transit.
+			<!-- though left in ambiguous cases (e.g., Hong Kong and Shenzhen). -->
+		</p>
+
+		<p>
+			We sourced the population density data from <a href="https://hub.worldpop.org/geodata/summary?id=24777" target="_blank">WorldPop</a>. The first population density metric is computed after removing areas where population density is less than 100km², to account for how some regions have more or less agricultural land and habitable geography (e.g. mountains, water, etc.).
+		</p>
+
+		<p>
+			We downloaded railway and station data from <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> (OSM) using <a href="https://overpass-turbo.eu/" target="_blank">overpass turbo</a> with <a href="https://github.com/schoolofcities/world-city-transit-density/blob/main/analysis/query_osm.py" target="_blank">this query</a>. We then calculated 1km buffers around each point and then estimated the population within the buffered area via aerial interpolation. While the quality and comprehensiveness of OSM data is quite good in most cities, there are several cities that have missing or incorrect data. As OSM data is edited and improved, we'll aim to update our maps and metrics.
+		</p>
+
+		<p>
+			There are two main limitations with this data. 1) it only includes rail transit, not Bus Rapid Transit (BRT), which in many cities provides comporable service to rail. 2) does not account for frequency (i.e. headway) of routes. While many transit agencies share their routes and schedules in GTFS format, which includes information about frequency and often technology (bus, rail, etc.), we found that the availability of GTFS at a global scale was not available, particularly outside of Europe and North America. 
+		</p>
+
+		<p>
+			All code and data is available on our <a href="https://github.com/schoolofcities/world-city-transit-density/tree/main" target="_blank">GitHub repository</a>. 
+		</p>
+
+		<br>
+		<br>
+		<br>
+
+	</div>
+
 </main>
 
 <style>
@@ -223,6 +259,39 @@
 	select {
 		width: 100%;
 		max-width: 700px;
+	}
+
+	#legend {
+		width: 100%;
+	}
+
+	#legend p {
+		font-family: TradeGothicLTLight;
+		margin-bottom: 0px;
+		margin-top: 0px;
+		color: var(--brandDarkBlue);
+	}
+
+	#legend-gradient {
+		width: 100%;
+		height: 15px;
+		border: solid 1px var(--brandLightBlue);
+		border-radius: 10px;
+		background: rgb(255,255,255);
+		background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(241,197,0,1) 50%, rgba(220,70,51,1) 100%);
+	}
+
+	#legend-numbers {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#legend-numbers-left {
+		text-align: left;
+	}
+
+	#legend-numbers-right {
+		text-align: right;
 	}
 
 </style>

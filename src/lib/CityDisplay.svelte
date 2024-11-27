@@ -47,6 +47,7 @@
         height: auto;
         border-radius: 50%;
         border: solid 1px var(--brandLightBlue);
+        box-shadow: 0 0 15px 10px rgba(214, 214, 214, 0.35);
     }
 
     @media screen and (max-width: 880px) {
@@ -55,4 +56,5 @@
             padding-left: 0px;
         }
     }
+
 </style>
