@@ -60,7 +60,6 @@ main {
 	width: calc(100%);
 	min-width: 360px;
 	max-width: 1200px;
-	/* margin-bottom: 100px; */
 	position: relative;
 }
 
@@ -88,7 +87,6 @@ main {
     position: relative;
     padding-left: 15px;
     padding-right: 15px;
-	/* border-top: solid 1px var(--brandGray80); */
 	margin-top: 20px;
 }
 
@@ -99,17 +97,15 @@ main {
     position: relative;
     padding-left: 15px;
     padding-right: 15px;
-	/* border-top: solid 1px var(--brandGray80); */
 	margin-top: 20px;
 }
 
 
 h1 {
     font-family: TradeGothicBold;
-    font-size: 47px;
+    font-size: 46px;
 	font-weight: normal;
     color: var(--brandDarkBlue);
-    /* border-bottom: solid 1px var(--brandGray); */
     text-decoration: underline;
     margin-top: 40px;
     margin-bottom: 10px;
@@ -119,8 +115,7 @@ h1 {
 h2 {
     text-align: left;
     font-family: TradeGothicLTLight;
-    font-size: 29px;
-    /* border-bottom: solid 1px var(--brandBlack); */
+    font-size: 29.5px;
     margin-top: 0px;
     color: var(--brandMedBlue);
 }
@@ -129,7 +124,6 @@ h3 {
     text-align: left;
     font-family: TradeGothicBold;
     font-size: 25px;
-    /* border-bottom: solid 1px var(--brandGray); */
     color: var(--brandDarkBlue);
 }
 
@@ -155,7 +149,6 @@ p {
     line-height: 30px;
 }
 
-
 a {
 	text-decoration: underline;
 	color: var(--brandMedBlue);
@@ -167,7 +160,7 @@ a:hover {
 
 select {
 	display: block;
-	margin: 0 auto; /* Horizontally center the select */
+	margin: 0 auto; 
 	width: 100%;
 	max-width: 700px;
 	color: var(--brandDarkBlue);
@@ -184,5 +177,4 @@ select {
 
 select:hover {
 	cursor: pointer;
-	/* background-color: var(--brandWhite); */
 }
