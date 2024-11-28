@@ -94,36 +94,9 @@ def collect_idxs_in_radius(src, lon_center_idx, lat_center_idx, bound_idxs, radi
     for i in range(bound_idxs['N'], bound_idxs['S'] + 1, 1):
         for j in range(bound_idxs['W'], bound_idxs['E'] + 1, 1):
             if geopy.distance.distance(center_coords[::-1], src.xy(i,j)[::-1]).km < radius:
-                radius_idxs.append((i,j))  # double check this
+                radius_idxs.append((i,j))  
     
     return radius_idxs
-
-def get_city_coords_gdf(src, band1, lon_center_idx, lat_center_idx, radius_idxs):
-    """
-    """
-    d = {
-        "row_idx": [],
-        "col_idx": [],
-        "pop_count": [],
-        "is_center": [],
-        "geometry": [],
-    }
-
-    for i,j in radius_idxs:
-        cur_coords = src.xy(i,j)
-        x, y = cur_coords[0], cur_coords[1]
-
-        d["row_idx"].append(i)
-        d["col_idx"].append(j)
-        d["pop_count"].append(band1[i,j])
-        d["is_center"].append((lat_center_idx == i) and (lon_center_idx == j))
-        d["geometry"].append(Point(x, y))
-    
-    gdf = gpd.GeoDataFrame(d, crs="EPSG:4326")
-    gdf = gdf[gdf['pop_count'] > 0]
-    gdf = gdf.sort_values(['row_idx', 'col_idx'])
-    
-    return gdf
 
 def get_area_in_sqkm(polys):
     """ Given a list of polygons, return the area in sqkm.
@@ -134,6 +107,38 @@ def get_poly_tile(x, y):
     offset = 1 / 240  # 0.004166666666666667
     L = [(x+offset,y+offset), (x-offset,y+offset), (x-offset,y-offset), (x+offset,y-offset), (x+offset,y+offset)]
     return Polygon(L)
+
+def get_city_coords_gdf(src, band1, lon_center_idx, lat_center_idx, radius_idxs):
+    """ Convert the tile data (within the radius) to a gdf.
+    """
+    d = {
+        "row_idx": [],
+        "col_idx": [],
+        "pop_count": [],
+        "pop_dens": [],
+        "is_center": [],
+        "geometry": [],
+    }
+
+    for i,j in radius_idxs:
+        cur_coords = src.xy(i,j)
+        x, y = cur_coords[0], cur_coords[1]
+
+        tile_area = get_area_in_sqkm([get_poly_tile(x, y)])
+        tile_dens = band1[i,j] / tile_area
+
+        d["row_idx"].append(i)
+        d["col_idx"].append(j)
+        d["pop_count"].append(band1[i,j])
+        d["pop_dens"].append(tile_dens)
+        d["is_center"].append((lat_center_idx == i) and (lon_center_idx == j))
+        d["geometry"].append(Point(x, y))
+    
+    gdf = gpd.GeoDataFrame(d, crs="EPSG:4326")
+    gdf = gdf[gdf['pop_count'] > 0]
+    gdf = gdf.sort_values(['row_idx', 'col_idx'])
+    
+    return gdf
 
 def get_station_density(src, band1, lon_max, lat_max, row):
     """ Return the area and population contained within a 1km radius of an
@@ -209,16 +214,18 @@ def load_raster_file():
 
     return src, band1, width, height 
 
-def get_city_pop_tiles(src, band1, lon_max, lat_max, cities_gdf, radius):
-    """
+def get_city_pop_tiles(src, band1, lon_max, lat_max, gdf_city_list, radius):
+    """ Identify and save all land tiles within a 50km radius for each city. 
+    Additionally, mark the center tile, which is the tile that contains the 
+    given centerpoint. 
     """
     # src.xy(i,j) --> (lon,lat), s.t. i --> lat, j --> lon
     # band1[i,j] --> dens. 
 
-    for index, row in tqdm(cities_gdf.iterrows(), total=cities_gdf.shape[0]):
-        city, pop, coords = row['NAME'].lower(), row['POP_MAX'], row['geometry']
+    for index, row in tqdm(gdf_city_list.iterrows(), total=gdf_city_list.shape[0]):
+        city, coords = row['NAME'].lower(), row['geometry']
 
-        if os.path.exists(f'./data/pop_tiles/{city}_coords.gpkg'):
+        if os.path.exists(f'./data/city_pop_tiles/{city}_coords.gpkg'):
             continue
 
         # Identify the pair of indices that has the center point
@@ -232,12 +239,19 @@ def get_city_pop_tiles(src, band1, lon_max, lat_max, cities_gdf, radius):
         radius_idxs = collect_idxs_in_radius(src, lon_center_idx, lat_center_idx, bound_idxs, radius)
 
         # Create a gdf, sort, and save. 
-        coords_gdf = get_city_coords_gdf(src, band1, lon_center_idx, lat_center_idx, radius_idxs)
-        coords_gdf = coords_gdf.sort_values(['row_idx', 'col_idx'])
-        coords_gdf.to_file(f'./data/pop_tiles/{city}_coords.gpkg', driver="GPKG")
+        gdf_coords = get_city_coords_gdf(src, band1, lon_center_idx, lat_center_idx, radius_idxs)
+        gdf_coords = gdf_coords.sort_values(['row_idx', 'col_idx'])
+        gdf_coords.to_file(f'./data/city_pop_tiles/{city}_coords.gpkg', driver="GPKG")
 
-def compute_city_density(src, band1, lon_max, lat_max, cities_gdf):
-    """ Compute raw density, density with a floor, for each city, and save. 
+def compute_metrics(src, band1, lon_max, lat_max, cities_gdf):
+    """ Compute the following metrics which evaluate density and transit:
+     1. General density: 
+     2. Urban population: 
+     3. Urban density: 
+     4. Station density: 
+     5. % population near transit:
+     6. % urban area near transit: 
+     7. concentration ratio: 
     """
     cities_gdf[['raw_total_pop', 'raw_total_area', 'raw_dens', 
                 'urban_total_pop', 'urban_total_area', 'urban_dens',
@@ -325,20 +339,22 @@ def compute_city_density(src, band1, lon_max, lat_max, cities_gdf):
     cities_gdf.to_json('./data/cities_dens.json', orient='index')
 
 def get_urban_density():
-    """ Save the data points of (lat, long, density) for a 50km range for each
-    of the cities. Each city should be its own csv. 
+    """ Compute various density related metrics for each of our cities, and 
+    save a GPKG and GeoJSON containing all final computed values. As part of 
+    this, also save GPKG's containing all tiles within a 50km radius for each
+    city.
     """
     # Load the raster file and methods for querying
     src, band1, lon_max, lat_max = load_raster_file()
 
     # Load the set of cities and their key coordinates
-    cities_gdf = gpd.read_file('./data/cities.gpkg')
+    gdf_city_list = gpd.read_file('./data/city_list.gpkg')
 
     # Identify the data points of (lat, long, density) for a 50km radius around the city coordinate, and save them 
-    # get_city_pop_tiles(src, band1, lon_max, lat_max, cities_gdf, 50)
+    # get_city_pop_tiles(src, band1, lon_max, lat_max, gdf_city_list, 50)
 
     # Compute the urban density using different metrics for each of these cities 
-    compute_city_density(src, band1, lon_max, lat_max, cities_gdf)
+    compute_metrics(src, band1, lon_max, lat_max, gdf_city_list)
 
 
 if __name__ == "__main__":
