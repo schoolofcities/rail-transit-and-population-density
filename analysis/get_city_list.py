@@ -30,6 +30,15 @@ SUBURBS = [
     "Yokohama",  # Tokyo
 ]
 
+ERROR_CITIES = [
+    "Kabul",  # Afghanistan
+    "Belem",  # Brazil
+    "Sanaa",  # Yemen
+    "Port-au-Prince",  # Haiti
+    "Beirut",  # Lebanon
+    "Manaus",  # Brazil
+    "Tashkent",  # Uzbekistan, due to geographic error
+]
 
 REGIONS = {
     'Japan': 'East Asia',
@@ -115,42 +124,35 @@ REGIONS = {
 }
 
 
-def clean_city_data():
-    """ Post-process city density data and save updated files
-     1. Use the ASCII name
-     2. Remove cities which are effectively suburbs of a larger city
-     3. Add a regional classifer for the city using SOV0NAME
-
-    TODO: Integrate this as part of the regular scripts, and delete this file.
+def get_city_list(N=300):
+    """ Save a GPKG of the top N cities, ranked by the population. Include the
+    geometric points for those cities and other relevant information (country,
+    country code, region, etc).
     """
-    # Load data
     gdf_places = gpd.read_file('./data/ne_10m_populated_places/ne_10m_populated_places.shp')
     gdf_places = gdf_places.sort_values(by='POP_MAX', ascending=False)
 
-    gdf_places_ascii = gdf_places.drop_duplicates(subset='NAMEASCII', keep='first', ignore_index=True)
-    gdf_places = gdf_places.drop_duplicates(subset='NAME', keep='first', ignore_index=True)
-    gdf_cities_dens = gpd.read_file("./data/cities_dens_old.gpkg")
+    # Select relevant subset of data
+    gdf_places = gdf_places[['NAMEASCII', 'SOV0NAME', 'SOV_A3', 'POP_MAX', 'geometry']]
+    gdf_places = gdf_places.rename(columns={'NAMEASCII': 'NAME'})
+    gdf_places = gdf_places.head(N)
 
-    # ASCII
-    gdf_cities_dens['NAME'] = gdf_cities_dens['NAME'].map(gdf_places.set_index('NAME')['NAMEASCII'])
+    # Remove duplicates, suburbs, and cities without transit, or other issues
+    gdf_places = gdf_places.drop_duplicates(subset='NAME').reset_index(drop=True)
+    gdf_places = gdf_places[~gdf_places['NAME'].isin(SUBURBS)].reset_index(drop=True)
+    gdf_places = gdf_places[~gdf_places['NAME'].isin(ERROR_CITIES)].reset_index(drop=True)
 
-    # Suburbs
-    gdf_cities_dens = gdf_cities_dens[~gdf_cities_dens['NAME'].isin(SUBURBS)].reset_index(drop=True)
-
-    # Regional classifier
-    gdf_cities_dens['country'] = gdf_cities_dens['NAME'].map(gdf_places_ascii.set_index('NAMEASCII')['SOV0NAME'])
-    gdf_cities_dens['region'] = gdf_cities_dens['country'].apply(lambda x: REGIONS[x])
+    # Add regional classifier
+    gdf_places['REGION'] = gdf_places['SOV0NAME'].apply(lambda x: REGIONS[x])
 
     # Fix columns and save
-    gdf_cities_dens = gdf_cities_dens.drop(columns='country')
-    cols = gdf_cities_dens.columns.to_list()
-    cols = cols[:2] + ['region'] + cols[2:-1]
-    gdf_cities_dens = gdf_cities_dens[cols]
+    gdf_places = gdf_places.rename(columns={'SOV0NAME': 'COUNTRY', 'SOV_A3': 'COUNTRY_CODE', 'POP_MAX': 'SRC_POP'})
 
-    gdf_cities_dens.to_file("./data/cities_dens.gpkg", driver="GPKG")
-    gdf_cities_dens = gdf_cities_dens.drop(columns='geometry')
-    gdf_cities_dens = gdf_cities_dens.set_index('NAME')
-    gdf_cities_dens.to_json('./data/cities_dens.json', orient='index')
+    cols = gdf_places.columns.to_list()
+    cols = cols[:-2] + [cols[-1]] + [cols[-2]]
+    gdf_places = gdf_places[cols]
+    gdf_places.to_file("./data/city_list.gpkg", driver="GPKG")
+
 
 if __name__ == "__main__":
-    clean_city_data()
+    get_city_list()

@@ -316,7 +316,7 @@ def compute_city_density(src, band1, lon_max, lat_max, cities_gdf):
     
     # print(cities_gdf)
 
-    cities_gdf = cities_gdf.drop_duplicates(subset='NAME').reset_index(drop=True)  # TODO: Look into the differences between duplicates, and if we need to pick one
+    cities_gdf = cities_gdf.drop_duplicates(subset='NAME').reset_index(drop=True)  
     cities_gdf.to_file("./data/cities_dens.gpkg", driver="GPKG")
 
     # Save as JSON format as well for web processing
