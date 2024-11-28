@@ -107,7 +107,7 @@
 			Well planned public transit routes and stations are sited to serve and connect the most amount of people as possible. Yet there's a lot of variation within and between cities in terms of where routes and stations are located relative to where people live.
 		</p>
 		<p>
-			To look at this, we've created maps of major rail transit lines and stations overlaid onto population density for 250+ of the most populated urban regions around the globe. Click the dropdowns to view how well transit systems serve their populations in different cities. Each map is in exactly the same scale (100km in diameter) to facilitate comparative analysis.
+			To look at this, we've created maps of major rail transit lines and stations overlaid onto population density for {cities.length} of the most populated urban regions around the globe. Click the dropdowns to view how well transit systems serve their populations in different cities. Each map is in exactly the same scale (100km in diameter) to facilitate comparative analysis.
 		</p>
 		<p>
 			Using these maps, we've also computed a number of different metrics examining characteristics of transit oriented development, and ranked how well cities perform relative to each other. Generally, the greater the density and proportion of the population that lives near higher-order transit, the better. Rapid transit and regional rail sustainably connect people to employment, education, and participate in wide array of other activities.
@@ -142,44 +142,20 @@
 				<p id="legend-numbers-left">0</p>
 				<p id="legend-numbers-right">10,000+</p>
 			</div>
-			
 		</div>
 		
 
 	</div>
 
 	<div class="charts">
-
 		<CityDisplay cities={cities} bind:curCity={curCityOne} />
 
 		<CityDisplay cities={cities} bind:curCity={curCityTwo} />
 
 		<CityMetricsDisplay citiesDens={citiesDens} cityOne={curCityOne} cityTwo={curCityTwo} metrics={metrics} metricsKeys={metricsKeys} />
-
 	</div>
 
-	<!-- <div class="text">
-
-		<br>
-		<br>
-
-		<p>
-			
-		</p>
-
-		<p>
-			Population density, derived from 
-		</p>
-
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>
-
-
-	</div> -->
-
 	<div class="text">
-
 		<br>
 
 		<h3>City Rankings</h3>
@@ -197,11 +173,9 @@
 		<p style="font-family: TradeGothicLTLight">
 			Select by region:
 		</p>
-		
 	</div>
 
 	<div class="charts">
-		
 		<HorizontalBarChart 
 			curMetric={curMetric} 
 			curMetricKey={curMetricKey} 
@@ -209,11 +183,9 @@
 			data={citiesDens} 
 			classifierColours={regionColours}
 		/>
-
 	</div>
 
 	<div class="text">
-
 		<h3>Data sources</h3>
 
 		<p>
@@ -225,20 +197,20 @@
 		</p>
 
 		<p>
-			We sourced the population density data from <a href="https://hub.worldpop.org/geodata/summary?id=24777" target="_blank">WorldPop</a>. Population density metric is computed after removing areas where population density is less than 100km², to account for how some regions have more or less agricultural land and habitable geography (e.g. mountains, water, etc.).
+			We sourced the population density data from <a href="https://hub.worldpop.org/geodata/summary?id=24777" target="_blank">WorldPop</a>. Urban population density metrics are computed after removing areas where population density is less than 150km², to account for how some regions have more or less agricultural land and habitable geography (e.g. mountains, water, etc.).
 		</p>
 
 		<p>
-			We downloaded railway and station data from <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> (OSM) using <a href="https://overpass-turbo.eu/" target="_blank">overpass turbo</a> with <a href="https://github.com/schoolofcities/world-city-transit-density/blob/main/analysis/query_osm.py" target="_blank">this query</a>. We then calculated 1km buffers around each point and then estimated the population within the buffered area via aerial interpolation. While the quality and comprehensiveness of OSM data is quite good in most cities, there are several cities that have missing or incorrect data. As OSM data is edited and improved, we'll aim to update our maps and metrics.
+			We downloaded railway and station data from <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> (OSM) using <a href="https://overpass-turbo.eu/" target="_blank">overpass turbo</a> with <a href="https://github.com/schoolofcities/world-city-transit-density/blob/main/analysis/query_osm.py" target="_blank">this query</a>. We then calculated 1km buffers around each station and then estimated the population within the buffered area via aerial interpolation. While the quality and comprehensiveness of OSM data is quite good in most cities, there are several cities that have missing or incorrect data. As OSM data is edited and improved, we'll aim to update our maps and metrics.
 		</p>
 
 		<p>
-			There are two main limitations with this transit data. 1) it only includes rail transit, not Bus Rapid Transit (BRT), which in many cities provides comparable service to rail. 2) does not account for frequency (i.e. headway) of routes. While many transit agencies share their routes and schedules in GTFS format, which includes information about frequency and often technology (bus, rail, etc.), we found that the availability of GTFS at a global scale was not available, particularly outside of Europe and North America. 
+			There are two main limitations with this transit data: 1) it only includes rail transit, not Bus Rapid Transit (BRT), which in many cities provides comparable service to rail. 2) does not account for frequency (i.e. headway) of routes. While many transit agencies share their routes and schedules in GTFS format, which includes information about frequency and often technology (bus, rail, etc.), we found that the availability of GTFS at a global scale was not available, particularly outside of Europe and North America. 
 		</p>
 
-		<p>
+		<!-- <p>
 			Now of course, where people live is just one side of the ....mention would be great to have destination data.
-		</p>
+		</p> -->
 
 		<p>
 			All code and data is available on our <a href="https://github.com/schoolofcities/world-city-transit-density/tree/main" target="_blank">GitHub repository</a>. 
@@ -247,13 +219,11 @@
 		<br>
 		<br>
 		<br>
-
 	</div>
 
 </main>
 
 <style>
-
 	select {
 		width: 100%;
 		max-width: 700px;
@@ -291,5 +261,4 @@
 	#legend-numbers-right {
 		text-align: right;
 	}
-
 </style>
