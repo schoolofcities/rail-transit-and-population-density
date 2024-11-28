@@ -1,13 +1,15 @@
 <script>
-    import '../assets/styles.css'; 
-    
-    import TopSofC from "../lib/TopSofC.svelte";
+	import '../assets/styles.css'; 
+	
+	import TopSofC from "../lib/TopSofC.svelte";
 
-    import CityDisplay from '../lib/CityDisplay.svelte';
-    import CityMetricsDisplay from '../lib/CityMetricsDisplay.svelte';
-    import HorizontalBarChart from '../lib/HorizontalBarChart.svelte';
-    
-    import citiesDens from "../data/cities_dens.json"
+	import LongCityGraphic from '../lib/LongCityGraphic.svelte';
+
+	import CityDisplay from '../lib/CityDisplay.svelte';
+	import CityMetricsDisplay from '../lib/CityMetricsDisplay.svelte';
+	import HorizontalBarChart from '../lib/HorizontalBarChart.svelte';
+	
+	import citiesDens from "../data/cities_dens.json"
 
 	async function loadData() {
 		try {
@@ -20,139 +22,243 @@
 		}
 	}
 
-    const regionColours = {
-        'US & Canada': '#00A189', 
-        'Europe': '#DC4633', 
-        'Sub Saharan Africa': '#8DBF2E', 
-        'Middle East & North Africa': '#F1C500', 
-        'East Asia': '#0D534D', 
-        'South East Asia & Oceania': '#6FC7EA', 
-        'Latin America & Caribbean': '#007FA3', 
-        'South & Central Asia': '#AB1368',
-    }
+	const regionColours = {
+		'US & Canada': '#00A189', 
+		'Europe': '#DC4633', 
+		'Sub Saharan Africa': '#8DBF2E', 
+		'Middle East & North Africa': '#007FA3', 
+		'East Asia': '#0D534D', 
+		'South East Asia & Oceania': '#6FC7EA', 
+		'Latin America & Caribbean': '#F1C500', 
+		'South & Central Asia': '#AB1368',
+	}
 
-    const cities = Object.keys(citiesDens);
-    cities.sort()
+	const cities = Object.keys(citiesDens);
+	cities.sort()
 
-    let curCityOne = "Toronto";
-    let curCityTwo = "Chicago";
+	let curCityOne = "Cape Town";
+	let curCityTwo = "Taipei";
 
-    const metrics = [
-        "General density",
-        "Urban density",
-        "Station density",
-        "% Pop urban and near transit",
-        "% Area urban and near transit",
-        "Ratio of urban population and area near transit"
-    ];
+	const metrics = [
+		"General density",
+		"Urban population density (people / km²)",
+		"Population density in the area 1km from all major rail transit stations",
+		"% of total population that lives 1km from a major rail transit station",
+		"% of the urban area within 1km of a major rail transit station",
+		"Concentration ratio (% of population near transit / % of area near transit)"
+	];
 
-    const metricsKeys = [
-        "raw_dens",
-        "urban_dens",
-        "station_dens",
-        "transit_pop_pct",
-        "transit_area_pct",
-        "transit_ratio",
-    ];
+	const metricsKeys = [
+		"raw_dens",
+		"urban_dens",
+		"station_dens",
+		"transit_pop_pct",
+		"transit_area_pct",
+		"transit_ratio",
+	];
 
-    const metricValues = [
-        10000,
-        10000,
-        50000,
-        100,
-        100,
-        25,
-    ]
+	const metricValues = [
+		7500,
+		8000,
+		40000,
+		80,
+		40,
+		30,
+	]
 
-    let curMetric = metrics[0];
-    $: curMetricKey = metricsKeys[metrics.indexOf(curMetric)];
-    $: maxMetricValue = metricValues[metrics.indexOf(curMetric)];
+	let curMetric = metrics[2];
+	$: curMetricKey = metricsKeys[metrics.indexOf(curMetric)];
+	$: maxMetricValue = metricValues[metrics.indexOf(curMetric)];
 </script>
 
 <svelte:head>
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1, minimum-scale=1"
-    />
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1, minimum-scale=1"
+	/>
 </svelte:head>
 
 <TopSofC />
 
 <main>
-    <div class="title">
-        <h1>Comparing Transit-Oriented Density</h1>
-        <p>
-            Aniket Kali, Jeff Allen
-        </p>
-        <p>
-            Published TBD
-        </p>
-    </div>
 
-    <div class="text">
-        <p>Transit is a key part of many cities - but there's a lot of variation in how and where lines and stations are placed. Ideally, they serve the most amount of people while covering an efficient amount of area.</p>
+	
 
-        <p>Below, you can compare how well transit systems serve their populations for 275 of the most populated cities around the globe. We've computed a number of different metrics examining this below, including ranking which cities perform highest on them. </p>
+	<div class="title">
 
-        <p>Each map below displays a population density heatmap overlayed with transit. We show density in 1 sqkm tiles, covering a 50 km radius from city centers. Transit lines and stations are shown in purple, and only include regional rail, subways, and LRT.</p>
+		<LongCityGraphic/>
+		
+		<h1>
+			Rail transit and population density
+		</h1>
+		<h2>
+			Comparing and ranking 250+ cities around the world
+		</h2>
+		<p>
+			Aniket Kali & Jeff Allen | December 2024
+		</p>
+		<br>
 
-        <h3>Compare Cities</h3>
+	</div>
 
-        <CityDisplay cities={cities} bind:curCity={curCityOne} />
+	<div class="text">
+		
+		<p>
+			Well planned public transit routes and stations are sited to serve and connect the most amount of people as possible. Yet there's a lot of variation within and between cities in terms of where routes and stations are located relative to where people live.
+		</p>
+		<p>
+			To look at this, we've created maps of major rail transit lines and stations overlaid onto population density for {cities.length} of the most populated urban regions around the globe. Click the dropdowns to view how well transit systems serve their populations in different cities. Each map is in exactly the same scale (100km in diameter) to facilitate comparative analysis.
+		</p>
+		<p>
+			Using these maps, we've also computed a number of different metrics examining characteristics of transit oriented development, and ranked how well cities perform relative to each other. Generally, the greater the density and proportion of the population that lives near higher-order transit, the better. Rapid transit and regional rail sustainably connect people to employment, education, and participate in wide array of other activities.
+		</p>
+		<p>
+			The data we mapped and analyzed are not perfect representations of reality, which is especially difficult when doing analysis that combines sources across many jurisdictions. So please treat this as useful for comparative analyses and looking at general trends, but not 100% definitive. At the bottom of this page we detail our data sources, methodology, assumptions, limitations, and potential next steps.
+		</p>
 
-        <CityDisplay cities={cities} bind:curCity={curCityTwo} />
 
-        <CityMetricsDisplay citiesDens={citiesDens} cityOne={curCityOne} cityTwo={curCityTwo} metrics={metrics} metricsKeys={metricsKeys} />
+		<!-- <p> -->
+			<!-- Each map below displays a population density heatmap overlayed with major transit routes.  -->
+			<!-- We show density in 1 sqkm tiles, covering a 50 km radius from city centers. Transit lines and stations are shown in purple, and only include regional rail, subways, and LRT. -->
+		<!-- </p> -->
 
-        <h5><u>Density metrics</u></h5>
+		<!-- <h3>Compare Cities</h3> -->
 
-        <p>{metrics[0]}: Total population divided by total area</p>
-        <p>{metrics[1]}: Population divided by area, for 1 sqkm tiles with at least 100 people</p>
-        <p>{metrics[2]}: Average population divided by area, for each 1km radius around a station</p>
+		<br>
 
-        <h5><u>Transit metrics</u></h5>
+		<div id="legend">
+			<p >
+				Rail transit line and station
+				<svg width="40" height="15" xmlns="http://www.w3.org/2000/svg">
+					<line x1="0" y1="10" x2="40" y2="10" stroke="#0D534D" stroke-width="1" />
+					<circle cx="18" cy="10" r="3" fill="#0D534D" />
+				</svg>
+			</p>
+			<p style="padding-top: 10px;">						
+				Population density (people / km²)
+			</p>
+			<div id="legend-gradient"></div>
+			<div id="legend-numbers">
+				<p id="legend-numbers-left">0</p>
+				<p id="legend-numbers-right">10,000+</p>
+			</div>
+		</div>
+		
 
-        <p>{metrics[3]}: Percent of the total population that is urban (> 100 people in a 1 sqkm tile) and within 1 km of a station</p>
-        <p>{metrics[4]}: Percent of the total area that is urban and within 1km of a station</p>
-        <p>{metrics[5]}: {metrics[3]} divided by {metrics[4].toLowerCase()}</p>
-    </div>
+	</div>
 
-    <div class="text">
-        <h3>Rank Cities</h3>
+	<div class="charts">
+		<CityDisplay cities={cities} bind:curCity={curCityOne} />
 
-        <select bind:value={curMetric}>
-            {#each metrics as value}
-                <option {value}>{value}</option>
-            {/each}
-        </select>
-        
-        <HorizontalBarChart 
-            curMetric={curMetric} 
-            curMetricKey={curMetricKey} 
-            maxMetricValue={maxMetricValue} 
-            data={citiesDens} 
-            classifierColours={regionColours}
-        />
-    </div>
+		<CityDisplay cities={cities} bind:curCity={curCityTwo} />
 
-    <div class="text">
-        <h3>Appendix</h3>
-        <p class="appendix-text">We obtained railway and station data from <a href="https://www.openstreetmap.org/">OpenStreetMap</a> (OSM) using <a href="https://overpass-turbo.eu/">overpass turbo</a> with <a href="https://github.com/schoolofcities/world-city-transit-density/blob/main/analysis/query_osm.py">this query</a>. Many cities have missing or incorrect data - let us know if you update OSM for one of our cities, and we'll aim to update our webpage.</p>
-        
-        <p class="appendix-text">We sourced geographic population density from <a href="https://hub.worldpop.org/geodata/summary?id=24777">WorldPop</a>, and center points from <a href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/">Natural Earth</a>. Our water layer is from <a href="https://www.arcgis.com/home/item.html?id=e750071279bf450cbd510454a80f2e63">World Water Bodies</a>, and we applied the Douglas-Peucker simplification algorithm to reduce file size.</p>
+		<CityMetricsDisplay citiesDens={citiesDens} cityOne={curCityOne} cityTwo={curCityTwo} metrics={metrics} metricsKeys={metricsKeys} />
+	</div>
 
-        <p class="appendix-text">We also obtained our list of cities from Natural Earth, and initially used the 300 most populated cities. We manually removed cases where one city was essentially the suburb of another city at our scale (e.g., Kolkata and Howrah), though left in ambiguous cases (e.g., Hong Kong and Shenzhen). </p>
+	<div class="text">
+		<br>
 
-        <p class="appendix-text">All code and relevant data is available on our <a href="https://github.com/schoolofcities/world-city-transit-density/tree/main">GitHub repository</a>.</p>
-    </div>
+		<h3>City Rankings</h3>
+
+		<p style="font-family: TradeGothicLTLight">
+			Select by metric:
+		</p>
+		
+		<select bind:value={curMetric}>
+			{#each metrics as value}
+				<option {value}>{value}</option>
+			{/each}
+		</select>
+
+		<p style="font-family: TradeGothicLTLight">
+			Select by region:
+		</p>
+	</div>
+
+	<div class="charts">
+		<HorizontalBarChart 
+			curMetric={curMetric} 
+			curMetricKey={curMetricKey} 
+			maxMetricValue={maxMetricValue} 
+			data={citiesDens} 
+			classifierColours={regionColours}
+		/>
+	</div>
+
+	<div class="text">
+		<h3>Data sources</h3>
+
+		<p>
+			Cities included are from a dataset by <a href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/" target="_blank">Natural Earth</a>, which includes point coordinates for the centre of each city. For each city, we then defined the urban region shown on the maps as a circle with a 50km radius from this centre point.  We chose to use a standard circle size for all regions to account for idiosyncrasies in how different parts of the world define metro areas. 50km is approximately the outer range that someone would commute to/from a city centre along a major rail corridor.
+		</p>
+
+		<p>
+			We started with a list of the 300 most populated cities, but then manually removed cases where one city was essentially the suburb of another city at our scale (e.g. Howrah was removed since it is very close to Kolkata). We also only included cities with rail transit.
+		</p>
+
+		<p>
+			We sourced the population density data from <a href="https://hub.worldpop.org/geodata/summary?id=24777" target="_blank">WorldPop</a>. Urban population density metrics are computed after removing areas where population density is less than 150km², to account for how some regions have more or less agricultural land and habitable geography (e.g. mountains, water, etc.).
+		</p>
+
+		<p>
+			We downloaded railway and station data from <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> (OSM) using <a href="https://overpass-turbo.eu/" target="_blank">overpass turbo</a> with <a href="https://github.com/schoolofcities/world-city-transit-density/blob/main/analysis/query_osm.py" target="_blank">this query</a>. We then calculated 1km buffers around each station and then estimated the population within the buffered area via aerial interpolation. While the quality and comprehensiveness of OSM data is quite good in most cities, there are several cities that have missing or incorrect data. As OSM data is edited and improved, we'll aim to update our maps and metrics.
+		</p>
+
+		<p>
+			There are two main limitations with this transit data: 1) it only includes rail transit, not Bus Rapid Transit (BRT), which in many cities provides comparable service to rail. 2) does not account for frequency (i.e. headway) of routes. While many transit agencies share their routes and schedules in GTFS format, which includes information about frequency and often technology (bus, rail, etc.), we found that the availability of GTFS at a global scale was not available, particularly outside of Europe and North America. 
+		</p>
+
+		<!-- <p>
+			Now of course, where people live is just one side of the ....mention would be great to have destination data.
+		</p> -->
+
+		<p>
+			All code and data is available on our <a href="https://github.com/schoolofcities/world-city-transit-density/tree/main" target="_blank">GitHub repository</a>. 
+		</p>
+
+		<br>
+		<br>
+		<br>
+	</div>
+
 </main>
 
 <style>
-    select {
-        width: 100%;
-    }
+	select {
+		width: 100%;
+		max-width: 700px;
+	}
 
-    .appendix-text {
-        font-size: 16px;
-    }
+	#legend {
+		width: 100%;
+	}
+
+	#legend p {
+		font-family: TradeGothicLTLight;
+		margin-bottom: 0px;
+		margin-top: 0px;
+		color: var(--brandDarkBlue);
+	}
+
+	#legend-gradient {
+		width: 100%;
+		height: 15px;
+		border: solid 1px var(--brandLightBlue);
+		border-radius: 10px;
+		background: rgb(255,255,255);
+		background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(241,197,0,1) 50%, rgba(220,70,51,1) 100%);
+	}
+
+	#legend-numbers {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#legend-numbers-left {
+		text-align: left;
+	}
+
+	#legend-numbers-right {
+		text-align: right;
+	}
 </style>

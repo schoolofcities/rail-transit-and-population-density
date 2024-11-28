@@ -30,7 +30,7 @@
 
 
 :root {
-	font-family: -apple-system, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+	font-family: -apple-system, RobotoRegular, "Open Sans", "Helvetica Neue", sans-serif;
 	--brandBlack: #000000;
 	--brandWhite: #ffffff;
 	--brandGray: #D0D1C9;
@@ -60,7 +60,6 @@ main {
 	width: calc(100%);
 	min-width: 360px;
 	max-width: 1200px;
-	/* margin-bottom: 100px; */
 	position: relative;
 }
 
@@ -70,7 +69,7 @@ main {
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 0px;
-    /* border-bottom: solid 1px var(--brandBlack); */
+    border-bottom: solid 1px var(--brandLightBlue);
     position: relative;
 	padding-left: 15px;
     padding-right: 15px;
@@ -78,49 +77,54 @@ main {
 
 .title p {
     line-height: 25px;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .text {
     background-color: none;
-    max-width: 1000px;
+    max-width: 700px;
     margin: 0 auto;
     position: relative;
     padding-left: 15px;
     padding-right: 15px;
-	border-top: solid 1px var(--brandGray80);
 	margin-top: 20px;
-	
+}
+
+.charts {
+	background-color: none;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+	margin-top: 20px;
 }
 
 
 h1 {
     font-family: TradeGothicBold;
-    font-size: 42px;
+    font-size: 49px;
 	font-weight: normal;
-    color: var(--brandBlack);
-    border-bottom: solid 1px var(--brandGray);
-    text-decoration: none;
+    color: var(--brandDarkBlue);
+    text-decoration: underline;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     padding: 0px;
 }
 
 h2 {
     text-align: left;
-    font-family: TradeGothicBold;
-    font-size: 32px;
-    border-bottom: solid 1px var(--brandBlack);
+    font-family: TradeGothicLTLight;
+    font-size: 29.5px;
     margin-top: 0px;
-    color: var(--brandBlack);
+    color: var(--brandMedBlue);
 }
 
 h3 {
     text-align: left;
     font-family: TradeGothicBold;
-    font-size: 23px;
-    border-bottom: solid 1px var(--brandGray);
-    color: var(--brandBlack);
+    font-size: 25px;
+    color: var(--brandDarkBlue);
 }
 
 h4 {
@@ -139,12 +143,11 @@ h5 {
 
 p {
     font-family: SourceSerif;
-    color: var(--brandBlack);
+    color: var(--brandDarkBlue);
     text-align: left;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 30px;
 }
-
 
 a {
 	text-decoration: underline;
@@ -155,28 +158,23 @@ a:hover {
 	color: var(--brandMedGreen);
 }
 
-
-
 select {
-	padding: 3px;
+	display: block;
+	margin: 0 auto; 
+	width: 100%;
+	max-width: 700px;
+	color: var(--brandDarkBlue);
+	background-color: white;
+	border: solid 1px var(--brandLightBlue);
+	border-radius: 5px;
+	margin-top: 10px;
+	padding: 5px;
 	padding-left: 5px;
-	width: 340px;
-	background-color: var(--brandGray);
-	border: 1px solid var(--brandGray);
-	font-size: 14px;
-	border-color: var(--brandDarkBlue);
-	border-radius: 1px;
-	margin-bottom: 8px; 
+	font-size: 16px;   
+	font-family: TradeGothicBold;
 }
 
-option {
-	/* font-family: TradeGothicLTLight; */
-	/* background-color: var(--brandGray); */
-	/* color: white;
-	stroke: white; */
-}
 
 select:hover {
 	cursor: pointer;
-	/* background-color: var(--brandWhite); */
 }

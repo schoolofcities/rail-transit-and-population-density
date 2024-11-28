@@ -9,7 +9,9 @@
     export let classifierColours;
 
     // Classifiers and cleaning data
-    let classifiers = Object.keys(classifierColours);
+    let classifiers = ['US & Canada']
+    
+    // Object.keys(classifierColours);
     // https://github.com/sveltejs/svelte/issues/13446#issuecomment-2382939034
     let dataObj = Object.entries(data);
     $: sortedData = dataObj
@@ -24,10 +26,10 @@
 
     // Define chart parameters
     let xAxisTop = 34;
-    let xAxisStart = 37;
+    let xAxisStart = 50;
 
     let regionStart = 0;
-    let rankStart = 8;
+    let rankStart = 14;
     let barStart = xAxisStart + 1;
     let barLabelStart = xAxisStart + 5;
 
@@ -41,8 +43,9 @@
 
     // Create the chart scaffolding
     $: showPct = curMetric.includes('pct');
-    $: xAxisIntervals = [...Array(6).keys()].map(x => (x/5) * maxMetricValue);
+    $: xAxisIntervals = [...Array(5).keys()].map(x => (x/4) * maxMetricValue);
 	$: xAxisIntervalSpacing = (chartWidth - chartEndGap) / (xAxisIntervals.length - 1);
+
 </script>
 
 <div id="chart-wrapper" bind:offsetWidth={chartWidth}>
@@ -112,7 +115,7 @@
             <line class="bar-classifier"
                 x1={regionStart}
                 y1={barTop + (i * barGap)}
-                x2={regionStart + 4}
+                x2={regionStart + 12}
                 y2={barTop + (i * barGap)}
                 style="
                     stroke: {classifierColours[cityInfo['region']]};
@@ -121,13 +124,13 @@
 
             <text class="axis-label"
                 x = {rankStart}
-                y = {rankTop + (i * barGap)}
+                y = {rankTop + (i * barGap + 1)}
                 text-anchor="start"
             >{i + 1}</text>
 
             <text class="bar-label"
                 x={barLabelStart}
-                y={barLabelTop + (i * barGap)}
+                y={barLabelTop + (i * barGap + 2)}
             >{city}</text>
         {/each}
     </svg>
@@ -153,7 +156,7 @@
 
 	.grid-primary {
 		stroke: var(--brandLightBlue);
-		stroke-width: 1px;
+		stroke-width: 0.5px;
 	}
 
 	.grid-secondary {
@@ -162,15 +165,16 @@
 	}
 
 	.axis-label {
-        stroke: 'grey';
+        /* stroke: 'grey'; */
 		fill: var(--brandBlack);
 		font-size: 14px;
+        font-family: TradeGothicLTLight;
 	}
 
     .bar-data {
-        stroke: var(--brandBlack);
+        stroke: var(--brandDarkBlue);
         stroke-width: 16;
-        stroke-opacity: 0.08;
+        stroke-opacity: 0.2;
     }
 
     .bar-classifier {
@@ -179,7 +183,8 @@
     }
 
 	.bar-label {
-		fill: var(--brandBlack); 
-		font-size: 13px;
+		fill: var(--brandDarkBlue); 
+		font-size: 16px;
+        font-family: TradeGothicLTLight;
 	}
 </style>
