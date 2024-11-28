@@ -36,12 +36,12 @@
 	const cities = Object.keys(citiesDens);
 	cities.sort()
 
-	let curCityOne = "Mumbai";
+	let curCityOne = "Cape Town";
 	let curCityTwo = "Taipei";
 
 	const metrics = [
-		// "General density",
-		"Population density (people / km²)",
+		"General density",
+		"Urban population density (people / km²)",
 		"Population density in the area 1km from all major rail transit stations",
 		"% of total population that lives 1km from a major rail transit station",
 		"% of the urban area within 1km of a major rail transit station",
@@ -49,7 +49,7 @@
 	];
 
 	const metricsKeys = [
-		// "raw_dens",
+		"raw_dens",
 		"urban_dens",
 		"station_dens",
 		"transit_pop_pct",
@@ -58,7 +58,7 @@
 	];
 
 	const metricValues = [
-		// 7500,
+		7500,
 		8000,
 		40000,
 		80,
@@ -87,10 +87,13 @@
 	<div class="title">
 
 		<LongCityGraphic/>
-
-
-		<h1>Rail transit and population density</h1>
-		<h2>Comparing and ranking 250+ cities around the world</h2>
+		
+		<h1>
+			Rail transit and population density
+		</h1>
+		<h2>
+			Comparing and ranking 250+ cities around the world
+		</h2>
 		<p>
 			Aniket Kali & Jeff Allen | December 2024
 		</p>
@@ -101,12 +104,18 @@
 	<div class="text">
 		
 		<p>
-			Public transit is important infrastructure in many cities. Ideally, major transit routes and stations are sited to serve and connect the most amount of people while covering an efficient amount of area. However, there's a lot of variation in how and where lines and stations are placed relative to where people live.
+			Well planned public transit routes and stations are sited to serve and connect the most amount of people as possible. Yet there's a lot of variation within and between cities in terms of where routes and stations are located relative to where people live.
+		</p>
+		<p>
+			To look at this, we've created maps of major rail transit lines and stations overlaid onto population density for 250+ of the most populated urban regions around the globe. Click the dropdowns to view how well transit systems serve their populations in different cities. Each map is in exactly the same scale (100km in diameter) to facilitate comparative analysis.
+		</p>
+		<p>
+			Using these maps, we've also computed a number of different metrics examining characteristics of transit oriented development, and ranked how well cities perform relative to each other. Generally, the greater the density and proportion of the population that lives near higher-order transit, the better. Rapid transit and regional rail sustainably connect people to employment, education, and participate in wide array of other activities.
+		</p>
+		<p>
+			The data we mapped and analyzed are not perfect representations of reality, which is especially difficult when doing analysis that combines sources across many jurisdictions. So please treat this as useful for comparative analyses and looking at general trends, but not 100% definitive. At the bottom of this page we detail our data sources, methodology, assumptions, limitations, and potential next steps.
 		</p>
 
-		<p>
-			We've created maps of major transit lines overlaid onto population density for 250+ of the most populated cities around the globe. Click the dropdowns to view and compare how well transit systems serve their populations. Using these maps, we've computed a number of different metrics examining characteristics of transit oriented development, and ranked how well cities perform relative to each other.
-		</p>
 
 		<!-- <p> -->
 			<!-- Each map below displays a population density heatmap overlayed with major transit routes.  -->
@@ -149,39 +158,25 @@
 
 	</div>
 
-	<div class="text">
-
-		<!-- <h5><u>Density metrics</u></h5>
-
-		<p>{metrics[0]}: Total population divided by total area</p>
-		<p>{metrics[1]}: Population divided by area, for 1 sqkm tiles with at least 100 people</p>
-		<p>{metrics[2]}: Average population divided by area, for each 1km radius around a station</p>
-
-		<h5><u>Transit metrics</u></h5>
-
-		<p>{metrics[3]}: Percent of the total population that is urban (> 100 people in a 1 sqkm tile) and within 1 km of a station</p>
-		<p>{metrics[4]}: Percent of the total area that is urban and within 1km of a station</p>
-		<p>{metrics[5]}: {metrics[3]} divided by {metrics[4].toLowerCase()}</p> -->
+	<!-- <div class="text">
 
 		<br>
 		<br>
 
 		<p>
-			Add some brief description on what each metric means / how to intrepret
+			
+		</p>
+
+		<p>
+			Population density, derived from 
 		</p>
 
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		</p>
 
-		
 
-		<!-- Our water layer is from <a href="https://www.arcgis.com/home/item.html?id=e750071279bf450cbd510454a80f2e63">World Water Bodies</a>, and we applied the Douglas-Peucker simplification algorithm to reduce file size. -->
-		
-
-	</div>
-
-
+	</div> -->
 
 	<div class="text">
 
@@ -227,11 +222,10 @@
 
 		<p>
 			We started with a list of the 300 most populated cities, but then manually removed cases where one city was essentially the suburb of another city at our scale (e.g. Howrah was removed since it is very close to Kolkata). We also only included cities with rail transit.
-			<!-- though left in ambiguous cases (e.g., Hong Kong and Shenzhen). -->
 		</p>
 
 		<p>
-			We sourced the population density data from <a href="https://hub.worldpop.org/geodata/summary?id=24777" target="_blank">WorldPop</a>. The first population density metric is computed after removing areas where population density is less than 100km², to account for how some regions have more or less agricultural land and habitable geography (e.g. mountains, water, etc.).
+			We sourced the population density data from <a href="https://hub.worldpop.org/geodata/summary?id=24777" target="_blank">WorldPop</a>. Population density metric is computed after removing areas where population density is less than 100km², to account for how some regions have more or less agricultural land and habitable geography (e.g. mountains, water, etc.).
 		</p>
 
 		<p>
@@ -239,7 +233,11 @@
 		</p>
 
 		<p>
-			There are two main limitations with this data. 1) it only includes rail transit, not Bus Rapid Transit (BRT), which in many cities provides comporable service to rail. 2) does not account for frequency (i.e. headway) of routes. While many transit agencies share their routes and schedules in GTFS format, which includes information about frequency and often technology (bus, rail, etc.), we found that the availability of GTFS at a global scale was not available, particularly outside of Europe and North America. 
+			There are two main limitations with this transit data. 1) it only includes rail transit, not Bus Rapid Transit (BRT), which in many cities provides comparable service to rail. 2) does not account for frequency (i.e. headway) of routes. While many transit agencies share their routes and schedules in GTFS format, which includes information about frequency and often technology (bus, rail, etc.), we found that the availability of GTFS at a global scale was not available, particularly outside of Europe and North America. 
+		</p>
+
+		<p>
+			Now of course, where people live is just one side of the ....mention would be great to have destination data.
 		</p>
 
 		<p>
