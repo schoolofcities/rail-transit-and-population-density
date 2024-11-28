@@ -14,7 +14,7 @@ from shapely.ops import unary_union
 
 from geog import propagate
 
-URBAN_POP_FLOOR = 100
+URBAN_DENS_FLOOR = 150
 # tqdm.pandas()
 # np.seterr(all='raise')
 
@@ -188,9 +188,9 @@ def get_transit_proportions(row, mpoly_stations):
     """ Given a row containing information about a tile within the 50km radius
     of a city (including coordinates and population), return the proportional
     population and the area overlap for the tile. Compute this only if the tile
-    represents an urban area (>100). 
+    represents an urban area (>150 dens). 
     """
-    if row['pop_count'] >= URBAN_POP_FLOOR:
+    if row['pop_dens'] >= URBAN_DENS_FLOOR:
         x, y = row['geometry'].x, row['geometry'].y
         poly_tile = get_poly_tile(x, y)
         poly_tile_subset = poly_tile.intersection(mpoly_stations)
@@ -243,44 +243,47 @@ def get_city_pop_tiles(src, band1, lon_max, lat_max, gdf_city_list, radius):
         gdf_coords = gdf_coords.sort_values(['row_idx', 'col_idx'])
         gdf_coords.to_file(f'./data/city_pop_tiles/{city}_coords.gpkg', driver="GPKG")
 
-def compute_metrics(src, band1, lon_max, lat_max, cities_gdf):
+def compute_metrics(src, band1, lon_max, lat_max, gdf_city_list):
     """ Compute the following metrics which evaluate density and transit:
-     1. General density: 
-     2. Urban population: 
-     3. Urban density: 
-     4. Station density: 
-     5. % population near transit:
-     6. % urban area near transit: 
-     7. concentration ratio: 
+     1. General density: Total pop / total area
+     2. Urban population: Pop in tiles with >150 density
+     3. Urban density: Urban pop / urban area
+     4. Station density: Mean density within 1km of a station across all stations, using general pop
+     5. % urban pop near transit: Urban pop within 1 km of transit / Urban pop
+     6. % urban area near transit: Urban area within 1 km of transit / urban area
+     7. concentration ratio: M5 / M6
     """
-    cities_gdf[['raw_total_pop', 'raw_total_area', 'raw_dens', 
-                'urban_total_pop', 'urban_total_area', 'urban_dens',
-                'station_total_pop', 'station_total_area', 'station_dens',
-                'transit_pop_prop', 'transit_area_prop', 'transit_ratio']] = 0.0
+    gdf_city_metrics = gdf_city_list
+    gdf_city_metrics[[
+        'raw_total_pop', 'raw_total_area', 'raw_dens',
+        'urban_total_pop', 'urban_total_area', 
+        'urban_dens',
+        'station_dens',
+        'transit_pop_pct',
+        'transit_area_pct',
+        'conc_ratio'
+    ]] = 0.0
 
-    for i, row_i in tqdm(cities_gdf.iterrows(), total=cities_gdf.shape[0]):
+    for i, row_i in tqdm(gdf_city_metrics.iterrows(), total=gdf_city_metrics.shape[0]):
         city = row_i['NAME'].lower()
-        # if city != 'toronto':
-        #     continue
 
-        # 1. Get non-transit density
-        # NOTE: Consider refactoring below into a helper function for simplicity
-        coords_gdf = gpd.read_file(f'./data/pop_tiles/{city}_coords.gpkg')
+        # 1. Get raw and urban density
+        gdf_coords = gpd.read_file(f'./data/city_pop_tiles/{city}_coords.gpkg')
         
         raw_polys, urban_polys = [], []
-        for j, row_j in coords_gdf.iterrows():
+        for j, row_j in gdf_coords.iterrows():
             x, y = row_j['geometry'].x, row_j['geometry'].y
             poly = get_poly_tile(x, y)
 
-            if row_j['pop_count'] >= URBAN_POP_FLOOR:
+            if row_j['pop_dens'] >= URBAN_DENS_FLOOR:
                 urban_polys.append(poly)
             raw_polys.append(poly)
 
             if row_j['is_center']:
-                cities_gdf.at[i,'geometry'] = Point(x, y)
+                gdf_city_metrics.at[i,'geometry'] = Point(x, y)
 
-        raw_total_pop = coords_gdf['pop_count'].sum()
-        urban_total_pop = coords_gdf[coords_gdf['pop_count'] >= URBAN_POP_FLOOR]['pop_count'].sum()
+        raw_total_pop = gdf_coords['pop_count'].sum()
+        urban_total_pop = gdf_coords[gdf_coords['pop_dens'] >= URBAN_DENS_FLOOR]['pop_count'].sum()
 
         raw_total_area = get_area_in_sqkm(raw_polys)
         urban_total_area = get_area_in_sqkm(urban_polys)
@@ -288,57 +291,46 @@ def compute_metrics(src, band1, lon_max, lat_max, cities_gdf):
         raw_dens = raw_total_pop / raw_total_area
         urban_dens = urban_total_pop / urban_total_area
 
-        cities_gdf.at[i,'raw_total_pop'] = raw_total_pop
-        cities_gdf.at[i,'urban_total_pop'] = urban_total_pop
-        cities_gdf.at[i,'raw_total_area'] = raw_total_area
-        cities_gdf.at[i,'urban_total_area'] = urban_total_area
-        cities_gdf.at[i,'raw_dens'] = raw_dens
-        cities_gdf.at[i,'urban_dens'] = urban_dens
+        gdf_city_metrics.at[i,'raw_total_pop'] = raw_total_pop
+        gdf_city_metrics.at[i,'urban_total_pop'] = urban_total_pop
+        gdf_city_metrics.at[i,'raw_total_area'] = raw_total_area
+        gdf_city_metrics.at[i,'urban_total_area'] = urban_total_area
+        gdf_city_metrics.at[i,'raw_dens'] = raw_dens
+        gdf_city_metrics.at[i,'urban_dens'] = urban_dens
 
-        # 2. Get transit density
-        # TOD: Compute the population density within a 1km radius of a station
+        # 2. Get station density
         stations_gdf = gpd.read_file(f'./data/osm_data/{city}_station_osm.geojson')
         if not stations_gdf.empty:  # already has 0 values otherwise
             # Iterate through the set of stations for a given city, and compute density using the lat and long
             stations_gdf['stats'] = stations_gdf.apply(lambda x: get_station_density(src, band1, lon_max, lat_max, x), axis=1)
             stations_gdf[['pop', 'area', 'dens', 'poly_station']] = pd.DataFrame(stations_gdf['stats'].tolist(), index=stations_gdf.index)
 
-            # Take the mean density for all stations, which is TOD for a city.
-            cities_gdf.at[i,'station_total_pop'] = stations_gdf['pop'].sum()
-            cities_gdf.at[i,'station_total_area'] = stations_gdf['area'].sum()
-            cities_gdf.at[i,'station_dens'] = stations_gdf['dens'].mean()
+            # Take the mean density for all stations.
+            gdf_city_metrics.at[i,'station_dens'] = stations_gdf['dens'].mean()
 
-        # print(stations_gdf['pop'].sum(), stations_gdf['area'].sum(), stations_gdf['dens'].mean())
-
-        # 3. Get population and area proportions near stations
+        # 3. Get urban population and urban area proportions near transit
         if not stations_gdf.empty:
             # Merge the station circles for this city into one big MultiPolygon
             mpoly_stations = unary_union(stations_gdf['poly_station'].to_list())
 
-            coords_gdf['stats'] = coords_gdf.apply(lambda x: get_transit_proportions(x, mpoly_stations), axis=1)
-            coords_gdf[['pop', 'area']] = pd.DataFrame(coords_gdf['stats'].tolist(), index=coords_gdf.index)
+            gdf_coords['stats'] = gdf_coords.apply(lambda x: get_transit_proportions(x, mpoly_stations), axis=1)
+            gdf_coords[['transit_pop', 'transit_area']] = pd.DataFrame(gdf_coords['stats'].tolist(), index=gdf_coords.index)
             
             # Compute their proportions
-            transit_pop_pct = (coords_gdf['pop'].sum() / coords_gdf['pop_count'].sum()) * 100
-            transit_area_pct = (coords_gdf['area'].sum() / raw_total_area) * 100
+            transit_pop_pct = (gdf_coords['transit_pop'].sum() / urban_total_pop) * 100
+            transit_area_pct = (gdf_coords['transit_area'].sum() / urban_total_area) * 100
 
-            cities_gdf.at[i,'transit_pop_pct'] = transit_pop_pct
-            cities_gdf.at[i,'transit_area_pct'] = transit_area_pct
-            cities_gdf.at[i,'transit_ratio'] = transit_pop_pct / transit_area_pct
-
-        # print(cities_gdf.loc[[i]])
+            gdf_city_metrics.at[i,'transit_pop_pct'] = transit_pop_pct
+            gdf_city_metrics.at[i,'transit_area_pct'] = transit_area_pct
+            gdf_city_metrics.at[i,'conc_ratio'] = transit_pop_pct / transit_area_pct
     
-    # print(cities_gdf)
+    # Save in GPKG (internal) and JSON (web)
+    gdf_city_metrics.to_file("./data/city_metrics.gpkg", driver="GPKG")
+    gdf_city_metrics = gdf_city_metrics.drop(columns='geometry')
+    gdf_city_metrics = gdf_city_metrics.set_index('NAME')
+    gdf_city_metrics.to_json('./src/data/city_metrics.json', orient='index')
 
-    cities_gdf = cities_gdf.drop_duplicates(subset='NAME').reset_index(drop=True)  
-    cities_gdf.to_file("./data/cities_dens.gpkg", driver="GPKG")
-
-    # Save as JSON format as well for web processing
-    cities_gdf = cities_gdf.drop(columns='geometry')
-    cities_gdf = cities_gdf.set_index('NAME')
-    cities_gdf.to_json('./data/cities_dens.json', orient='index')
-
-def get_urban_density():
+def get_city_metrics():
     """ Compute various density related metrics for each of our cities, and 
     save a GPKG and GeoJSON containing all final computed values. As part of 
     this, also save GPKG's containing all tiles within a 50km radius for each
@@ -358,4 +350,4 @@ def get_urban_density():
 
 
 if __name__ == "__main__":
-    get_urban_density()
+    get_city_metrics()
