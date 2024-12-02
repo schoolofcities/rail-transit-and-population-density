@@ -14,7 +14,7 @@ Ensure that you have the following data downloaded and named appropriately. All 
 
 Create these directories as well, if they don't exist already, which are used for storing intermediate stages of data. Inside `./data/`, you can run: `mkdir city_pop_tiles city_water osm_data`
 
-### Programs
+### Analysis
 
 Next, run these programs.
 1. `get_city_list.py`: Selects our subset of cities and relevant fields as `city_list.gpkg` (<1m).
