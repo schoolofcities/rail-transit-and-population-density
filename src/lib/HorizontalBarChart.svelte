@@ -141,7 +141,7 @@
             <text class="bar-label"
                 x={barLabelStart}
                 y={barLabelTop + (i * barGap + 2)}
-            >{city}</text>
+            >{city}, {cityInfo.COUNTRY_CODE}</text>
         {/each}
     </svg>
 </div>
