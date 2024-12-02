@@ -9,18 +9,7 @@
 	import CityMetricsDisplay from '../lib/CityMetricsDisplay.svelte';
 	import HorizontalBarChart from '../lib/HorizontalBarChart.svelte';
 	
-	import citiesDens from "../data/cities_dens.json"
-
-	async function loadData() {
-		try {
-			// const response = await fetch('../recovery_rankings.csv');
-			const response = await fetch("../data/cities_dens.json");
-			const csvData = await response.text();
-			data = csvParse(csvData);
-		} catch (error) {
-			console.error('Error loading CSV data:', error);
-		}
-	}
+	import cityMetrics from "../data/city_metrics.json"
 
 	const regionColours = {
 		'US & Canada': '#00A189', 
@@ -33,37 +22,37 @@
 		'South & Central Asia': '#AB1368',
 	}
 
-	const cities = Object.keys(citiesDens);
+	const cities = Object.keys(cityMetrics);
 	cities.sort()
 
 	let curCityOne = "Cape Town";
 	let curCityTwo = "Taipei";
 
 	const metrics = [
-		"General density",
+		"Urban population",
 		"Urban population density (people / km²)",
 		"Population density in the area 1km from all major rail transit stations",
-		"% of total population that lives 1km from a major rail transit station",
+		"% of the urban population within 1km of a major rail transit station",
 		"% of the urban area within 1km of a major rail transit station",
 		"Concentration ratio (% of population near transit / % of area near transit)"
 	];
 
 	const metricsKeys = [
-		"raw_dens",
+		"urban_total_pop",
 		"urban_dens",
 		"station_dens",
 		"transit_pop_pct",
 		"transit_area_pct",
-		"transit_ratio",
+		"conc_ratio",
 	];
 
 	const metricValues = [
-		7500,
+		40000000,
 		8000,
 		40000,
 		80,
 		40,
-		30,
+		10,
 	]
 
 	let curMetric = metrics[2];
@@ -152,7 +141,7 @@
 
 		<CityDisplay cities={cities} bind:curCity={curCityTwo} />
 
-		<CityMetricsDisplay citiesDens={citiesDens} cityOne={curCityOne} cityTwo={curCityTwo} metrics={metrics} metricsKeys={metricsKeys} />
+		<CityMetricsDisplay cityMetrics={cityMetrics} cityOne={curCityOne} cityTwo={curCityTwo} metrics={metrics} metricsKeys={metricsKeys} />
 	</div>
 
 	<div class="text">
@@ -180,7 +169,7 @@
 			curMetric={curMetric} 
 			curMetricKey={curMetricKey} 
 			maxMetricValue={maxMetricValue} 
-			data={citiesDens} 
+			data={cityMetrics} 
 			classifierColours={regionColours}
 		/>
 	</div>

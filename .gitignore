@@ -7,8 +7,7 @@ __pycache__
 data/*
 !data/pop_tiles
 !data/city_list.gpkg
-!data/cities_dens.gpkg
-!data/cities_dens.json
+!data/city_metrics.gpkg
 
 # Output
 .output

@@ -1,5 +1,5 @@
 <script>
-    export let citiesDens;
+    export let cityMetrics;
     export let cityOne;
     export let cityTwo;
 
@@ -39,11 +39,11 @@
             <div class="resp-table-row"> 
                 <div class="table-body-cell-value">
                     {#if metric.includes('Concentration')}
-                        {citiesDens[cityOne][metricsKeys[i]].toFixed(2)}
+                        {cityMetrics[cityOne][metricsKeys[i]].toFixed(2)}
                     {:else if metric.includes('%')}
-                        {citiesDens[cityOne][metricsKeys[i]].toFixed(1)}%
+                        {cityMetrics[cityOne][metricsKeys[i]].toFixed(1)}%
                     {:else}
-                        {numberWithCommas(nearestHun(citiesDens[cityOne][metricsKeys[i]]))}
+                        {numberWithCommas(nearestHun(cityMetrics[cityOne][metricsKeys[i]]))}
                     {/if}
                 </div>
                 <div class="table-body-cell-header">
@@ -51,11 +51,11 @@
                 </div>
                 <div class="table-body-cell-value">
                     {#if metric.includes('Concentration')}
-                        {citiesDens[cityTwo][metricsKeys[i]].toFixed(2)}
+                        {cityMetrics[cityTwo][metricsKeys[i]].toFixed(2)}
                     {:else if metric.includes('%')}
-                        {citiesDens[cityTwo][metricsKeys[i]].toFixed(1)}%
+                        {cityMetrics[cityTwo][metricsKeys[i]].toFixed(1)}%
                     {:else}
-                        {numberWithCommas(nearestHun(citiesDens[cityTwo][metricsKeys[i]]))} 
+                        {numberWithCommas(nearestHun(cityMetrics[cityTwo][metricsKeys[i]]))} 
                     {/if}
                 </div>
             </div>

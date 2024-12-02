@@ -8,15 +8,21 @@
     export let data;
     export let classifierColours;
 
+    function numberWithCommas(n) {  // https://stackoverflow.com/a/10899795
+        var parts=n.toString().split(".");
+        return parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",") + (parts[1] ? "." + parts[1] : "");
+    }
+
     // Classifiers and cleaning data
     let classifiers = ['US & Canada']; // Object.keys(classifierColours);
     
     // https://github.com/sveltejs/svelte/issues/13446#issuecomment-2382939034
     let dataObj = Object.entries(data);
+
     $: sortedData = dataObj
-        .filter(item => classifiers.includes(item[1].region))
+        .filter(item => classifiers.includes(item[1].REGION))
         .sort(function(a,b) {return b[1][curMetricKey] - a[1][curMetricKey]});  // Subtraction is required for Chrome https://stackoverflow.com/a/1969183
-    
+
     // CHART VARIABLES //
     // Define chart dimensions 
     let chartWidth;
@@ -76,7 +82,11 @@
                 y = {xAxisTop - 4}
                 text-anchor="end"
             >
-                {xInterval}
+                {#if curMetric == "Urban population"}
+                    {numberWithCommas(xInterval)}
+                {:else}
+                    {xInterval}
+                {/if}
                 {#if showPct}
                     %
                 {/if}
@@ -118,7 +128,7 @@
                 x2={regionStart + 12}
                 y2={barTop + (i * barGap)}
                 style="
-                    stroke: {classifierColours[cityInfo['region']]};
+                    stroke: {classifierColours[cityInfo['REGION']]};
                 "
             ></line>
 
