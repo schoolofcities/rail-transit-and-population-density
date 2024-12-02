@@ -42,6 +42,8 @@
                         {cityMetrics[cityOne][metricsKeys[i]].toFixed(2)}
                     {:else if metric.includes('%')}
                         {cityMetrics[cityOne][metricsKeys[i]].toFixed(1)}%
+                    {:else if metric == "Urban population"}
+                        {(cityMetrics[cityOne][metricsKeys[i]] / (10 ** 6)).toFixed(2)}M
                     {:else}
                         {numberWithCommas(nearestHun(cityMetrics[cityOne][metricsKeys[i]]))}
                     {/if}
@@ -54,6 +56,8 @@
                         {cityMetrics[cityTwo][metricsKeys[i]].toFixed(2)}
                     {:else if metric.includes('%')}
                         {cityMetrics[cityTwo][metricsKeys[i]].toFixed(1)}%
+                    {:else if metric == "Urban population"}
+                        {(cityMetrics[cityTwo][metricsKeys[i]] / (10 ** 6)).toFixed(2)}M
                     {:else}
                         {numberWithCommas(nearestHun(cityMetrics[cityTwo][metricsKeys[i]]))} 
                     {/if}

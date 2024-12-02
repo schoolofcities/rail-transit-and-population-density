@@ -55,7 +55,7 @@
 		10,
 	]
 
-	let curMetric = metrics[2];
+	let curMetric = metrics[3];
 	$: curMetricKey = metricsKeys[metrics.indexOf(curMetric)];
 	$: maxMetricValue = metricValues[metrics.indexOf(curMetric)];
 </script>
