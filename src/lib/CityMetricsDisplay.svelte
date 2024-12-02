@@ -7,6 +7,15 @@
     export let metricsKeys;
 
     let width;
+
+    function nearestHun(n) { 
+        return Math.round(n / 100) * 100; 
+    }
+
+    function numberWithCommas(n) {  // https://stackoverflow.com/a/10899795
+        var parts=n.toString().split(".");
+        return parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",") + (parts[1] ? "." + parts[1] : "");
+    }
 </script>
 
 <!-- https://stackoverflow.com/a/69528090 -->
@@ -29,13 +38,25 @@
         {#each metrics as metric, i}
             <div class="resp-table-row"> 
                 <div class="table-body-cell-value">
-                    {citiesDens[cityOne][metricsKeys[i]].toFixed(2)}
+                    {#if metric.includes('Concentration')}
+                        {citiesDens[cityOne][metricsKeys[i]].toFixed(2)}
+                    {:else if metric.includes('%')}
+                        {citiesDens[cityOne][metricsKeys[i]].toFixed(1)}%
+                    {:else}
+                        {numberWithCommas(nearestHun(citiesDens[cityOne][metricsKeys[i]]))}
+                    {/if}
                 </div>
                 <div class="table-body-cell-header">
                     {metric}
                 </div>
                 <div class="table-body-cell-value">
-                    {citiesDens[cityTwo][metricsKeys[i]].toFixed(2)} 
+                    {#if metric.includes('Concentration')}
+                        {citiesDens[cityTwo][metricsKeys[i]].toFixed(2)}
+                    {:else if metric.includes('%')}
+                        {citiesDens[cityTwo][metricsKeys[i]].toFixed(1)}%
+                    {:else}
+                        {numberWithCommas(nearestHun(citiesDens[cityTwo][metricsKeys[i]]))} 
+                    {/if}
                 </div>
             </div>
         {/each}

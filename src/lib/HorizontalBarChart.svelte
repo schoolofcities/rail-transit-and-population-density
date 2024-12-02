@@ -42,7 +42,7 @@
     ////
 
     // Create the chart scaffolding
-    $: showPct = curMetric.includes('pct');
+    $: showPct = curMetric.includes('%') && !curMetric.includes('Concentration');
     $: xAxisIntervals = [...Array(5).keys()].map(x => (x/4) * maxMetricValue);
 	$: xAxisIntervalSpacing = (chartWidth - chartEndGap) / (xAxisIntervals.length - 1);
 
