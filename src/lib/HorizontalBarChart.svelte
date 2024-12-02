@@ -9,9 +9,8 @@
     export let classifierColours;
 
     // Classifiers and cleaning data
-    let classifiers = ['US & Canada']
+    let classifiers = ['US & Canada']; // Object.keys(classifierColours);
     
-    // Object.keys(classifierColours);
     // https://github.com/sveltejs/svelte/issues/13446#issuecomment-2382939034
     let dataObj = Object.entries(data);
     $: sortedData = dataObj
@@ -23,6 +22,7 @@
     let chartWidth;
 	let chartHeight = 100;
 	$: chartHeight = 24 * sortedData.length + 50;  // Responsive to the subset chosen
+    let numIntervals = 5;
 
     // Define chart parameters
     let xAxisTop = 34;
@@ -43,7 +43,7 @@
 
     // Create the chart scaffolding
     $: showPct = curMetric.includes('%') && !curMetric.includes('Concentration');
-    $: xAxisIntervals = [...Array(5).keys()].map(x => (x/4) * maxMetricValue);
+    $: xAxisIntervals = [...Array(numIntervals).keys()].map(x => (x/(numIntervals - 1)) * maxMetricValue);
 	$: xAxisIntervalSpacing = (chartWidth - chartEndGap) / (xAxisIntervals.length - 1);
 
 </script>
