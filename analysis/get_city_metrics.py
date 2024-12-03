@@ -14,7 +14,7 @@ from shapely.ops import unary_union
 
 from geog import propagate
 
-URBAN_DENS_FLOOR = 150
+URBAN_DENS_FLOOR = 400
 # tqdm.pandas()
 # np.seterr(all='raise')
 
@@ -205,7 +205,7 @@ def get_transit_proportions(row, mpoly_stations):
 def load_raster_file():
     """
     """
-    file_name = './data/ppp_2020_1km_Aggregated.tif'
+    file_name = './data/GlobPOP_Count_30arc_2022_I32.tiff'
     src = rio.open(file_name)
     width, height = src.width, src.height
     print(f'width (lon_max): {width}, height (lat_max): {height}')
@@ -343,10 +343,10 @@ def get_city_metrics():
     gdf_city_list = gpd.read_file('./data/city_list.gpkg')
 
     # Identify the data points of (lat, long, density) for a 50km radius around the city coordinate, and save them 
-    # get_city_pop_tiles(src, band1, lon_max, lat_max, gdf_city_list, 50)
+    get_city_pop_tiles(src, band1, lon_max, lat_max, gdf_city_list, 50)
 
     # Compute the urban density using different metrics for each of these cities 
-    compute_metrics(src, band1, lon_max, lat_max, gdf_city_list)
+    # compute_metrics(src, band1, lon_max, lat_max, gdf_city_list)
 
 
 if __name__ == "__main__":
