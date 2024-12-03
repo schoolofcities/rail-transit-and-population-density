@@ -34,7 +34,7 @@
 		"Population density in the area 1km from all major rail transit stations",
 		"% of the urban population within 1km of a major rail transit station",
 		"% of the urban area within 1km of a major rail transit station",
-		"Concentration ratio (% of population near transit / % of area near transit)"
+		"Concentration ratio (% urban pop near transit / % urban area near transit)"
 	];
 
 	const metricsKeys = [
@@ -48,11 +48,11 @@
 
 	const metricValues = [
 		40000000,
-		8000,
+		20000,
 		40000,
 		80,
-		40,
-		10,
+		60,
+		8,
 	]
 
 	let curMetric = metrics[3];
@@ -186,7 +186,7 @@
 		</p>
 
 		<p>
-			We sourced the population density data from <a href="https://hub.worldpop.org/geodata/summary?id=24777" target="_blank">WorldPop</a>. Urban population density metrics are computed after removing areas where population density is less than 150km², to account for how some regions have more or less agricultural land and habitable geography (e.g. mountains, water, etc.).
+			We sourced the population density data from <a href="https://github.com/lulingliu/GlobPOP" target="_blank">GlobPOP</a>. Urban population density metrics are computed after removing areas where population density is less than 400km², to account for how some regions have more or less agricultural land and habitable geography (e.g. mountains, water, etc.).
 		</p>
 
 		<p>

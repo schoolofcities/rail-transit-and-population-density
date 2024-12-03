@@ -26,7 +26,7 @@ SUBURBS = [
     "Tainan",  # Kaohsiung
     "Incheon",  # Seoul
     "Kobe",  # Osaka
-    # "Kyoto",  # Osaka
+    "Kyoto",  # Osaka
     "Yokohama",  # Tokyo
 ]
 
@@ -38,6 +38,7 @@ ERROR_CITIES = [
     "Beirut",  # Lebanon
     "Manaus",  # Brazil
     "Tashkent",  # Uzbekistan, due to geographic error
+    "Haikou",  # China, processing error 
 ]
 
 REGIONS = {

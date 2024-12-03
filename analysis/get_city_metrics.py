@@ -343,10 +343,10 @@ def get_city_metrics():
     gdf_city_list = gpd.read_file('./data/city_list.gpkg')
 
     # Identify the data points of (lat, long, density) for a 50km radius around the city coordinate, and save them 
-    get_city_pop_tiles(src, band1, lon_max, lat_max, gdf_city_list, 50)
+    # get_city_pop_tiles(src, band1, lon_max, lat_max, gdf_city_list, 50)
 
     # Compute the urban density using different metrics for each of these cities 
-    # compute_metrics(src, band1, lon_max, lat_max, gdf_city_list)
+    compute_metrics(src, band1, lon_max, lat_max, gdf_city_list)
 
 
 if __name__ == "__main__":

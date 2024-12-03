@@ -83,7 +83,7 @@
                 text-anchor="end"
             >
                 {#if curMetric == "Urban population"}
-                    {numberWithCommas(xInterval)}
+                    {(xInterval / (10 ** 6)).toFixed(0)}M
                 {:else}
                     {xInterval}
                 {/if}
