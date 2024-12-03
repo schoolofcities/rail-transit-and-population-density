@@ -12,14 +12,14 @@
 	import cityMetrics from "../data/city_metrics.json"
 
 	const regionColours = {
-		'US & Canada': '#00A189', 
+		'US & Canada': '#DDDDDD', 
 		'Europe': '#DC4633', 
-		'Sub Saharan Africa': '#8DBF2E', 
-		'Middle East & North Africa': '#007FA3', 
-		'East Asia': '#0D534D', 
-		'South East Asia & Oceania': '#6FC7EA', 
-		'Latin America & Caribbean': '#F1C500', 
-		'South & Central Asia': '#AB1368',
+		'Sub Saharan Africa': '#CCBB44', 
+		'Middle East & North Africa': '#0072B2', 
+		'East Asia': '#EE6677', 
+		'South East Asia & Oceania': '#88CCEE', 
+		'Latin America & Caribbean': '#F0E442', 
+		'South & Central Asia': '#332288',
 	}
 
 	const cities = Object.keys(cityMetrics);
