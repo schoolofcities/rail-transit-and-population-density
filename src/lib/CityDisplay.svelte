@@ -1,28 +1,26 @@
 <script>
-
     import "../assets/styles.css";
 
     export let curCity;
     export let cities;
-
 </script>
 
 
-
 <div class="city-compare">
-    
-
-    {#await import(`../assets/city_image/${curCity.toLowerCase()}.png`) then { default: src }}
-        <img {src} alt="" />
-    {/await}
-
     <select bind:value={curCity}>
         {#each cities as value}
             <option {value}>{value}</option>
         {/each}
     </select>
-</div>
 
+    {#await import(`../assets/city_image/${curCity.toLowerCase()}.png`)}
+        <div></div>
+    {:then { default: src }}
+        <img {src} alt="" />
+    {:catch error}
+        Failed to load {curCity}
+    {/await}
+</div>
 
 
 <style>
@@ -39,6 +37,7 @@
     select {
         width: 100%;
         max-width: 220px;
+        margin-bottom: 10px;
     }
 
     img {
@@ -56,5 +55,4 @@
             padding-left: 0px;
         }
     }
-
 </style>
