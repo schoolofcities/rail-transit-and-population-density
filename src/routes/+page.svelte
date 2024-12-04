@@ -178,7 +178,7 @@
 		</p>
 
 		<p>
-			We sourced the population density data from <a href="https://github.com/lulingliu/GlobPOP" target="_blank">GlobPOP</a>. Urban population density metrics are computed after removing areas where population density is less than 400km², following [Statistics Canada](https://www12.statcan.gc.ca/census-recensement/2021/ref/dict/az/definition-eng.cfm?ID=geo049a) to account for how some regions vary in agricultural land and habitable geography (e.g. mountains, water, etc.).
+			We sourced the population density data from <a href="https://github.com/lulingliu/GlobPOP" target="_blank">GlobPOP</a>. Urban population density metrics are computed after removing areas where population density is less than 400km², following <a href="https://www12.statcan.gc.ca/census-recensement/2021/ref/dict/az/definition-eng.cfm?ID=geo049a" target="_blank">Statistics Canada</a>, to account for how some regions vary in agricultural land and habitable geography (e.g. mountains, water, etc.).
 		</p>
 
 		<p>
