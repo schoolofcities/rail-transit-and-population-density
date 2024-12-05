@@ -16,7 +16,7 @@
 		'Europe': '#DC4633', 
 		'Sub Saharan Africa': '#CCBB44', 
 		'Middle East & North Africa': '#0072B2', 
-		'East Asia': '#EE6677', 
+		'East Asia': '#f6a7af', 
 		'South East Asia & Oceania': '#88CCEE', 
 		'Latin America & Caribbean': '#F0E442', 
 		'South & Central Asia': '#332288',
