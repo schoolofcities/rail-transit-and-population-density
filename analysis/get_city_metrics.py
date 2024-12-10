@@ -101,7 +101,7 @@ def collect_idxs_in_radius(src, lon_center_idx, lat_center_idx, bound_idxs, radi
 def get_area_in_sqkm(polys):
     """ Given a list of polygons, return the area in sqkm.
     """
-    return gpd.GeoSeries(polys, crs=4326).to_crs(3857).area.sum() / (10 ** 6)
+    return gpd.GeoSeries(polys, crs=4326).to_crs({'proj':'cea'}).area.sum() / (10 ** 6)  # https://gis.stackexchange.com/a/385013
 
 def get_poly_tile(x, y):
     offset = 1 / 240  # 0.004166666666666667

@@ -49,7 +49,7 @@
 	const metricValues = [
 		40000000,
 		20000,
-		40000,
+		50000,
 		80,
 		60,
 		8,
@@ -121,7 +121,7 @@
 			<div id="legend-gradient"></div>
 			<div id="legend-numbers">
 				<p id="legend-numbers-left">0</p>
-				<p id="legend-numbers-right">10,000+</p>
+				<p id="legend-numbers-right">20,000+</p>
 			</div>
 		</div>
 		
