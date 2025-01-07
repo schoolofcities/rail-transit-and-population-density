@@ -2,6 +2,14 @@ import numpy as np
 import pandas as pd
 import geopandas as gpd
 
+# cities, that for now, are outside the top 300 that are worth adding
+EXTRA_CITIES = [
+    "Calgary",
+    "Edmonton",
+    "Ottawa",
+    "Kuala Lumpur",
+    "Almaty"
+]
 
 SUBURBS = [
     "Long Beach",  # Los Angeles
@@ -28,17 +36,42 @@ SUBURBS = [
     "Kobe",  # Osaka
     "Kyoto",  # Osaka
     "Yokohama",  # Tokyo
+    "Tijuana", # San Diego
+    "Baltimore", # Washington (kindof)
 ]
 
 ERROR_CITIES = [
+    "Las Vegas", # USA, only has mini monorails
+    "Asuncion", # Paraguay, stations are abandonded
+    "Barranquilla", # Colombia, no transit
+    "Bogota", # Colombia, no transit (is under construction)
     "Kabul",  # Afghanistan
     "Belem",  # Brazil
+    "Campinas", # Brazil
+    "Curitiba", # Brazil, no transit
+    "Cincinnati", # USA, no transit
+    "Detroit", # USA
+    "Douala", # Cameroon, no transit
+    "Goiania", # Brazil, no transit
+    "Guayaquil", # Ecuador, no transit
     "Sanaa",  # Yemen
+    "Hechi", # China
+    "Kano", # Nigeria, no transit
     "Port-au-Prince",  # Haiti
     "Beirut",  # Lebanon
     "Manaus",  # Brazil
     "Tashkent",  # Uzbekistan, due to geographic error
     "Haikou",  # China, processing error 
+    "Kuwait City", # Kuwait, no transit
+    "La Paz", # Bolivia, no transit
+    "Puebla", # Mexico, no transit
+    "Qiqihar", # China, no transit
+    "Saidu", # Pakistan, no transit
+    "Tampa", # USA, no transit
+    "Tripoli", #Libya, no transit
+    "Weifang", #China, no transit
+    "Xiantao", #China, odd data
+    "Xinyang", #China, odd data
 ]
 
 REGIONS = {
@@ -102,6 +135,7 @@ REGIONS = {
     'Austria': 'Europe',
     'Greece': 'Europe',
     'Uzbekistan': 'South & Central Asia',
+    'Kazakhstan': 'South & Central Asia',
     'Cuba': 'Latin America & Caribbean',
     'Azerbaijan': 'Middle East & North Africa',
     'Ghana': 'Sub Saharan Africa',
@@ -136,7 +170,14 @@ def get_city_list(N=300):
     # Select relevant subset of data
     gdf_places = gdf_places[['NAMEASCII', 'SOV0NAME', 'SOV_A3', 'POP_MAX', 'geometry']]
     gdf_places = gdf_places.rename(columns={'NAMEASCII': 'NAME'})
+
+    # Parse out extra cities
+    gdf_places_extra = gdf_places[gdf_places['NAME'].isin(EXTRA_CITIES)]
+
+    # Get top N cities
     gdf_places = gdf_places.head(N)
+
+    gdf_places = pd.concat([gdf_places, gdf_places_extra], ignore_index=True)
 
     # Remove duplicates, suburbs, and cities without transit, or other issues
     gdf_places = gdf_places.drop_duplicates(subset='NAME').reset_index(drop=True)
