@@ -8,7 +8,12 @@ EXTRA_CITIES = [
     "Edmonton",
     "Ottawa",
     "Kuala Lumpur",
-    "Almaty"
+    "Almaty",
+    "Stockholm",
+    "Jerusalem",
+    "Marseille",
+    "Dubai",
+    "Doha"
 ]
 
 SUBURBS = [
@@ -72,6 +77,7 @@ ERROR_CITIES = [
     "Weifang", #China, no transit
     "Xiantao", #China, odd data
     "Xinyang", #China, odd data
+    "Santa Cruz", #Bolivia, no data
 ]
 
 REGIONS = {
@@ -156,6 +162,9 @@ REGIONS = {
     'Zimbabwe': 'Sub Saharan Africa',
     'Uruguay': 'Latin America & Caribbean',
     'Malaysia': 'South East Asia & Oceania',
+    'Qatar': 'Middle East & North Africa',
+    'United Arab Emirates': 'Middle East & North Africa',
+    'Sweden': 'Europe'
 }
 
 
