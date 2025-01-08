@@ -117,7 +117,7 @@
 			To look at this, we've created maps of major rail transit lines and stations overlaid onto population density for {cities.length} of the most populated urban regions around the globe. Click the dropdowns below to view how well transit systems serve their populations in different cities. 
 		</p>
 		<p>
-			Each map has the same geographic scale, 100km in diameter, to be easily comparable.
+			Each map has the same geographic scale, 100km in diameter, to be easily comparable with each other.
 		</p>
 		<p>
 			Using these maps, we've also computed several metrics examining characteristics of transit oriented development, and ranked how well cities perform relative to each other. Generally, the greater the density and proportion of the population that lives near major rail transit, the better. 
