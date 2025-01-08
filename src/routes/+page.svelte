@@ -170,7 +170,7 @@
 	</div>
 
 	<div class="text">
-		<h3>Data sources</h3>
+		<h3>Data & Methods</h3>
 
 		<p>
 			Cities included <a href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/" target="_blank">Natural Earth</a>, which includes population estimates and point coordinates for the centre of each city. 
