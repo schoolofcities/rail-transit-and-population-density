@@ -65,20 +65,38 @@
 		name="viewport"
 		content="width=device-width, initial-scale=1, minimum-scale=1"
 	/>
+
+	<title>Rail transit and population density</title>
+
+	<meta name="description" content="Maps, charts, and rankings that compare 250 cities around the world">
+	<meta name="author" content="Aniket Kali & Jeff Allen">
+
+	<meta property="og:title" content="Rail transit and population density" />
+	<meta property="og:description" content="Maps, charts, and rankings that compare 250 cities around the world" />
+	<meta property="og:type" content="website" />
+	<!-- <meta property="og:url" content="https://schoolofcities.github.io/essential-spaces/map" /> -->
+	<!-- <meta property="og:image" content="https://schoolofcities.github.io/essential-spaces/web-card.png" /> -->
+	<meta property="og:locale" content="en_CA">
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<!-- <meta name="twitter:site" content="https://schoolofcities.github.io/essential-spaces/map" /> -->
+	<meta name="twitter:creator" content="@UofTCities" />
+	<meta name="twitter:title" content="Rail transit and population density" />
+	<meta name="twitter:description" content="Maps, charts, and rankings that compare 250 cities around the world" />
+	<!-- <meta name="twitter:image" content="https://schoolofcities.github.io/essential-spaces/web-card.png" />  -->
+
 </svelte:head>
 
 <TopSofC />
 
 <main>
 
-	
-
 	<div class="title">
 
 		<LongCityGraphic/>
 		
 		<h1>
-			Rail transit and population density
+			Rail Transit & Population Density
 		</h1>
 		<h2>
 			Comparing and ranking {cities.length} cities around the world
@@ -99,13 +117,13 @@
 			To look at this, we've created maps of major rail transit lines and stations overlaid onto population density for {cities.length} of the most populated urban regions around the globe. Click the dropdowns below to view how well transit systems serve their populations in different cities. 
 		</p>
 		<p>
-			Each map is in exactly the same geographic scale, 100km in diameter.
+			Each map has the same geographic scale, 100km in diameter, to be easily comparable.
 		</p>
 		<p>
 			Using these maps, we've also computed several metrics examining characteristics of transit oriented development, and ranked how well cities perform relative to each other. Generally, the greater the density and proportion of the population that lives near major rail transit, the better. 
 		</p>
 		<p>
-			Population data are from <a href="https://github.com/lulingliu/GlobPOP" target="_blank">GlobPOP</a> and rail transit data are from <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>. At the bottom of this page we describe these data sources, our methodology, and limitations in more detail.
+			Population data are from <a href="https://zenodo.org/records/11179644" target="_blank">GlobPOP</a> and rail transit data are from <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>. At the bottom of this page we describe these data sources, our methodology, and limitations in more detail.
 		</p>
 
 		<br>
@@ -180,7 +198,7 @@
 			For each city, we then defined the urban region shown on the maps as a circle with a 50km radius from this centre point. We chose to use a standard circle size for all regions to account for idiosyncrasies in how different parts of the world define metro areas. 50km is approximately the outer range that someone would commute to/from a city centre along a major rail corridor.
 		</p>
 		<p>
-			We sourced the population density data from <a href="https://github.com/lulingliu/GlobPOP" target="_blank">GlobPOP</a> which provides population count and density data at a spatial resolution of 30 arc-seconds (approximately 1km at the equator) around the globe. Our urban population density metrics are computed after removing areas where population density is less than 400km², to account for how regions vary in terms agricultural land and habitable geography they have (e.g. mountains, water, etc.). (400km² is the same threshold used by <a href="https://www12.statcan.gc.ca/census-recensement/2021/ref/dict/az/definition-eng.cfm?ID=geo049a" target="_blank">Statistics Canada</a> for urban areas).
+			We sourced the population density data from <a href="https://zenodo.org/records/11179644" target="_blank">GlobPOP</a> which provides population count and density data at a spatial resolution of 30 arc-seconds (approximately 1km at the equator) around the globe. Our urban population density metrics are computed after removing areas where population density is less than 400km², to account for how regions vary in terms agricultural land and habitable geography they have (e.g. mountains, water, etc.). (400km² is the same threshold used by <a href="https://www12.statcan.gc.ca/census-recensement/2021/ref/dict/az/definition-eng.cfm?ID=geo049a" target="_blank">Statistics Canada</a> for urban areas).
 		</p>
 
 		<p>
