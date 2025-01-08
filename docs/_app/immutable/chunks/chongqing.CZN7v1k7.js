@@ -1,0 +1,1 @@
+const n=""+new URL("../assets/chongqing.BvHNskgG.png",import.meta.url).href;export{n as default};
