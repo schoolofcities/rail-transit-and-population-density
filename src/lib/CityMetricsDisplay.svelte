@@ -23,10 +23,10 @@
 <div>
     <div class="city-header">
         <div class="city-label">
-            {cityOne}
+            {cityOne}, {cityMetrics[cityOne].COUNTRY_CODE}
         </div>
         <div class="city-label">
-            {cityTwo}
+            {cityTwo}, {cityMetrics[cityTwo].COUNTRY_CODE}
         </div>
     </div>
 
@@ -71,7 +71,7 @@
         width: 100%;
         max-width: 680px;
         margin-top: 20px;
-        border-top: 1px solid var(--brandLightBlue);
+        border-top: 2px solid var(--brandLightBlue);
         color: var(--brandDarkBlue);
         display: flex;
         justify-content: space-between;
@@ -92,7 +92,9 @@
         max-width: 680px;
         display: table;
         color: var(--brandDarkBlue);
-        /* border: 2px solid var(--brandDarkBlue); */
+        border-bottom: 2px solid var(--brandLightBlue); 
+        border-top: 1px solid var(--brandLightBlue); 
+
     }
 
     .resp-table-body {

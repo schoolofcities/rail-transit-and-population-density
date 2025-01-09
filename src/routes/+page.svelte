@@ -114,7 +114,7 @@
 			Public transit connects people to employment, education, and allow easy participation in urban life. Ideally, this is done efficiently and sustainably, with transit routes and stations connecting the most amount of people possible. But in reality, there's a lot of variation within and between cities in how effectively this is done.
 		</p>
 		<p>
-			To look at this, we've created maps of major rail transit lines and stations overlaid onto population density for {cities.length} of the most populated urban regions around the globe. Click the dropdowns below to view how well transit systems serve their populations in different cities. 
+			To look at this, we've created maps of major rail transit lines and stations (rapid transit, regional rail, LRT) overlaid onto population density for {cities.length} of the most populated urban regions around the globe. Click the dropdowns below to view how well transit systems serve their populations in different cities. 
 		</p>
 		<p>
 			Each map has the same geographic scale, 100km in diameter, to be easily comparable with each other.
@@ -140,8 +140,18 @@
 				Population density (people / km²)
 			</p>
 			<div id="legend-gradient"></div>
+			<div id="legend-ticks">
+				<p>|</p>
+				<p>|</p>
+				<p>|</p>
+				<p>|</p>
+				<p>|</p>
+				<p>|</p>
+				<p>|</p>
+			</div>
 			<div id="legend-numbers">
-				<p id="legend-numbers-left">0</p>
+				<p id="legend-numbers-left">0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+				<p id="legend-numbers-middle">15,000</p>
 				<p id="legend-numbers-right">30,000</p>
 			</div>
 		</div>
@@ -249,18 +259,36 @@
 		width: 100%;
 		height: 15px;
 		border: solid 1px var(--brandLightBlue);
-		border-radius: 10px;
+		border-radius: 5px;
 		background: rgb(255,255,255);
-		background: linear-gradient(90deg, rgba(255,255,255,0.9) 0%, rgba(241,197,0,0.9) 25%, rgba(220,70,51,0.9) 50%, rgba(171,19,104,0.9) 75%, rgba(109,36,122,0.9) 100%);
+		background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(241,197,0,0.7) 10%, rgba(220,70,51,0.8) 50%, rgba(171,19,104,0.8) 75%, rgba(109,36,122,0.8) 100%);
 	}
 
 	#legend-numbers {
 		display: flex;
 		justify-content: space-between;
 	}
+	#legend-numbers p {
+		font-size: 17px;
+	}
+
+	#legend-ticks {
+		display: flex;
+		justify-content: space-between;
+		margin-top: -10px;
+		height: 13px;
+	}
+	#legend-ticks p {
+		font-size: 10px;
+	}
 
 	#legend-numbers-left {
 		text-align: left;
+	}
+
+	#legend-numbers-middle {
+		text-align: center;
+		flex-grow: 1; /* Allows the middle number to take up available space */
 	}
 
 	#legend-numbers-right {
