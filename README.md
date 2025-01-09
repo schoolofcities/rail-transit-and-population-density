@@ -1,4 +1,4 @@
-# Rail transit and population density
+# [Rail transit and population density](https://schoolofcities.github.io/rail-transit-and-population-density/)
 ## Comparing and ranking 250+ cities around the world
 #### Aniket Kali & Jeff Allen | December 2024
 
