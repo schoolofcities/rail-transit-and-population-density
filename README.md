@@ -1,6 +1,6 @@
 # Rail transit and population density
 ## Comparing and ranking 250+ cities around the world
-### Aniket Kali & Jeff Allen | December 2024
+#### Aniket Kali & Jeff Allen | December 2024
 
 Code used to generate final metrics, maps, and otherwise analyze data, is available under `analysis/`. 
 
@@ -21,6 +21,7 @@ Ensure that you have the following data downloaded and named appropriately. All 
 * `./data/GlobPOP_Count_30arc_2022_I32.tiff`: [GlobPOP](https://github.com/lulingliu/GlobPOP), using the 2022 population count data
 * `./data/src_water/v107/`: [World Water Bodies](https://www.arcgis.com/home/item.html?id=e750071279bf450cbd510454a80f2e63)
 * `./data/src_water/water_simp.gpkg`: Apply the Douglas-Peucker simplification algorithm in QGIS to the World Water Bodies layer (or something else that reduces file size)
+* The hillshade topography layer is sourced from [ESRI](https://www.arcgis.com/home/item.html?id=1b243539f4514b6ba35e7d995890db1d)
 
 Create these directories as well, if they don't exist already, which are used for storing intermediate stages of data. Inside `./data/`, you can run: `mkdir city_pop_tiles city_water osm_data`
 

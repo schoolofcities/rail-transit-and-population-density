@@ -66,7 +66,7 @@
 		content="width=device-width, initial-scale=1, minimum-scale=1"
 	/>
 
-	<title>Rail transit and population density</title>
+	<title>Rail Transit & Population Density</title>
 
 	<meta name="description" content="Maps, charts, and rankings that compare 250 cities around the world">
 	<meta name="author" content="Aniket Kali & Jeff Allen">
@@ -74,16 +74,16 @@
 	<meta property="og:title" content="Rail transit and population density" />
 	<meta property="og:description" content="Maps, charts, and rankings that compare 250 cities around the world" />
 	<meta property="og:type" content="website" />
-	<!-- <meta property="og:url" content="https://schoolofcities.github.io/essential-spaces/map" /> -->
-	<!-- <meta property="og:image" content="https://schoolofcities.github.io/essential-spaces/web-card.png" /> -->
+	<meta property="og:url" content="https://schoolofcities.github.io/rail-transit-and-population-density" />
+	<meta property="og:image" content="https://schoolofcities.github.io/rail-transit-and-population-density/web-card.png" />
 	<meta property="og:locale" content="en_CA">
 
 	<meta name="twitter:card" content="summary_large_image" />
-	<!-- <meta name="twitter:site" content="https://schoolofcities.github.io/essential-spaces/map" /> -->
+	<meta name="twitter:site" content="https://schoolofcities.github.io/rail-transit-and-population-density" />
 	<meta name="twitter:creator" content="@UofTCities" />
 	<meta name="twitter:title" content="Rail transit and population density" />
 	<meta name="twitter:description" content="Maps, charts, and rankings that compare 250 cities around the world" />
-	<!-- <meta name="twitter:image" content="https://schoolofcities.github.io/essential-spaces/web-card.png" />  -->
+	<meta name="twitter:image" content="https://schoolofcities.github.io/rail-transit-and-population-density/web-card.png" /> 
 
 </svelte:head>
 
@@ -111,7 +111,7 @@
 	<div class="text">
 		
 		<p>
-			Public transit connects people to employment, education, and allow easy participation in urban life. Ideally, this is done efficiently and sustainably, with transit routes and stations connecting the most amount of people possible. But in reality, there's a lot of variation within and between cities in how effectively this is done.
+			Good public transit connects people to places. Ideally, this is done efficiently and sustainably, with transit routes and stations serving and connecting the most amount of people possible. But in reality, there's a lot of variation within and between cities in how effectively this is done.
 		</p>
 		<p>
 			To look at this, we've created maps of major rail transit lines and stations (rapid transit, regional rail, LRT) overlaid onto population density for {cities.length} of the most populated urban regions around the globe. Click the dropdowns below to view how well transit systems serve their populations in different cities. 
@@ -120,10 +120,10 @@
 			Each map has the same geographic scale, 100km in diameter, to be easily comparable with each other.
 		</p>
 		<p>
-			Using these maps, we've also computed several metrics examining characteristics of transit oriented development, and ranked how well cities perform relative to each other. Generally, the greater the density and proportion of the population that lives near major rail transit, the better. 
+			Using these maps, we've also computed several metrics examining characteristics of <a href="https://en.wikipedia.org/wiki/Transit-oriented_development" target="_blank">transit oriented development</a>, and ranked how well cities perform relative to each other. Generally, the greater the density and proportion of the population that lives near major rail transit, the better.
 		</p>
 		<p>
-			Population data are from <a href="https://zenodo.org/records/11179644" target="_blank">GlobPOP</a> and rail transit data are from <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>. At the bottom of this page we describe these data sources, our methodology, and limitations in more detail.
+			Population data for these maps are from <a href="https://zenodo.org/records/11179644" target="_blank">GlobPOP</a>, and rail transit data are from <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>. At the bottom of this page we describe these data sources, our methodology, and limitations in more detail.
 		</p>
 
 		<br>
@@ -220,7 +220,7 @@
 		</p>
 
 		<p>
-			Now of course, where people live is just one side; the goal of transit is ultimately to take people where they want to go (work, school, recreation, etc.). It would be great to layer on employment and activity location data onto these maps to also look at the destination side of the equation. Something to work on in the future!
+			Now of course, where people live is just one side; the goal of transit is ultimately to take people where they want to go (work, school, recreation, etc.). It would be great to layer on employment and activity location data onto these maps to also look at the destination side of the equation as well as analyze connectivity of networks. Something to work on in the future!
 		</p>
 
 		<p>
