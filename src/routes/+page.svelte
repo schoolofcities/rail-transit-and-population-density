@@ -201,26 +201,25 @@
 		<h3>Data & Methods</h3>
 
 		<p>
-			Cities included <a href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/" target="_blank">Natural Earth</a>, which includes population estimates and point coordinates for the centre of each city. 
-			We started with a list of the 300 most populated cities, but then manually removed cases where one city was essentially the suburb of another city at our scale (e.g. Howrah was removed since it is very close to Kolkata). We also only included cities with rail transit.
+			Our list of cities came from a dataset from <a href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/" target="_blank">Natural Earth</a>. We started with a list of the 300 most populated cities, but then manually removed cases where one city was essentially the suburb of another city at our scale (e.g. Howrah was removed since it is very close to Kolkata). We also only included cities with rail transit.
 		</p>
 		<p>
-			For each city, we then defined the urban region shown on the maps as a circle with a 50km radius from this centre point. We chose to use a standard circle size for all regions to account for idiosyncrasies in how different parts of the world define metro areas. 50km is approximately the outer range that someone would commute to/from a city centre along a major rail corridor.
+			For each city, we then defined the urban region shown on the maps as a circle with a 50km radius from the centre point noted in the Natural Earth dataset. We chose to use a standard circle size for all regions to account for idiosyncrasies in how different parts of the world define metro areas. 50km is approximately the outer range that someone would commute to/from a city centre along a major rail corridor.
 		</p>
 		<p>
-			We sourced the population density data from <a href="https://zenodo.org/records/11179644" target="_blank">GlobPOP</a> which provides population count and density data at a spatial resolution of 30 arc-seconds (approximately 1km at the equator) around the globe. Our urban population density metrics are computed after removing areas where population density is less than 400km², to account for how regions vary in terms agricultural land and habitable geography they have (e.g. mountains, water, etc.). (400km² is the same threshold used by <a href="https://www12.statcan.gc.ca/census-recensement/2021/ref/dict/az/definition-eng.cfm?ID=geo049a" target="_blank">Statistics Canada</a> for urban areas).
-		</p>
-
-		<p>
-			We downloaded railway and station data from <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> (OSM) using <a href="https://overpass-turbo.eu/" target="_blank">overpass turbo</a> with <a href="https://github.com/schoolofcities/world-city-transit-density/blob/main/analysis/query_osm.py" target="_blank">this query</a>. We then calculated 1km buffers around each station and then estimated the population within the buffered area via aerial interpolation. OSM is crowd-sourced data, and while the quality and comprehensiveness of OSM data is quite good in most cities, there are several cities that have missing or incorrect data. If you see any errors, please update OSM! As OSM data is edited and improved, we'll aim to update our maps and metrics in the future.
+			We sourced the population density data from <a href="https://zenodo.org/records/11179644" target="_blank">GlobPOP</a> which provides population count and density data at a spatial resolution of 30 arc-seconds (approximately 1km at the equator) around the globe. Our urban population density metrics are computed after removing areas where population density is less than 400km², to account for how regions vary in terms of how much agricultural land and un-habitable geography they have (e.g. mountains, water, etc. 400km² is the same threshold used by <a href="https://www12.statcan.gc.ca/census-recensement/2021/ref/dict/az/definition-eng.cfm?ID=geo049a" target="_blank">Statistics Canada</a> to define populated places.
 		</p>
 
 		<p>
-			There are two main limitations with this transit data: 1) it only includes rail transit, not Bus Rapid Transit (BRT), which in many cities provides comparable service to rail. 2) it does not account for frequency (i.e. headway) of routes. While many transit agencies share their routes and schedules in GTFS format, which includes information about frequency and often technology (bus, rail, etc.), we found that the availability of GTFS at a global scale was not available, particularly outside of Europe and North America. 
+			We downloaded rail and station data from <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> (OSM) using <a href="https://overpass-turbo.eu/" target="_blank">overpass turbo</a> with <a href="https://github.com/schoolofcities/world-city-transit-density/blob/main/analysis/query_osm.py" target="_blank">this query</a>. We then calculated 1km buffers around each station and then estimated the population within the buffered area via aerial interpolation. OSM is crowd-sourced data, and while the quality and comprehensiveness of OSM data is quite good in most cities, there are several cities that have missing or incorrect data. If you see any errors, please update OSM! As OSM data is edited and improved, we'll aim to update our maps and metrics in the future.
 		</p>
 
 		<p>
-			Now of course, where people live is just one side; the goal of transit is ultimately to take people where they want to go (work, school, recreation, etc.). It would be great to layer on employment and activity location data onto these maps to also look at the destination side of the equation as well as analyze connectivity of networks. Something to work on in the future!
+			There are two main limitations with this transit data: 1) it only includes rail transit, not Bus Rapid Transit (BRT), which in many cities provides comparable service to rail. 2) it does not account for frequency (i.e. headway) of routes. While many transit agencies share their routes and schedules in GTFS format, which includes information about frequency and often technology (bus, rail, etc.), we found that the availability of GTFS at a global scale was not available everywhere, particularly outside of Europe and North America. 
+		</p>
+
+		<p>
+			Now of course, where people live is just one piece; the goal of transit is ultimately to take people where they want to go (work, school, recreation, etc.). It would be great to layer on employment and activity location data onto these maps to also look at the destination side of the equation as well as analyze connectivity of networks. Something to work on in the future!
 		</p>
 
 		<p>
