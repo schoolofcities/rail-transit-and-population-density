@@ -102,7 +102,9 @@
 			Comparing and ranking {cities.length} cities around the world
 		</h2>
 		<p>
-			Aniket Kali & Jeff Allen | January 2025
+			<a href="https://www.linkedin.com/in/aniket-k-8a8b9921b/" target="_blank">Aniket Kali</a> & 
+			<a href="http://jamaps.github.io/">Jeff Allen</a> | 
+			January 2025
 		</p>
 		<br>
 
@@ -152,7 +154,7 @@
 			<div id="legend-numbers">
 				<p id="legend-numbers-left">0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 				<p id="legend-numbers-middle">15,000</p>
-				<p id="legend-numbers-right">30,000</p>
+				<p id="legend-numbers-right">30,000+</p>
 			</div>
 		</div>
 		
