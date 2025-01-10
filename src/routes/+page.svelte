@@ -66,7 +66,7 @@
 		content="width=device-width, initial-scale=1, minimum-scale=1"
 	/>
 
-	<title>Rail Transit and Population Density in 250 Cities</title>
+	<title>Rail Transit & Population Density | School of Cities</title>
 
 	<meta name="description" content="Maps, charts, and rankings that compare 250 cities around the world">
 	<meta name="author" content="Aniket Kali & Jeff Allen">
