@@ -66,12 +66,12 @@
 		content="width=device-width, initial-scale=1, minimum-scale=1"
 	/>
 
-	<title>Rail Transit & Population Density</title>
+	<title>Rail Transit and Population Density in 250 Cities</title>
 
 	<meta name="description" content="Maps, charts, and rankings that compare 250 cities around the world">
 	<meta name="author" content="Aniket Kali & Jeff Allen">
 
-	<meta property="og:title" content="Rail transit and population density" />
+	<meta property="og:title" content="Rail Transit and Population Density in 250 Cities" />
 	<meta property="og:description" content="Maps, charts, and rankings that compare 250 cities around the world" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://schoolofcities.github.io/rail-transit-and-population-density" />
@@ -81,7 +81,7 @@
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="https://schoolofcities.github.io/rail-transit-and-population-density" />
 	<meta name="twitter:creator" content="@UofTCities" />
-	<meta name="twitter:title" content="Rail transit and population density" />
+	<meta name="twitter:title" content="Rail Transit and Population Density in 250 Cities" />
 	<meta name="twitter:description" content="Maps, charts, and rankings that compare 250 cities around the world" />
 	<meta name="twitter:image" content="https://schoolofcities.github.io/rail-transit-and-population-density/web-card.png" /> 
 
@@ -103,7 +103,7 @@
 		</h2>
 		<p>
 			<a href="https://www.linkedin.com/in/aniket-k-8a8b9921b/" target="_blank">Aniket Kali</a> & 
-			<a href="http://jamaps.github.io/">Jeff Allen</a> | 
+			<a href="http://jamaps.github.io/" target="_blank">Jeff Allen</a> | 
 			January 2025
 		</p>
 		<br>
@@ -152,7 +152,7 @@
 				<p>|</p>
 			</div>
 			<div id="legend-numbers">
-				<p id="legend-numbers-left">0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+				<p id="legend-numbers-left">0 &nbsp;&nbsp;</p>
 				<p id="legend-numbers-middle">15,000</p>
 				<p id="legend-numbers-right">30,000+</p>
 			</div>
@@ -203,7 +203,7 @@
 		<h3>Data & Methods</h3>
 
 		<p>
-			Our list of cities came from a dataset from <a href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/" target="_blank">Natural Earth</a>. We started with a list of the 300 most populated cities, but then manually removed cases where one city was essentially the suburb of another city at our scale (e.g. Howrah was removed since it is very close to Kolkata). We also only included cities with rail transit.
+			Our list of cities came from a dataset from <a href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/" target="_blank">Natural Earth</a>. We started with a list of the 300 most populated cities, but then manually removed cases where one city was essentially the suburb of another city at our scale (e.g. Howrah was removed since it is very close to Kolkata), as well as removed cities without any rail transit.
 		</p>
 		<p>
 			For each city, we then defined the urban region shown on the maps as a circle with a 50km radius from the centre point noted in the Natural Earth dataset. We chose to use a standard circle size for all regions to account for idiosyncrasies in how different parts of the world define metro areas. 50km is approximately the outer range that someone would commute to/from a city centre along a major rail corridor.
@@ -257,12 +257,25 @@
 	}
 
 	#legend-gradient {
-		width: 100%;
+		width: calc(100% - 32px);
 		height: 15px;
 		border: solid 1px var(--brandLightBlue);
+		margin-left: 0px;
 		border-radius: 5px;
 		background: rgb(255,255,255);
-		background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(241,197,0,0.7) 10%, rgba(220,70,51,0.8) 50%, rgba(171,19,104,0.8) 75%, rgba(109,36,122,0.8) 100%);
+		background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(241,197,0,0.7) 10%, rgba(220,70,51,0.8) 50%, rgba(171,19,104,0.8) 75%, rgba(109,36,122,0.8) 100%, rgba(109,36,122,0.8) 100%);
+	}
+
+	#legend-ticks {
+		width: calc(100% - 32px);
+		margin-left: 0px;
+		display: flex;
+		justify-content: space-between;
+		margin-top: -10px;
+		height: 13px;
+	}
+	#legend-ticks p {
+		font-size: 10px;
 	}
 
 	#legend-numbers {
@@ -271,16 +284,6 @@
 	}
 	#legend-numbers p {
 		font-size: 17px;
-	}
-
-	#legend-ticks {
-		display: flex;
-		justify-content: space-between;
-		margin-top: -10px;
-		height: 13px;
-	}
-	#legend-ticks p {
-		font-size: 10px;
 	}
 
 	#legend-numbers-left {
