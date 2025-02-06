@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="76.199997cm"
-   height="121.92cm"
-   viewBox="0 0 762.00002 1219.2001"
+   width="29.999998in"
+   height="51in"
+   viewBox="0 0 762.00002 1295.4001"
    version="1.1"
    id="svg5"
    sodipodi:docname="transit-density-poster.svg"
@@ -27,17 +27,17 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="cm"
      showgrid="false"
-     units="cm"
+     units="in"
      width="30in"
-     inkscape:zoom="0.5007929"
-     inkscape:cx="497.21152"
-     inkscape:cy="1584.4873"
+     inkscape:zoom="0.17705703"
+     inkscape:cx="1259.4812"
+     inkscape:cy="3504.5206"
      inkscape:window-width="1854"
      inkscape:window-height="1017"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="layer2"
      height="36in"
      showguides="false" />
   <defs
@@ -6272,32 +6272,32 @@
      id="layer2"
      inkscape:label="background">
     <rect
-       style="fill:#ffffff;stroke-width:10.2924;stroke-linejoin:round"
+       style="fill:#ffffff;stroke-width:10.6092;stroke-linejoin:round"
        id="rect94941"
        width="762.00006"
-       height="1219.2001"
+       height="1295.4001"
        x="0"
        y="0" />
     <text
        xml:space="preserve"
-       style="font-size:8.46667px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
        x="51.460484"
-       y="382.46356"
+       y="462.46365"
        id="text180145"><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:end;text-anchor:end;stroke-width:0.264583"
-         x="51.460487"
-         y="382.46356"
+         x="51.460484"
+         y="462.46365"
          id="tspan180149">Population</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:end;text-anchor:end;stroke-width:0.264583"
          x="51.460484"
-         y="393.04691"
+         y="473.047"
          id="tspan216232">density</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:end;text-anchor:end;stroke-width:0.264583"
          x="51.460484"
-         y="403.63025"
+         y="483.63034"
          id="tspan196729">(people/km²)</tspan></text>
   </g>
   <g
@@ -6313,7 +6313,7 @@
        x="31.355543"
        y="75.715836"
        clip-path="url(#clipPath6779)"
-       transform="matrix(1.254375,0,0,1.254375,10.444053,-20.200035)" />
+       transform="matrix(1.254375,0,0,1.254375,10.444053,59.80007)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6323,7 +6323,7 @@
        x="182.82672"
        y="77.180984"
        clip-path="url(#clipPath9695)"
-       transform="matrix(1.4,0,0,1.4,-34.457386,-40.553378)" />
+       transform="matrix(1.4,0,0,1.4,-34.457386,39.446727)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6333,7 +6333,7 @@
        x="310.50229"
        y="91.709938"
        clip-path="url(#clipPath9815)"
-       transform="matrix(1.4,0,0,1.4,-34.203166,-60.893913)" />
+       transform="matrix(1.4,0,0,1.4,-34.203166,19.106192)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6343,7 +6343,7 @@
        x="280.74683"
        y="252.5616"
        clip-path="url(#clipPath10015)"
-       transform="matrix(1.3681102,0,0,1.3681102,197.00193,-276.43763)" />
+       transform="matrix(1.3681102,0,0,1.3681102,197.00193,-196.43752)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6353,7 +6353,7 @@
        x="33.719635"
        y="207.86275"
        clip-path="url(#clipPath78043)"
-       transform="matrix(1.4,0,0,1.4,-4.7074852,-48.507849)" />
+       transform="matrix(1.4,0,0,1.4,-4.7074852,31.492256)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6363,7 +6363,7 @@
        x="174.26469"
        y="210.00276"
        clip-path="url(#clipPath78163)"
-       transform="matrix(1.3681102,0,0,1.3681102,-15.318792,-43.212427)" />
+       transform="matrix(1.3681102,0,0,1.3681102,-15.318792,36.787678)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6373,7 +6373,7 @@
        x="321.64142"
        y="205.37605"
        clip-path="url(#clipPath78283)"
-       transform="matrix(1.3681102,0,0,1.3681102,-37.946377,-36.882567)" />
+       transform="matrix(1.3681102,0,0,1.3681102,-37.946377,43.117538)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6383,7 +6383,7 @@
        x="481.78995"
        y="210.54297"
        clip-path="url(#clipPath78403)"
-       transform="matrix(1.3681102,0,0,1.3681102,-78.047257,-43.951477)" />
+       transform="matrix(1.3681102,0,0,1.3681102,-78.047257,36.048628)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6393,7 +6393,7 @@
        x="32.076447"
        y="345.20773"
        clip-path="url(#clipPath121578)"
-       transform="matrix(1.4,0,0,1.4,-2.4070214,-65.790799)" />
+       transform="matrix(1.4,0,0,1.4,-2.4070214,14.209306)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6403,7 +6403,7 @@
        x="180.62001"
        y="340.87793"
        clip-path="url(#clipPath124505)"
-       transform="matrix(1.4,0,0,1.4,-31.367991,-59.729074)" />
+       transform="matrix(1.4,0,0,1.4,-31.367991,20.271031)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6413,7 +6413,7 @@
        x="306.85852"
        y="494.41528"
        clip-path="url(#clipPath124658)"
-       transform="matrix(1.4,0,0,1.4,-29.10189,-274.68136)" />
+       transform="matrix(1.4,0,0,1.4,-29.10189,-194.68125)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6423,7 +6423,7 @@
        x="516.07678"
        y="493.88696"
        clip-path="url(#clipPath124662)"
-       transform="matrix(1.4,0,0,1.4,-143.00746,-273.94171)" />
+       transform="matrix(1.4,0,0,1.4,-143.00746,-193.9416)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6433,7 +6433,7 @@
        x="30.59523"
        y="623.68481"
        clip-path="url(#clipPath223998)"
-       transform="matrix(1.4,0,0,1.4,-0.33332906,-105.65869)" />
+       transform="matrix(1.4,0,0,1.4,-0.33332906,-25.658584)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6443,7 +6443,7 @@
        x="188.36897"
        y="625.08307"
        clip-path="url(#clipPath224002)"
-       transform="matrix(1.4,0,0,1.4,-42.216538,-107.61625)" />
+       transform="matrix(1.4,0,0,1.4,-42.216538,-27.616144)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6453,7 +6453,7 @@
        x="335.23679"
        y="625.80109"
        clip-path="url(#clipPath224006)"
-       transform="matrix(1.4,0,0,1.4,-68.831462,-108.62147)" />
+       transform="matrix(1.4,0,0,1.4,-68.831462,-28.621364)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6463,7 +6463,7 @@
        x="478.94223"
        y="619.80719"
        clip-path="url(#clipPath224010)"
-       transform="matrix(1.4,0,0,1.4,-91.019129,-100.23001)" />
+       transform="matrix(1.4,0,0,1.4,-91.019129,-20.229904)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6473,7 +6473,7 @@
        x="-22.290352"
        y="765.97632"
        clip-path="url(#clipPath267081)"
-       transform="matrix(1.4,0,0,1.4,73.706488,-129.86679)" />
+       transform="matrix(1.4,0,0,1.4,73.706488,-49.866685)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6483,7 +6483,7 @@
        x="136.20831"
        y="780.76953"
        clip-path="url(#clipPath267085)"
-       transform="matrix(1.4,0,0,1.4,30.808385,-150.57729)" />
+       transform="matrix(1.4,0,0,1.4,30.808385,-70.577185)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6493,7 +6493,7 @@
        x="292.59366"
        y="753.29645"
        clip-path="url(#clipPath267089)"
-       transform="matrix(1.4,0,0,1.4,-9.1310835,-112.11496)" />
+       transform="matrix(1.4,0,0,1.4,-9.1310835,-32.114855)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6503,7 +6503,7 @@
        x="443.69571"
        y="795.56274"
        clip-path="url(#clipPath267093)"
-       transform="matrix(1.4,0,0,1.4,-41.673956,-171.28779)" />
+       transform="matrix(1.4,0,0,1.4,-41.673956,-91.287685)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6513,7 +6513,7 @@
        x="28.085821"
        y="497.96924"
        clip-path="url(#clipPath173615)"
-       transform="matrix(1.4,0,0,1.4,3.1798515,-104.65689)" />
+       transform="matrix(1.4,0,0,1.4,3.1798515,-24.656784)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6523,7 +6523,7 @@
        x="179.55011"
        y="512.40448"
        clip-path="url(#clipPath173623)"
-       transform="matrix(1.4,0,0,1.4,-29.87013,-124.86623)" />
+       transform="matrix(1.4,0,0,1.4,-29.87013,-44.866125)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6533,7 +6533,7 @@
        x="336.258"
        y="516.97498"
        clip-path="url(#clipPath173627)"
-       transform="matrix(1.4,0,0,1.4,-70.261156,-131.26493)" />
+       transform="matrix(1.4,0,0,1.4,-70.261156,-51.264825)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6543,7 +6543,7 @@
        x="478.91599"
        y="515.21198"
        clip-path="url(#clipPath173631)"
-       transform="matrix(1.4,0,0,1.4,-90.982385,-128.79673)" />
+       transform="matrix(1.4,0,0,1.4,-90.982385,-48.796625)" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -6553,649 +6553,649 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold,  Bold';text-align:center;text-anchor:middle;stroke-width:0.264705"
        x="112.66933"
-       y="213.13971"
+       y="293.1398"
        id="text16720"><tspan
          sodipodi:role="line"
          id="tspan16718"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold,  Bold';text-align:center;text-anchor:middle;stroke-width:0.264705"
          x="112.66933"
-         y="213.13971">TORONTO</tspan></text>
+         y="293.1398">TORONTO</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
        x="112.39629"
-       y="222.55626"
+       y="302.55637"
        id="text27992"><tspan
          sodipodi:role="line"
          id="tspan27990"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="112.39629"
-         y="222.55626">6.45M urban pop</tspan><tspan
+         y="302.55637">6.45M urban pop</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="112.39629"
-         y="231.81667"
+         y="311.81677"
          id="tspan27994">20.0% near transit</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
        x="291.25748"
-       y="212.12378"
+       y="292.12387"
        id="text16720-7"><tspan
          sodipodi:role="line"
          id="tspan16718-8"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="291.25748"
-         y="212.12378">MONTREAL</tspan></text>
+         y="292.12387">MONTREAL</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
        x="291.45844"
-       y="222.55626"
+       y="302.55637"
        id="text27992-4"><tspan
          sodipodi:role="line"
          id="tspan27990-5"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="291.45844"
-         y="222.55626">4.30M urban pop</tspan><tspan
+         y="302.55637">4.30M urban pop</tspan><tspan
          sodipodi:role="line"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="291.45844"
-         y="231.81667"
+         y="311.81677"
          id="tspan27994-0">28.6% near transit</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
        x="470.59375"
-       y="212.12378"
+       y="292.12387"
        id="text16720-3"><tspan
          sodipodi:role="line"
          id="tspan16718-6"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="470.59375"
-         y="212.12378">VANCOUVER</tspan></text>
+         y="292.12387">VANCOUVER</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
        x="470.45844"
-       y="222.55626"
+       y="302.55637"
        id="text27992-1"><tspan
          sodipodi:role="line"
          id="tspan27990-0"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="470.45844"
-         y="222.55626">2.60M urban pop</tspan><tspan
+         y="302.55637">2.60M urban pop</tspan><tspan
          sodipodi:role="line"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="470.45844"
-         y="231.81667"
+         y="311.81677"
          id="tspan27994-6">22.1% near transit</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
        x="649.50281"
-       y="212.12378"
+       y="292.12387"
        id="text16720-32"><tspan
          sodipodi:role="line"
          id="tspan16718-0"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="649.50281"
-         y="212.12378">CHICAGO</tspan></text>
+         y="292.12387">CHICAGO</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
        x="649.4566"
-       y="222.55626"
+       y="302.55637"
        id="text27992-6"><tspan
          sodipodi:role="line"
          id="tspan27990-1"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="649.4566"
-         y="222.55626">7.01M urban pop</tspan><tspan
+         y="302.55637">7.01M urban pop</tspan><tspan
          sodipodi:role="line"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="649.4566"
-         y="231.81667"
+         y="311.81677"
          id="tspan27994-5">33.3% near transit</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
        x="112.09486"
-       y="388.1391"
+       y="468.13919"
        id="text16720-1"><tspan
          sodipodi:role="line"
          id="tspan16718-7"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="112.09486"
-         y="388.1391">NEW YORK</tspan></text>
+         y="468.13919">NEW YORK</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
        x="112.36254"
-       y="397.55627"
+       y="477.55637"
        id="text27992-2"><tspan
          sodipodi:role="line"
          id="tspan27990-7"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="112.36254"
-         y="397.55627">15.29M urban pop</tspan><tspan
+         y="477.55637">15.29M urban pop</tspan><tspan
          sodipodi:role="line"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="112.36254"
-         y="406.81668"
+         y="486.81677"
          id="tspan27994-2">55.9% near transit</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
        x="291.50552"
-       y="388.1391"
+       y="468.13919"
        id="text16720-7-2"><tspan
          sodipodi:role="line"
          id="tspan16718-8-6"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="291.50552"
-         y="388.1391">LONDON</tspan></text>
+         y="468.13919">LONDON</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
        x="291.36258"
-       y="397.55627"
+       y="477.55637"
        id="text27992-4-1"><tspan
          sodipodi:role="line"
          id="tspan27990-5-0"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="291.36258"
-         y="397.55627">14.13M urban pop</tspan><tspan
+         y="477.55637">14.13M urban pop</tspan><tspan
          sodipodi:role="line"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="291.36258"
-         y="406.81668"
+         y="486.81677"
          id="tspan27994-0-6">63.0% near transit</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
        x="470.2327"
-       y="388.14148"
+       y="468.14157"
        id="text16720-3-1"><tspan
          sodipodi:role="line"
          id="tspan16718-6-5"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="470.2327"
-         y="388.14148">MOSCOW</tspan></text>
+         y="468.14157">MOSCOW</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
        x="470.36258"
-       y="397.55627"
+       y="477.55637"
        id="text27992-1-9"><tspan
          sodipodi:role="line"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="470.36258"
-         y="397.55627"
+         y="477.55637"
          id="tspan106576">17.14M urban pop</tspan><tspan
          sodipodi:role="line"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="470.36258"
-         y="406.81668"
+         y="486.81677"
          id="tspan27994-6-9">54.3% near transit</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
        x="649.20514"
-       y="388.14148"
+       y="468.14157"
        id="text16720-32-0"><tspan
          sodipodi:role="line"
          id="tspan16718-0-9"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="649.20514"
-         y="388.14148">ISTANBUL</tspan></text>
+         y="468.14157">ISTANBUL</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
        x="649.62848"
-       y="397.55627"
+       y="477.55637"
        id="text27992-6-1"><tspan
          sodipodi:role="line"
          id="tspan27990-1-7"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="649.62848"
-         y="397.55627">14.39M urban pop</tspan><tspan
+         y="477.55637">14.39M urban pop</tspan><tspan
          sodipodi:role="line"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="649.62848"
-         y="406.81668"
+         y="486.81677"
          id="tspan27994-5-7"> 44.9% near transit</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
        x="112.62679"
-       y="563.14148"
+       y="643.1416"
        id="text16720-1-1"><tspan
          sodipodi:role="line"
          id="tspan16718-7-1"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="112.62679"
-         y="563.14148">TOKYO</tspan></text>
+         y="643.1416">TOKYO</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
        x="112.50001"
-       y="572.56628"
+       y="652.56641"
        id="text27992-2-5"><tspan
          sodipodi:role="line"
          id="tspan27990-7-9"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="112.50001"
-         y="572.56628">33.68M urban pop</tspan><tspan
+         y="652.56641">33.68M urban pop</tspan><tspan
          sodipodi:role="line"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="112.50001"
-         y="581.82672"
+         y="661.82684"
          id="tspan27994-2-7">63.1% near transit</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
        x="291.42285"
-       y="563.14148"
+       y="643.1416"
        id="text16720-7-2-7"><tspan
          sodipodi:role="line"
          id="tspan16718-8-6-6"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="291.42285"
-         y="563.14148">SEOUL</tspan></text>
+         y="643.1416">SEOUL</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
        x="291.50183"
-       y="572.56628"
+       y="652.56641"
        id="text27992-4-1-7"><tspan
          sodipodi:role="line"
          id="tspan27990-5-0-3"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="291.50183"
-         y="572.56628">24.77M urban pop</tspan><tspan
+         y="652.56641">24.77M urban pop</tspan><tspan
          sodipodi:role="line"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="291.50183"
-         y="581.82672"
+         y="661.82684"
          id="tspan27994-0-6-6">67.1% near transit</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
        x="470.45044"
-       y="563.14386"
+       y="643.14398"
        id="text16720-3-1-5"><tspan
          sodipodi:role="line"
          id="tspan16718-6-5-6"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="470.45044"
-         y="563.14386">BEIJING</tspan></text>
+         y="643.14398">BEIJING</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
        x="470.50186"
-       y="572.56628"
+       y="652.56641"
        id="text27992-1-9-3"><tspan
          sodipodi:role="line"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="470.50186"
-         y="572.56628"
+         y="652.56641"
          id="tspan106576-9">22.13M urban pop</tspan><tspan
          sodipodi:role="line"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="470.50186"
-         y="581.82672"
+         y="661.82684"
          id="tspan27994-6-9-4">56.4% near transit</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
        x="649.71777"
-       y="563.14148"
+       y="643.1416"
        id="text16720-32-0-8"><tspan
          sodipodi:role="line"
          id="tspan16718-0-9-1"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="649.71777"
-         y="563.14148">SHANGHAI</tspan></text>
+         y="643.1416">SHANGHAI</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
        x="649.50006"
-       y="572.56628"
+       y="652.56641"
        id="text27992-6-1-2"><tspan
          sodipodi:role="line"
          id="tspan27990-1-7-9"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="649.50006"
-         y="572.56628">32.51M urban pop</tspan><tspan
+         y="652.56641">32.51M urban pop</tspan><tspan
          sodipodi:role="line"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="649.50006"
-         y="581.82672"
+         y="661.82684"
          id="tspan27994-5-7-3">55.0% near transit</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
        x="112.27952"
-       y="738.14148"
+       y="818.1416"
        id="text16720-1-1-9"><tspan
          sodipodi:role="line"
          id="tspan16718-7-1-0"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="112.27952"
-         y="738.14148">OSAKA</tspan></text>
+         y="818.1416">OSAKA</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
        x="112.36255"
-       y="747.56628"
+       y="827.56641"
        id="text27992-2-5-8"><tspan
          sodipodi:role="line"
          id="tspan27990-7-9-8"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="112.36255"
-         y="747.56628">14.72M urban pop</tspan><tspan
+         y="827.56641">14.72M urban pop</tspan><tspan
          sodipodi:role="line"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="112.36255"
-         y="756.82672"
+         y="836.82684"
          id="tspan27994-2-7-5">69.0% near transit</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
        x="291.43112"
-       y="738.14148"
+       y="818.1416"
        id="text16720-7-2-7-0"><tspan
          sodipodi:role="line"
          id="tspan16718-8-6-6-9"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="291.43112"
-         y="738.14148">SINGAPORE</tspan></text>
+         y="818.1416">SINGAPORE</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
        x="291.34991"
-       y="747.56628"
+       y="827.56641"
        id="text27992-4-1-7-6"><tspan
          sodipodi:role="line"
          id="tspan27990-5-0-3-3"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="291.34991"
-         y="747.56628">9.40M urban pop</tspan><tspan
+         y="827.56641">9.40M urban pop</tspan><tspan
          sodipodi:role="line"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="291.34991"
-         y="756.82672"
+         y="836.82684"
          id="tspan27994-0-6-6-8">56.6% near transit</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
        x="470.25751"
-       y="738.14386"
+       y="818.14398"
        id="text16720-3-1-5-5"><tspan
          sodipodi:role="line"
          id="tspan16718-6-5-6-6"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="470.25751"
-         y="738.14386">KUALA LUMPUR</tspan></text>
+         y="818.14398">KUALA LUMPUR</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
        x="470.45844"
-       y="747.56628"
+       y="827.56641"
        id="text27992-1-9-3-1"><tspan
          sodipodi:role="line"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="470.45844"
-         y="747.56628"
+         y="827.56641"
          id="tspan106576-9-1">9.78M urban pop</tspan><tspan
          sodipodi:role="line"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="470.45844"
-         y="756.82672"
+         y="836.82684"
          id="tspan27994-6-9-4-5">28.6% near transit</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
        x="649.61578"
-       y="738.14148"
+       y="818.1416"
        id="text16720-32-0-8-9"><tspan
          sodipodi:role="line"
          id="tspan16718-0-9-1-8"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="649.61578"
-         y="738.14148">SHENZHEN + HONG KONG</tspan></text>
+         y="818.1416">SHENZHEN + HONG KONG</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
        x="649.50183"
-       y="747.56628"
+       y="827.56641"
        id="text27992-6-1-2-4"><tspan
          sodipodi:role="line"
          id="tspan27990-1-7-9-8"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="649.50183"
-         y="747.56628">23.85M urban pop</tspan><tspan
+         y="827.56641">23.85M urban pop</tspan><tspan
          sodipodi:role="line"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="649.50183"
-         y="756.82672"
+         y="836.82684"
          id="tspan27994-5-7-3-1">60.4% near transit</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
        x="112.55237"
-       y="913.14148"
+       y="993.1416"
        id="text16720-1-1-9-0"><tspan
          sodipodi:role="line"
          id="tspan16718-7-1-0-3"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="112.55237"
-         y="913.14148">DELHI</tspan></text>
+         y="993.1416">DELHI</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
        x="112.50001"
-       y="922.67627"
+       y="1002.6763"
        id="text27992-2-5-8-0"><tspan
          sodipodi:role="line"
          id="tspan27990-7-9-8-4"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="112.50001"
-         y="922.67627">35.34M urban pop</tspan><tspan
+         y="1002.6763">35.34M urban pop</tspan><tspan
          sodipodi:role="line"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="112.50001"
-         y="931.93671"
+         y="1011.9367"
          id="tspan27994-2-7-5-4">40.1% near transit</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
        x="291.50003"
-       y="913.14148"
+       y="993.1416"
        id="text16720-7-2-7-0-4"><tspan
          sodipodi:role="line"
          id="tspan16718-8-6-6-9-4"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="291.50003"
-         y="913.14148">MUMBAI</tspan></text>
+         y="993.1416">MUMBAI</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
        x="291.50183"
-       y="922.67627"
+       y="1002.6763"
        id="text27992-4-1-7-6-7"><tspan
          sodipodi:role="line"
          id="tspan27990-5-0-3-3-6"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="291.50183"
-         y="922.67627">25.75M urban pop</tspan><tspan
+         y="1002.6763">25.75M urban pop</tspan><tspan
          sodipodi:role="line"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="291.50183"
-         y="931.93671"
+         y="1011.9367"
          id="tspan27994-0-6-6-8-3">49.9% near transit</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
        x="470.61292"
-       y="913.14386"
+       y="993.14398"
        id="text16720-3-1-5-5-1"><tspan
          sodipodi:role="line"
          id="tspan16718-6-5-6-6-7"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="470.61292"
-         y="913.14386">CAPE TOWN</tspan></text>
+         y="993.14398">CAPE TOWN</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
        x="470.50745"
-       y="922.67627"
+       y="1002.6763"
        id="text27992-1-9-3-1-5"><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="470.50745"
-         y="922.67627"
+         y="1002.6763"
          id="tspan106576-9-1-9">4.96M urban pop</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="470.50745"
-         y="931.93671"
+         y="1011.9367"
          id="tspan27994-6-9-4-5-6">30.8% near transit</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
        x="649.69574"
-       y="913.14148"
+       y="993.1416"
        id="text16720-32-0-8-9-2"><tspan
          sodipodi:role="line"
          id="tspan16718-0-9-1-8-1"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="649.69574"
-         y="913.14148">JOHANNESBURG</tspan></text>
+         y="993.1416">JOHANNESBURG</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
        x="649.36255"
-       y="922.67627"
+       y="1002.6763"
        id="text27992-6-1-2-4-7"><tspan
          sodipodi:role="line"
          id="tspan27990-1-7-9-8-8"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="649.36255"
-         y="922.67627">12.24M urban pop</tspan><tspan
+         y="1002.6763">12.24M urban pop</tspan><tspan
          sodipodi:role="line"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="649.36255"
-         y="931.93671"
+         y="1011.9367"
          id="tspan27994-5-7-3-1-5">16.2% near transit</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
        x="112.75081"
-       y="1088.1415"
+       y="1168.1416"
        id="text16720-1-1-9-0-8"><tspan
          sodipodi:role="line"
          id="tspan16718-7-1-0-3-6"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="112.75081"
-         y="1088.1415">TEHRAN</tspan></text>
+         y="1168.1416">TEHRAN</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
        x="112.36254"
-       y="1097.6763"
+       y="1177.6764"
        id="text27992-2-5-8-0-0"><tspan
          sodipodi:role="line"
          id="tspan27990-7-9-8-4-4"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="112.36254"
-         y="1097.6763">14.61M urban pop</tspan><tspan
+         y="1177.6764">14.61M urban pop</tspan><tspan
          sodipodi:role="line"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="112.36254"
-         y="1106.9366"
+         y="1186.9368"
          id="tspan27994-2-7-5-4-8">30.5% near transit</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
        x="291.3815"
-       y="1088.1415"
+       y="1168.1416"
        id="text16720-7-2-7-0-4-8"><tspan
          sodipodi:role="line"
          id="tspan16718-8-6-6-9-4-8"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="291.3815"
-         y="1088.1415">RIO DE JANEIRO</tspan></text>
+         y="1168.1416">RIO DE JANEIRO</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
        x="291.36258"
-       y="1097.6763"
+       y="1177.6764"
        id="text27992-4-1-7-6-7-9"><tspan
          sodipodi:role="line"
          id="tspan27990-5-0-3-3-6-7"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="291.36258"
-         y="1097.6763">12.73M urban pop</tspan><tspan
+         y="1177.6764">12.73M urban pop</tspan><tspan
          sodipodi:role="line"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="291.36258"
-         y="1106.9366"
+         y="1186.9368"
          id="tspan27994-0-6-6-8-3-7">29.4% near transit</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
        x="470.34018"
-       y="1088.1439"
+       y="1168.144"
        id="text16720-3-1-5-5-1-6"><tspan
          sodipodi:role="line"
          id="tspan16718-6-5-6-6-7-4"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="470.34018"
-         y="1088.1439">BUENOS AIRES</tspan></text>
+         y="1168.144">BUENOS AIRES</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
        x="470.36258"
-       y="1097.6763"
+       y="1177.6764"
        id="text27992-1-9-3-1-5-3"><tspan
          sodipodi:role="line"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="470.36258"
-         y="1097.6763"
+         y="1177.6764"
          id="tspan106576-9-1-9-0">14.54M urban pop</tspan><tspan
          sodipodi:role="line"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="470.36258"
-         y="1106.9366"
+         y="1186.9368"
          id="tspan27994-6-9-4-5-6-3">35.8% near transit</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
        x="649.15002"
-       y="1088.1415"
+       y="1168.1416"
        id="text16720-32-0-8-9-2-0"><tspan
          sodipodi:role="line"
          id="tspan16718-0-9-1-8-1-9"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="649.15002"
-         y="1088.1415">MEXICO CITY</tspan></text>
+         y="1168.1416">MEXICO CITY</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
        x="649.50183"
-       y="1097.6763"
+       y="1177.6764"
        id="text27992-6-1-2-4-7-2"><tspan
          sodipodi:role="line"
          id="tspan27990-1-7-9-8-8-5"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="649.50183"
-         y="1097.6763">20.10M urban pop</tspan><tspan
+         y="1177.6764">20.10M urban pop</tspan><tspan
          sodipodi:role="line"
-         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583;-inkscape-font-specification:'TradeGothic LT Light, ';font-family:'TradeGothic LT Light';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.40833px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:center;text-anchor:middle;stroke-width:0.264583"
          x="649.50183"
-         y="1106.9366"
+         y="1186.9368"
          id="tspan27994-5-7-3-1-5-4">19.4% near transit</tspan></text>
   </g>
   <g
@@ -7204,7 +7204,7 @@
      id="layer1">
     <g
        id="g5226"
-       transform="matrix(1.3581288,0,0,1.3581288,65.705598,-199.87036)">
+       transform="matrix(1.3581288,0,0,1.3581288,-0.90576747,-4.7710748)">
       <g
          clip-path="url(#3268abb61f)"
          id="g316"
@@ -12572,7 +12572,7 @@
     </g>
     <g
        id="g5728"
-       transform="matrix(1.5422973,0,0,1.5422973,-86.515256,-30.269604)">
+       transform="matrix(1.5422973,0,0,1.5422973,-86.515256,49.730501)">
       <g
          id="g10"
          transform="matrix(0.05612638,0,0,-0.05612638,196.88944,805.77966)"
@@ -13080,45 +13080,77 @@
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:38.8055px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold,  Bold';fill:#1e3765;fill-opacity:1;stroke-width:0.259999;stroke-miterlimit:4;stroke-dasharray:none"
        x="71.60424"
-       y="48.405529"
+       y="128.40564"
        id="text22458"><tspan
          sodipodi:role="line"
          id="tspan22456"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:38.8055px;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold,  Bold';fill:#1e3765;fill-opacity:1;stroke-width:0.259999;stroke-miterlimit:4;stroke-dasharray:none"
          x="71.60424"
-         y="48.405529">RAIL TRANSIT &amp; POPULATION DENSITY</tspan></text>
+         y="128.40564">RAIL TRANSIT &amp; POPULATION DENSITY</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.1111px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold,  Bold';stroke-width:0.264583"
        x="314.27579"
-       y="1209.9281"
+       y="1289.9282"
        id="text108610"><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.1111px;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold,  Bold';fill:#1e3765;fill-opacity:1;stroke-width:0.264583"
          x="314.27579"
-         y="1209.9281"
+         y="1289.9282"
          id="tspan110624">Aniket Kali &amp; Jeff Allen</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:8.46667px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
        x="45.135468"
-       y="506.48532"
+       y="586.48541"
        id="text51744"><tspan
          sodipodi:role="line"
          id="tspan51742"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:end;text-anchor:end;stroke-width:0.264583"
          x="45.135468"
-         y="506.48532">Rail transit</tspan><tspan
+         y="586.48541">Rail transit</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:end;text-anchor:end;stroke-width:0.264583"
          x="45.135468"
-         y="517.08887"
+         y="597.08899"
          id="tspan64942">line and</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';text-align:end;text-anchor:end;stroke-width:0.264583"
          x="45.135468"
-         y="527.69244"
+         y="607.69257"
          id="tspan69826">station</tspan></text>
+    <rect
+       style="fill:#1e3765;stroke-width:4.11892;stroke-linejoin:round"
+       id="rect3807"
+       width="759.46008"
+       height="3.5000002"
+       x="1.2700001"
+       y="76.200005"
+       ry="1.7500001" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#1e3765;stroke-width:3.34636;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4010"
+       cx="57.150005"
+       cy="77.950005"
+       r="4.6768208" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#1e3765;stroke-width:3.34636;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4010-3"
+       cx="497.41672"
+       cy="77.950005"
+       r="4.6768208" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#1e3765;stroke-width:3.34636;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4010-3-6"
+       cx="277.28336"
+       cy="77.950005"
+       r="4.6768208" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:#1e3765;stroke-width:3.34636;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4010-3-6-7"
+       cx="717.55005"
+       cy="77.950005"
+       r="4.6768208" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -13130,10 +13162,10 @@
        width="1"
        height="62.500004"
        x="42.000004"
-       y="75.000008" />
+       y="155.00012" />
     <g
        id="g78691"
-       transform="translate(7.5187464)">
+       transform="translate(7.5187464,80.000106)">
       <rect
          style="fill:#1e3765;fill-opacity:1;stroke-width:12;stroke-linejoin:round"
          id="rect78187"
@@ -13171,89 +13203,89 @@
        id="rect137875-3"
        width="1"
        height="5.0000005"
-       x="75.000008"
+       x="155.00012"
        y="-47.000004"
        transform="rotate(90)" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;line-height:1.25;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold,  Bold';stroke-width:0.264583"
        x="14.654279"
-       y="109.90836"
+       y="189.90848"
        id="text141615"><tspan
          sodipodi:role="line"
          id="tspan141613"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:'TradeGothic LT Bold';-inkscape-font-specification:'TradeGothic LT Bold,  Bold';stroke-width:0.264583"
          x="14.654279"
-         y="109.90836">50km</tspan></text>
+         y="189.90848">50km</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:9.87778px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
        x="15.248684"
-       y="253.51442"
+       y="333.51453"
        id="text141615-2"><tspan
          sodipodi:role="line"
          id="tspan141613-9"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
          x="15.248684"
-         y="253.51442">30K+</tspan></text>
+         y="333.51453">30K+</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:9.87778px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
        x="20.255096"
-       y="297.49548"
+       y="377.49557"
        id="text141615-2-1"><tspan
          sodipodi:role="line"
          id="tspan141613-9-2"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
          x="20.255096"
-         y="297.49548">20K</tspan></text>
+         y="377.49557">20K</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:9.87778px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;line-height:1.25;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
        x="20.255096"
-       y="341.56549"
+       y="421.56558"
        id="text141615-2-1-9"><tspan
          sodipodi:role="line"
          id="tspan141613-9-2-3"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:'TradeGothic LT Light';-inkscape-font-specification:'TradeGothic LT Light, ';stroke-width:0.264583"
          x="20.255096"
-         y="341.56549">10K</tspan></text>
+         y="421.56558">10K</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';stroke-width:0.264583"
        x="31.473459"
-       y="1176.2789"
+       y="1256.2791"
        id="text108610-5"><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';fill:#1e3765;fill-opacity:1;stroke-width:0.264583"
          x="31.473459"
-         y="1176.2789"
+         y="1256.2791"
          id="tspan110624-3">blurb: what is happening on this poster??</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';fill:#1e3765;fill-opacity:1;stroke-width:0.264583"
          x="31.473459"
-         y="1190.39"
+         y="1270.3901"
          id="tspan166303">link/QR to see the full website</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';stroke-width:0.264583"
        x="530.88519"
-       y="1170.5669"
+       y="1250.567"
        id="text108610-5-5"><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';fill:#1e3765;fill-opacity:1;stroke-width:0.264583"
          x="530.88519"
-         y="1170.5669"
+         y="1250.567"
          id="tspan110624-3-6">blurb/arrows: explain the &quot;urban pop&quot; and</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';fill:#1e3765;fill-opacity:1;stroke-width:0.264583"
          x="530.88519"
-         y="1184.678"
+         y="1264.6781"
          id="tspan163497">&quot;near transit&quot;, pointing to Mexico City above</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';fill:#1e3765;fill-opacity:1;stroke-width:0.264583"
          x="530.88519"
-         y="1198.7892"
+         y="1278.7893"
          id="tspan163499">as a simple example</tspan></text>
     <image
        width="125.00001"
@@ -13261,7 +13293,7 @@
        preserveAspectRatio="none"
        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABIsAAAAOCAYAAACvvZwWAAAABHNCSVQICAgIfAhkiAAAAidJREFU eJzt2EGW2yAMAFC59z/yvNBFMowxyAamu/6/6TOSFUGwM+Uor68SUSLiFRElSnnFcf43XhFlEDva 64jyzjtKzW/uOwa1k/xrnXMv9b5f1h7lf9eZ6uVmDc59NrEY1L7Mq1v7Qf7dd/W+LtGol8fPUCmn 8YvS5p5rHIPc68fd181rN30/5I5rr8xvsnb57qvP7dYiqz2a30PuU91aK+n5x33tdp3W+ziPl1La 0YU+zuPNMj32car9OL+JPpLc8koauelj9KzUnjb7uOaO93m+Hlntufk91O72+dx6ZHXH74NT/tT8 3rnp+2Bx7fp1WuujGb+d31rtUrIaSR/T87vJf+g5f9+N62bvjmY/bfTRpKb7fPg2/3x+191kLK8Z 5Ui/rqdYRDLlidg4fvrOpmOD53Uz9nO5HnsP3bwft2KXdVyM1eGNWB/fie3s1TwW5bJWC7GI/X0+ ju3s1TbWx+djbXznGdjdq1fH2k9PMtb1tfIn4OP451m52x6T493afS5/1+Pgnbjy343OeM9mj9Z2 j5fQv+ix5i/Pf/AOGuVP74Gb37Dr+NT8+w9+rP24Bgs9nm6Z3teztdNn9e63fmK8a+e9Z/4k9wAA AADwH3JYBAAAAEDlsAgAAACAymERAAAAAJXDIgAAAAAqh0UAAAAAVA6LAAAAAKgcFgEAAABQOSwC AAAAoHJYBAAAAEDlsAgAAACAymERAAAAAJXDIgAAAACqv05c5Zk+wEC1AAAAAElFTkSuQmCC "
        id="image169669"
-       x="-375.00003"
+       x="-455.00012"
        y="40.000004"
        transform="rotate(-90)" />
   </g>
