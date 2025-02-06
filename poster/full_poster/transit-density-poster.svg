@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="60.959999cm"
-   height="91.440002cm"
-   viewBox="0 0 609.60002 914.40006"
+   width="76.199997cm"
+   height="121.92cm"
+   viewBox="0 0 762.00002 1219.2001"
    version="1.1"
    id="svg5"
    sodipodi:docname="transit-density-poster.svg"
@@ -28,17 +28,18 @@
      inkscape:document-units="cm"
      showgrid="false"
      units="cm"
-     width="24in"
-     inkscape:zoom="0.17705703"
-     inkscape:cx="1143.6993"
-     inkscape:cy="1832.7428"
+     width="30in"
+     inkscape:zoom="0.25039645"
+     inkscape:cx="1433.7264"
+     inkscape:cy="2434.1399"
      inkscape:window-width="1854"
      inkscape:window-height="1017"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer2"
-     height="36in" />
+     inkscape:current-layer="layer5"
+     height="36in"
+     showguides="false" />
   <defs
      id="defs2">
     <rect
@@ -6271,12 +6272,12 @@
      id="layer2"
      inkscape:label="background">
     <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:12;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect318236"
-       width="609.60004"
-       height="914.40002"
-       x="-1.3877788e-17"
-       y="2.220446e-16" />
+       style="fill:#ffffff;stroke-width:10.2924;stroke-linejoin:round"
+       id="rect94941"
+       width="762.00006"
+       height="1219.2001"
+       x="0"
+       y="0" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -6291,7 +6292,7 @@
        x="31.355543"
        y="75.715836"
        clip-path="url(#clipPath6779)"
-       transform="matrix(1.0035,0,0,1.0035,3.0076669,-16.160022)" />
+       transform="matrix(1.254375,0,0,1.254375,10.444053,-20.200035)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6301,7 +6302,7 @@
        x="182.82672"
        y="77.180984"
        clip-path="url(#clipPath9695)"
-       transform="matrix(1.12,0,0,1.12,-29.348444,-32.442705)" />
+       transform="matrix(1.4,0,0,1.4,-34.457386,-40.553378)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6311,7 +6312,7 @@
        x="310.50229"
        y="91.709938"
        clip-path="url(#clipPath9815)"
-       transform="matrix(1.12,0,0,1.12,-25.580016,-48.715133)" />
+       transform="matrix(1.4,0,0,1.4,-34.203166,-60.893913)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6321,7 +6322,7 @@
        x="280.74683"
        y="252.5616"
        clip-path="url(#clipPath10015)"
-       transform="matrix(1.0944882,0,0,1.0944882,162.9491,-221.15011)" />
+       transform="matrix(1.3681102,0,0,1.3681102,197.00193,-276.43763)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6331,7 +6332,7 @@
        x="33.719635"
        y="207.86275"
        clip-path="url(#clipPath78043)"
-       transform="matrix(1.12,0,0,1.12,-9.1135674,-41.30628)" />
+       transform="matrix(1.4,0,0,1.4,-4.7074852,-48.507849)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6341,7 +6342,7 @@
        x="174.26469"
        y="210.00276"
        clip-path="url(#clipPath78163)"
-       transform="matrix(1.0944882,0,0,1.0944882,-14.037578,-37.069958)" />
+       transform="matrix(1.3681102,0,0,1.3681102,-15.318792,-43.212427)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6351,7 +6352,7 @@
        x="321.64142"
        y="205.37605"
        clip-path="url(#clipPath78283)"
-       transform="matrix(1.0944882,0,0,1.0944882,-28.5746,-32.006062)" />
+       transform="matrix(1.3681102,0,0,1.3681102,-37.946377,-36.882567)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6361,7 +6362,7 @@
        x="481.78995"
        y="210.54297"
        clip-path="url(#clipPath78403)"
-       transform="matrix(1.0944882,0,0,1.0944882,-57.090257,-37.661191)" />
+       transform="matrix(1.3681102,0,0,1.3681102,-78.047257,-43.951477)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6371,7 +6372,7 @@
        x="32.076447"
        y="345.20773"
        clip-path="url(#clipPath121578)"
-       transform="matrix(1.12,0,0,1.12,-7.2731963,-57.632641)" />
+       transform="matrix(1.4,0,0,1.4,-2.4070214,-65.790799)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6381,7 +6382,7 @@
        x="180.62001"
        y="340.87793"
        clip-path="url(#clipPath124505)"
-       transform="matrix(1.12,0,0,1.12,-26.876928,-52.783261)" />
+       transform="matrix(1.4,0,0,1.4,-31.367991,-59.729074)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6391,7 +6392,7 @@
        x="306.85852"
        y="494.41528"
        clip-path="url(#clipPath124658)"
-       transform="matrix(1.12,0,0,1.12,-21.498995,-224.7451)" />
+       transform="matrix(1.4,0,0,1.4,-29.10189,-274.68136)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6401,7 +6402,7 @@
        x="516.07678"
        y="493.88696"
        clip-path="url(#clipPath124662)"
-       transform="matrix(1.12,0,0,1.12,-109.0584,-224.15338)" />
+       transform="matrix(1.4,0,0,1.4,-143.00746,-273.94171)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6411,7 +6412,7 @@
        x="30.59523"
        y="623.68481"
        clip-path="url(#clipPath223998)"
-       transform="matrix(1.12,0,0,1.12,-5.6142424,-94.526959)" />
+       transform="matrix(1.4,0,0,1.4,-0.33332906,-105.65869)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6421,7 +6422,7 @@
        x="188.36897"
        y="625.08307"
        clip-path="url(#clipPath224002)"
-       transform="matrix(1.12,0,0,1.12,-35.555766,-96.093004)" />
+       transform="matrix(1.4,0,0,1.4,-42.216538,-107.61625)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6431,7 +6432,7 @@
        x="335.23679"
        y="625.80109"
        clip-path="url(#clipPath224006)"
-       transform="matrix(1.12,0,0,1.12,-53.282653,-96.897184)" />
+       transform="matrix(1.4,0,0,1.4,-68.831462,-108.62147)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6441,7 +6442,7 @@
        x="478.94223"
        y="619.80719"
        clip-path="url(#clipPath224010)"
-       transform="matrix(1.12,0,0,1.12,-67.467734,-90.18402)" />
+       transform="matrix(1.4,0,0,1.4,-91.019129,-100.23001)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6451,7 +6452,7 @@
        x="-22.290352"
        y="765.97632"
        clip-path="url(#clipPath267081)"
-       transform="matrix(1.12,0,0,1.12,53.617611,-116.39344)" />
+       transform="matrix(1.4,0,0,1.4,73.706488,-129.86679)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6461,7 +6462,7 @@
        x="136.20831"
        y="780.76953"
        clip-path="url(#clipPath267085)"
-       transform="matrix(1.12,0,0,1.12,22.864173,-132.96184)" />
+       transform="matrix(1.4,0,0,1.4,30.808385,-150.57729)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6471,7 +6472,7 @@
        x="292.59366"
        y="753.29645"
        clip-path="url(#clipPath267089)"
-       transform="matrix(1.12,0,0,1.12,-5.52235,-102.19198)" />
+       transform="matrix(1.4,0,0,1.4,-9.1310835,-112.11496)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -6481,660 +6482,7 @@
        x="443.69571"
        y="795.56274"
        clip-path="url(#clipPath267093)"
-       transform="matrix(1.12,0,0,1.12,-27.991596,-149.53024)" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer4"
-     inkscape:label="cities info">
-    <text
-       xml:space="preserve"
-       style="font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
-       x="84.763359"
-       y="169.62378"
-       id="text16720"><tspan
-         sodipodi:role="line"
-         id="tspan16718"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="84.763359"
-         y="169.62378">TORONTO</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:6.35px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
-       x="84.616768"
-       y="177.26251"
-       id="text27992"><tspan
-         sodipodi:role="line"
-         id="tspan27990"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="84.616768"
-         y="177.26251">6.45M urban pop</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="84.616768"
-         y="185.20001"
-         id="tspan27994">20.0% near transit</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
-       x="231.20526"
-       y="169.62378"
-       id="text16720-7"><tspan
-         sodipodi:role="line"
-         id="tspan16718-8"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="231.20526"
-         y="169.62378">MONTREAL</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:6.35px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
-       x="231.38182"
-       y="177.26251"
-       id="text27992-4"><tspan
-         sodipodi:role="line"
-         id="tspan27990-5"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="231.38182"
-         y="177.26251">4.30M urban pop</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="231.38182"
-         y="185.20001"
-         id="tspan27994-0">28.6% near transit</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
-       x="378.26453"
-       y="169.62378"
-       id="text16720-3"><tspan
-         sodipodi:role="line"
-         id="tspan16718-6"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="378.26453"
-         y="169.62378">VANCOUVER</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:6.35px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
-       x="378.14688"
-       y="177.26251"
-       id="text27992-1"><tspan
-         sodipodi:role="line"
-         id="tspan27990-0"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="378.14688"
-         y="177.26251">2.60M urban pop</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="378.14688"
-         y="185.20001"
-         id="tspan27994-6">22.1% near transit</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
-       x="524.95001"
-       y="169.62378"
-       id="text16720-32"><tspan
-         sodipodi:role="line"
-         id="tspan16718-0"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="524.95001"
-         y="169.62378">CHICAGO</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:6.35px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
-       x="524.9104"
-       y="177.26251"
-       id="text27992-6"><tspan
-         sodipodi:role="line"
-         id="tspan27990-1"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="524.9104"
-         y="177.26251">7.01M urban pop</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="524.9104"
-         y="185.20001"
-         id="tspan27994-5">33.3% near transit</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
-       x="84.29792"
-       y="307.11896"
-       id="text16720-1"><tspan
-         sodipodi:role="line"
-         id="tspan16718-7"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="84.29792"
-         y="307.11896">NEW YORK</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:6.35px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
-       x="84.534599"
-       y="314.76251"
-       id="text27992-2"><tspan
-         sodipodi:role="line"
-         id="tspan27990-7"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="84.534599"
-         y="314.76251">15.29M urban pop</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="84.534599"
-         y="322.70001"
-         id="tspan27994-2">55.9% near transit</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
-       x="231.4223"
-       y="307.11896"
-       id="text16720-7-2"><tspan
-         sodipodi:role="line"
-         id="tspan16718-8-6"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="231.4223"
-         y="307.11896">LONDON</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:6.35px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
-       x="231.29967"
-       y="314.76251"
-       id="text27992-4-1"><tspan
-         sodipodi:role="line"
-         id="tspan27990-5-0"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="231.29967"
-         y="314.76251">14.13M urban pop</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="231.29967"
-         y="322.70001"
-         id="tspan27994-0-6">63.0% near transit</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
-       x="377.94864"
-       y="307.12137"
-       id="text16720-3-1"><tspan
-         sodipodi:role="line"
-         id="tspan16718-6-5"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="377.94864"
-         y="307.12137">MOSCOW</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:6.35px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
-       x="378.06473"
-       y="314.76251"
-       id="text27992-1-9"><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="378.06473"
-         y="314.76251"
-         id="tspan106576">17.14M urban pop</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="378.06473"
-         y="322.70001"
-         id="tspan27994-6-9">54.3% near transit</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
-       x="524.68958"
-       y="307.12137"
-       id="text16720-32-0"><tspan
-         sodipodi:role="line"
-         id="tspan16718-0-9"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="524.68958"
-         y="307.12137">ISTANBUL</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:6.35px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
-       x="525.05768"
-       y="314.76251"
-       id="text27992-6-1"><tspan
-         sodipodi:role="line"
-         id="tspan27990-1-7"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="525.05768"
-         y="314.76251">14.39M urban pop</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="525.05768"
-         y="322.70001"
-         id="tspan27994-5-7"> 44.9% near transit</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
-       x="84.763359"
-       y="444.61896"
-       id="text16720-1-1"><tspan
-         sodipodi:role="line"
-         id="tspan16718-7-1"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="84.763359"
-         y="444.61896">TOKYO</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:6.35px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
-       x="84.65242"
-       y="452.26251"
-       id="text27992-2-5"><tspan
-         sodipodi:role="line"
-         id="tspan27990-7-9"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="84.65242"
-         y="452.26251">33.68M urban pop</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="84.65242"
-         y="460.20001"
-         id="tspan27994-2-7">63.1% near transit</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
-       x="231.34996"
-       y="444.61896"
-       id="text16720-7-2-7"><tspan
-         sodipodi:role="line"
-         id="tspan16718-8-6-6"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="231.34996"
-         y="444.61896">SEOUL</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:6.35px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
-       x="231.41904"
-       y="452.26251"
-       id="text27992-4-1-7"><tspan
-         sodipodi:role="line"
-         id="tspan27990-5-0-3"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="231.41904"
-         y="452.26251">24.77M urban pop</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="231.41904"
-         y="460.20001"
-         id="tspan27994-0-6-6">67.1% near transit</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
-       x="378.13913"
-       y="444.62137"
-       id="text16720-3-1-5"><tspan
-         sodipodi:role="line"
-         id="tspan16718-6-5-6"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="378.13913"
-         y="444.62137">BEIJING</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:6.35px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
-       x="378.18411"
-       y="452.26251"
-       id="text27992-1-9-3"><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="378.18411"
-         y="452.26251"
-         id="tspan106576-9">22.13M urban pop</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="378.18411"
-         y="460.20001"
-         id="tspan27994-6-9-4">56.4% near transit</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
-       x="525.13812"
-       y="444.61896"
-       id="text16720-32-0-8"><tspan
-         sodipodi:role="line"
-         id="tspan16718-0-9-1"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="525.13812"
-         y="444.61896">SHANGHAI</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:6.35px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
-       x="524.94757"
-       y="452.26251"
-       id="text27992-6-1-2"><tspan
-         sodipodi:role="line"
-         id="tspan27990-1-7-9"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="524.94757"
-         y="452.26251">32.51M urban pop</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="524.94757"
-         y="460.20001"
-         id="tspan27994-5-7-3">55.0% near transit</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
-       x="84.459496"
-       y="582.12378"
-       id="text16720-1-1-9"><tspan
-         sodipodi:role="line"
-         id="tspan16718-7-1-0"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="84.459496"
-         y="582.12378">OSAKA</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:6.35px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
-       x="84.534599"
-       y="589.76733"
-       id="text27992-2-5-8"><tspan
-         sodipodi:role="line"
-         id="tspan27990-7-9-8"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="84.534599"
-         y="589.76733">14.72M urban pop</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="84.534599"
-         y="597.70483"
-         id="tspan27994-2-7-5">69.0% near transit</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
-       x="231.35719"
-       y="582.12378"
-       id="text16720-7-2-7-0"><tspan
-         sodipodi:role="line"
-         id="tspan16718-8-6-6-9"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="231.35719"
-         y="582.12378">SINGAPORE</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:6.35px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
-       x="231.2888"
-       y="589.76733"
-       id="text27992-4-1-7-6"><tspan
-         sodipodi:role="line"
-         id="tspan27990-5-0-3-3"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="231.2888"
-         y="589.76733">9.40M urban pop</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="231.2888"
-         y="597.70483"
-         id="tspan27994-0-6-6-8">56.6% near transit</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
-       x="377.97034"
-       y="582.12616"
-       id="text16720-3-1-5-5"><tspan
-         sodipodi:role="line"
-         id="tspan16718-6-5-6-6"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="377.97034"
-         y="582.12616">KUALA LUMPUR</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:6.35px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
-       x="378.14688"
-       y="589.76733"
-       id="text27992-1-9-3-1"><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="378.14688"
-         y="589.76733"
-         id="tspan106576-9-1">9.78M urban pop</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="378.14688"
-         y="597.70483"
-         id="tspan27994-6-9-4-5">28.6% near transit</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
-       x="525.04889"
-       y="582.12378"
-       id="text16720-32-0-8-9"><tspan
-         sodipodi:role="line"
-         id="tspan16718-0-9-1-8"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="525.04889"
-         y="582.12378">SHENZHEN + HONG KONG</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:6.35px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
-       x="524.94916"
-       y="589.76733"
-       id="text27992-6-1-2-4"><tspan
-         sodipodi:role="line"
-         id="tspan27990-1-7-9-8"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="524.94916"
-         y="589.76733">23.85M urban pop</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="524.94916"
-         y="597.70483"
-         id="tspan27994-5-7-3-1">60.4% near transit</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
-       x="84.698242"
-       y="719.62378"
-       id="text16720-1-1-9-0"><tspan
-         sodipodi:role="line"
-         id="tspan16718-7-1-0-3"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="84.698242"
-         y="719.62378">DELHI</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:6.35px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
-       x="84.652428"
-       y="727.26733"
-       id="text27992-2-5-8-0"><tspan
-         sodipodi:role="line"
-         id="tspan27990-7-9-8-4"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="84.652428"
-         y="727.26733">35.34M urban pop</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="84.652428"
-         y="735.20483"
-         id="tspan27994-2-7-5-4">40.1% near transit</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
-       x="231.4633"
-       y="719.62378"
-       id="text16720-7-2-7-0-4"><tspan
-         sodipodi:role="line"
-         id="tspan16718-8-6-6-9-4"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="231.4633"
-         y="719.62378">MUMBAI</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:6.35px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
-       x="231.41904"
-       y="727.26733"
-       id="text27992-4-1-7-6-7"><tspan
-         sodipodi:role="line"
-         id="tspan27990-5-0-3-3-6"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="231.41904"
-         y="727.26733">25.75M urban pop</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="231.41904"
-         y="735.20483"
-         id="tspan27994-0-6-6-8-3">49.9% near transit</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
-       x="378.29349"
-       y="719.62616"
-       id="text16720-3-1-5-5-1"><tspan
-         sodipodi:role="line"
-         id="tspan16718-6-5-6-6-7"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="378.29349"
-         y="719.62616">CAPE TOWN</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:6.35px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
-       x="378.14536"
-       y="727.26733"
-       id="text27992-1-9-3-1-5"><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="378.14536"
-         y="727.26733"
-         id="tspan106576-9-1-9">4.96M urban pop</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="378.14536"
-         y="735.20483"
-         id="tspan27994-6-9-4-5-6">30.8% near transit</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
-       x="525.11884"
-       y="719.62378"
-       id="text16720-32-0-8-9-2"><tspan
-         sodipodi:role="line"
-         id="tspan16718-0-9-1-8-1"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="525.11884"
-         y="719.62378">JOHANNESBURG</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:6.35px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
-       x="524.82977"
-       y="727.26733"
-       id="text27992-6-1-2-4-7"><tspan
-         sodipodi:role="line"
-         id="tspan27990-1-7-9-8-8"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="524.82977"
-         y="727.26733">12.24M urban pop</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="524.82977"
-         y="735.20483"
-         id="tspan27994-5-7-3-1-5">16.2% near transit</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
-       x="84.698242"
-       y="857.12384"
-       id="text16720-1-1-9-0-8"><tspan
-         sodipodi:role="line"
-         id="tspan16718-7-1-0-3-6"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="84.698242"
-         y="857.12384">TEHRAN</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:6.35px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
-       x="84.65242"
-       y="864.7674"
-       id="text27992-2-5-8-0-0"><tspan
-         sodipodi:role="line"
-         id="tspan27990-7-9-8-4-4"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="84.65242"
-         y="864.7674">14.61M urban pop</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="84.65242"
-         y="872.7049"
-         id="tspan27994-2-7-5-4-8">30.5% near transit</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
-       x="231.4633"
-       y="857.12384"
-       id="text16720-7-2-7-0-4-8"><tspan
-         sodipodi:role="line"
-         id="tspan16718-8-6-6-9-4-8"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="231.4633"
-         y="857.12384">RIO DE JANEIRO</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:6.35px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
-       x="231.41904"
-       y="864.7674"
-       id="text27992-4-1-7-6-7-9"><tspan
-         sodipodi:role="line"
-         id="tspan27990-5-0-3-3-6-7"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="231.41904"
-         y="864.7674">12.73M urban pop</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="231.41904"
-         y="872.7049"
-         id="tspan27994-0-6-6-8-3-7">29.4% near transit</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
-       x="378.29349"
-       y="857.12622"
-       id="text16720-3-1-5-5-1-6"><tspan
-         sodipodi:role="line"
-         id="tspan16718-6-5-6-6-7-4"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="378.29349"
-         y="857.12622">BUENOS AIRES</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:6.35px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
-       x="378.14536"
-       y="864.7674"
-       id="text27992-1-9-3-1-5-3"><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="378.14536"
-         y="864.7674"
-         id="tspan106576-9-1-9-0">14.54M urban pop</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="378.14536"
-         y="872.7049"
-         id="tspan27994-6-9-4-5-6-3">35.8% near transit</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
-       x="525.11884"
-       y="857.12384"
-       id="text16720-32-0-8-9-2-0"><tspan
-         sodipodi:role="line"
-         id="tspan16718-0-9-1-8-1-9"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="525.11884"
-         y="857.12384">MEXICO CITY</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:6.35px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
-       x="524.82977"
-       y="864.7674"
-       id="text27992-6-1-2-4-7-2"><tspan
-         sodipodi:role="line"
-         id="tspan27990-1-7-9-8-8-5"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="524.82977"
-         y="864.7674">20.10M urban pop</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="524.82977"
-         y="872.7049"
-         id="tspan27994-5-7-3-1-5-4">19.4% near transit</tspan></text>
+       transform="matrix(1.4,0,0,1.4,-41.673956,-171.28779)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -7144,7 +6492,7 @@
        x="28.085821"
        y="497.96924"
        clip-path="url(#clipPath173615)"
-       transform="matrix(1.12,0,0,1.12,-2.803698,-91.22552)" />
+       transform="matrix(1.4,0,0,1.4,3.1798515,-104.65689)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -7154,7 +6502,7 @@
        x="179.55011"
        y="512.40448"
        clip-path="url(#clipPath173623)"
-       transform="matrix(1.12,0,0,1.12,-25.678639,-107.39299)" />
+       transform="matrix(1.4,0,0,1.4,-29.87013,-124.86623)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -7164,7 +6512,7 @@
        x="336.258"
        y="516.97498"
        clip-path="url(#clipPath173627)"
-       transform="matrix(1.12,0,0,1.12,-54.426408,-112.51195)" />
+       transform="matrix(1.4,0,0,1.4,-70.261156,-131.26493)" />
     <image
        width="100.00001"
        height="100.00001"
@@ -7174,7 +6522,660 @@
        x="478.91599"
        y="515.21198"
        clip-path="url(#clipPath173631)"
-       transform="matrix(1.12,0,0,1.12,-67.438339,-110.53739)" />
+       transform="matrix(1.4,0,0,1.4,-90.982385,-128.79673)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="cities info">
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264705"
+       x="112.62684"
+       y="213.13971"
+       id="text16720"><tspan
+         sodipodi:role="line"
+         id="tspan16718"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264705"
+         x="112.62684"
+         y="213.13971">TORONTO</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.40833px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
+       x="112.4584"
+       y="222.55626"
+       id="text27992"><tspan
+         sodipodi:role="line"
+         id="tspan27990"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="112.4584"
+         y="222.55626">6.45M urban pop</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="112.4584"
+         y="231.81667"
+         id="tspan27994">20.0% near transit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="291.25748"
+       y="212.12378"
+       id="text16720-7"><tspan
+         sodipodi:role="line"
+         id="tspan16718-8"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="291.25748"
+         y="212.12378">MONTREAL</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.40833px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
+       x="291.45844"
+       y="222.55626"
+       id="text27992-4"><tspan
+         sodipodi:role="line"
+         id="tspan27990-5"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="291.45844"
+         y="222.55626">4.30M urban pop</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="291.45844"
+         y="231.81667"
+         id="tspan27994-0">28.6% near transit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="470.59375"
+       y="212.12378"
+       id="text16720-3"><tspan
+         sodipodi:role="line"
+         id="tspan16718-6"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="470.59375"
+         y="212.12378">VANCOUVER</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.40833px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
+       x="470.45844"
+       y="222.55626"
+       id="text27992-1"><tspan
+         sodipodi:role="line"
+         id="tspan27990-0"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="470.45844"
+         y="222.55626">2.60M urban pop</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="470.45844"
+         y="231.81667"
+         id="tspan27994-6">22.1% near transit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="649.50281"
+       y="212.12378"
+       id="text16720-32"><tspan
+         sodipodi:role="line"
+         id="tspan16718-0"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="649.50281"
+         y="212.12378">CHICAGO</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.40833px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
+       x="649.4566"
+       y="222.55626"
+       id="text27992-6"><tspan
+         sodipodi:role="line"
+         id="tspan27990-1"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="649.4566"
+         y="222.55626">7.01M urban pop</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="649.4566"
+         y="231.81667"
+         id="tspan27994-5">33.3% near transit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="112.09486"
+       y="388.1391"
+       id="text16720-1"><tspan
+         sodipodi:role="line"
+         id="tspan16718-7"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="112.09486"
+         y="388.1391">NEW YORK</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.40833px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
+       x="112.36254"
+       y="397.55627"
+       id="text27992-2"><tspan
+         sodipodi:role="line"
+         id="tspan27990-7"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="112.36254"
+         y="397.55627">15.29M urban pop</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="112.36254"
+         y="406.81668"
+         id="tspan27994-2">55.9% near transit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="291.50552"
+       y="388.1391"
+       id="text16720-7-2"><tspan
+         sodipodi:role="line"
+         id="tspan16718-8-6"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="291.50552"
+         y="388.1391">LONDON</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.40833px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
+       x="291.36258"
+       y="397.55627"
+       id="text27992-4-1"><tspan
+         sodipodi:role="line"
+         id="tspan27990-5-0"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="291.36258"
+         y="397.55627">14.13M urban pop</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="291.36258"
+         y="406.81668"
+         id="tspan27994-0-6">63.0% near transit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="470.2327"
+       y="388.14148"
+       id="text16720-3-1"><tspan
+         sodipodi:role="line"
+         id="tspan16718-6-5"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="470.2327"
+         y="388.14148">MOSCOW</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.40833px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
+       x="470.36258"
+       y="397.55627"
+       id="text27992-1-9"><tspan
+         sodipodi:role="line"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="470.36258"
+         y="397.55627"
+         id="tspan106576">17.14M urban pop</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="470.36258"
+         y="406.81668"
+         id="tspan27994-6-9">54.3% near transit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="649.20514"
+       y="388.14148"
+       id="text16720-32-0"><tspan
+         sodipodi:role="line"
+         id="tspan16718-0-9"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="649.20514"
+         y="388.14148">ISTANBUL</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.40833px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
+       x="649.62848"
+       y="397.55627"
+       id="text27992-6-1"><tspan
+         sodipodi:role="line"
+         id="tspan27990-1-7"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="649.62848"
+         y="397.55627">14.39M urban pop</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="649.62848"
+         y="406.81668"
+         id="tspan27994-5-7"> 44.9% near transit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="112.62679"
+       y="563.14148"
+       id="text16720-1-1"><tspan
+         sodipodi:role="line"
+         id="tspan16718-7-1"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="112.62679"
+         y="563.14148">TOKYO</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.40833px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
+       x="112.50001"
+       y="572.56628"
+       id="text27992-2-5"><tspan
+         sodipodi:role="line"
+         id="tspan27990-7-9"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="112.50001"
+         y="572.56628">33.68M urban pop</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="112.50001"
+         y="581.82672"
+         id="tspan27994-2-7">63.1% near transit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="291.42285"
+       y="563.14148"
+       id="text16720-7-2-7"><tspan
+         sodipodi:role="line"
+         id="tspan16718-8-6-6"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="291.42285"
+         y="563.14148">SEOUL</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.40833px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
+       x="291.50183"
+       y="572.56628"
+       id="text27992-4-1-7"><tspan
+         sodipodi:role="line"
+         id="tspan27990-5-0-3"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="291.50183"
+         y="572.56628">24.77M urban pop</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="291.50183"
+         y="581.82672"
+         id="tspan27994-0-6-6">67.1% near transit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="470.45044"
+       y="563.14386"
+       id="text16720-3-1-5"><tspan
+         sodipodi:role="line"
+         id="tspan16718-6-5-6"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="470.45044"
+         y="563.14386">BEIJING</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.40833px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
+       x="470.50186"
+       y="572.56628"
+       id="text27992-1-9-3"><tspan
+         sodipodi:role="line"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="470.50186"
+         y="572.56628"
+         id="tspan106576-9">22.13M urban pop</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="470.50186"
+         y="581.82672"
+         id="tspan27994-6-9-4">56.4% near transit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="649.71777"
+       y="563.14148"
+       id="text16720-32-0-8"><tspan
+         sodipodi:role="line"
+         id="tspan16718-0-9-1"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="649.71777"
+         y="563.14148">SHANGHAI</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.40833px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
+       x="649.50006"
+       y="572.56628"
+       id="text27992-6-1-2"><tspan
+         sodipodi:role="line"
+         id="tspan27990-1-7-9"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="649.50006"
+         y="572.56628">32.51M urban pop</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="649.50006"
+         y="581.82672"
+         id="tspan27994-5-7-3">55.0% near transit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="112.27952"
+       y="738.14148"
+       id="text16720-1-1-9"><tspan
+         sodipodi:role="line"
+         id="tspan16718-7-1-0"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="112.27952"
+         y="738.14148">OSAKA</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.40833px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
+       x="112.36255"
+       y="747.56628"
+       id="text27992-2-5-8"><tspan
+         sodipodi:role="line"
+         id="tspan27990-7-9-8"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="112.36255"
+         y="747.56628">14.72M urban pop</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="112.36255"
+         y="756.82672"
+         id="tspan27994-2-7-5">69.0% near transit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="291.43112"
+       y="738.14148"
+       id="text16720-7-2-7-0"><tspan
+         sodipodi:role="line"
+         id="tspan16718-8-6-6-9"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="291.43112"
+         y="738.14148">SINGAPORE</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.40833px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
+       x="291.34991"
+       y="747.56628"
+       id="text27992-4-1-7-6"><tspan
+         sodipodi:role="line"
+         id="tspan27990-5-0-3-3"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="291.34991"
+         y="747.56628">9.40M urban pop</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="291.34991"
+         y="756.82672"
+         id="tspan27994-0-6-6-8">56.6% near transit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="470.25751"
+       y="738.14386"
+       id="text16720-3-1-5-5"><tspan
+         sodipodi:role="line"
+         id="tspan16718-6-5-6-6"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="470.25751"
+         y="738.14386">KUALA LUMPUR</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.40833px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
+       x="470.45844"
+       y="747.56628"
+       id="text27992-1-9-3-1"><tspan
+         sodipodi:role="line"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="470.45844"
+         y="747.56628"
+         id="tspan106576-9-1">9.78M urban pop</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="470.45844"
+         y="756.82672"
+         id="tspan27994-6-9-4-5">28.6% near transit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="649.61578"
+       y="738.14148"
+       id="text16720-32-0-8-9"><tspan
+         sodipodi:role="line"
+         id="tspan16718-0-9-1-8"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="649.61578"
+         y="738.14148">SHENZHEN + HONG KONG</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.40833px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
+       x="649.50183"
+       y="747.56628"
+       id="text27992-6-1-2-4"><tspan
+         sodipodi:role="line"
+         id="tspan27990-1-7-9-8"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="649.50183"
+         y="747.56628">23.85M urban pop</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="649.50183"
+         y="756.82672"
+         id="tspan27994-5-7-3-1">60.4% near transit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="112.55237"
+       y="913.14148"
+       id="text16720-1-1-9-0"><tspan
+         sodipodi:role="line"
+         id="tspan16718-7-1-0-3"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="112.55237"
+         y="913.14148">DELHI</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.40833px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
+       x="112.50001"
+       y="922.67627"
+       id="text27992-2-5-8-0"><tspan
+         sodipodi:role="line"
+         id="tspan27990-7-9-8-4"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="112.50001"
+         y="922.67627">35.34M urban pop</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="112.50001"
+         y="931.93671"
+         id="tspan27994-2-7-5-4">40.1% near transit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="291.5524"
+       y="913.14148"
+       id="text16720-7-2-7-0-4"><tspan
+         sodipodi:role="line"
+         id="tspan16718-8-6-6-9-4"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="291.5524"
+         y="913.14148">MUMBAI</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.40833px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
+       x="291.50183"
+       y="922.67627"
+       id="text27992-4-1-7-6-7"><tspan
+         sodipodi:role="line"
+         id="tspan27990-5-0-3-3-6"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="291.50183"
+         y="922.67627">25.75M urban pop</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="291.50183"
+         y="931.93671"
+         id="tspan27994-0-6-6-8-3">49.9% near transit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="470.62683"
+       y="913.14386"
+       id="text16720-3-1-5-5-1"><tspan
+         sodipodi:role="line"
+         id="tspan16718-6-5-6-6-7"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="470.62683"
+         y="913.14386">CAPE TOWN</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.40833px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
+       x="470.45663"
+       y="922.67627"
+       id="text27992-1-9-3-1-5"><tspan
+         sodipodi:role="line"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="470.45663"
+         y="922.67627"
+         id="tspan106576-9-1-9">4.96M urban pop</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="470.45663"
+         y="931.93671"
+         id="tspan27994-6-9-4-5-6">30.8% near transit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="649.69574"
+       y="913.14148"
+       id="text16720-32-0-8-9-2"><tspan
+         sodipodi:role="line"
+         id="tspan16718-0-9-1-8-1"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="649.69574"
+         y="913.14148">JOHANNESBURG</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.40833px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
+       x="649.36255"
+       y="922.67627"
+       id="text27992-6-1-2-4-7"><tspan
+         sodipodi:role="line"
+         id="tspan27990-1-7-9-8-8"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="649.36255"
+         y="922.67627">12.24M urban pop</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="649.36255"
+         y="931.93671"
+         id="tspan27994-5-7-3-1-5">16.2% near transit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="112.75081"
+       y="1088.1415"
+       id="text16720-1-1-9-0-8"><tspan
+         sodipodi:role="line"
+         id="tspan16718-7-1-0-3-6"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="112.75081"
+         y="1088.1415">TEHRAN</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.40833px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
+       x="112.36254"
+       y="1097.6763"
+       id="text27992-2-5-8-0-0"><tspan
+         sodipodi:role="line"
+         id="tspan27990-7-9-8-4-4"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="112.36254"
+         y="1097.6763">14.61M urban pop</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="112.36254"
+         y="1106.9366"
+         id="tspan27994-2-7-5-4-8">30.5% near transit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="291.3815"
+       y="1088.1415"
+       id="text16720-7-2-7-0-4-8"><tspan
+         sodipodi:role="line"
+         id="tspan16718-8-6-6-9-4-8"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="291.3815"
+         y="1088.1415">RIO DE JANEIRO</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.40833px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
+       x="291.36258"
+       y="1097.6763"
+       id="text27992-4-1-7-6-7-9"><tspan
+         sodipodi:role="line"
+         id="tspan27990-5-0-3-3-6-7"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="291.36258"
+         y="1097.6763">12.73M urban pop</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="291.36258"
+         y="1106.9366"
+         id="tspan27994-0-6-6-8-3-7">29.4% near transit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="470.34018"
+       y="1088.1439"
+       id="text16720-3-1-5-5-1-6"><tspan
+         sodipodi:role="line"
+         id="tspan16718-6-5-6-6-7-4"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="470.34018"
+         y="1088.1439">BUENOS AIRES</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.40833px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
+       x="470.36258"
+       y="1097.6763"
+       id="text27992-1-9-3-1-5-3"><tspan
+         sodipodi:role="line"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="470.36258"
+         y="1097.6763"
+         id="tspan106576-9-1-9-0">14.54M urban pop</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="470.36258"
+         y="1106.9366"
+         id="tspan27994-6-9-4-5-6-3">35.8% near transit</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;text-align:center;text-anchor:middle;stroke-width:0.264583"
+       x="649.15002"
+       y="1088.1415"
+       id="text16720-32-0-8-9-2-0"><tspan
+         sodipodi:role="line"
+         id="tspan16718-0-9-1-8-1-9"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="649.15002"
+         y="1088.1415">MEXICO CITY</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.40833px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
+       x="649.50183"
+       y="1097.6763"
+       id="text27992-6-1-2-4-7-2"><tspan
+         sodipodi:role="line"
+         id="tspan27990-1-7-9-8-8-5"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="649.50183"
+         y="1097.6763">20.10M urban pop</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:7.40833px;text-align:center;text-anchor:middle;stroke-width:0.264583"
+         x="649.50183"
+         y="1106.9366"
+         id="tspan27994-5-7-3-1-5-4">19.4% near transit</tspan></text>
   </g>
   <g
      inkscape:label="title+credits"
@@ -7182,7 +7183,7 @@
      id="layer1">
     <g
        id="g5226"
-       transform="matrix(1.0774489,0,0,1.0774489,-5.092443,-131.10966)">
+       transform="matrix(1.0774489,0,0,1.0774489,97.56846,-116.1596)">
       <g
          clip-path="url(#3268abb61f)"
          id="g316"
@@ -12550,7 +12551,7 @@
     </g>
     <g
        id="g5728"
-       transform="matrix(1.3384658,0,0,1.3384658,-100.22167,-90.115144)">
+       transform="matrix(1.5422973,0,0,1.5422973,-86.515256,-30.269604)">
       <g
          id="g10"
          transform="matrix(0.05612638,0,0,-0.05612638,196.88944,805.77966)"
@@ -13056,18 +13057,93 @@
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';white-space:pre;shape-inside:url(#rect13968)" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:31.75px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';fill:#1e3765;fill-opacity:1;stroke-width:0.26;stroke-miterlimit:4;stroke-dasharray:none"
-       x="17.166409"
-       y="42.897827"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:38.8056px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';fill:#1e3765;fill-opacity:1;stroke-width:0.26;stroke-miterlimit:4;stroke-dasharray:none"
+       x="29.447422"
+       y="47.986267"
        id="text22458"><tspan
          sodipodi:role="line"
          id="tspan22456"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:31.75px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';fill:#1e3765;fill-opacity:1;stroke-width:0.26;stroke-miterlimit:4;stroke-dasharray:none"
-         x="17.166409"
-         y="42.897827">RAIL TRANSIT &amp; POPULATION DENSITY</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:38.8056px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';fill:#1e3765;fill-opacity:1;stroke-width:0.26;stroke-miterlimit:4;stroke-dasharray:none"
+         x="29.447422"
+         y="47.986267">RAIL TRANSIT &amp; POPULATION DENSITY</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.1111px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';stroke-width:0.264583"
+       x="308.30167"
+       y="1209.9281"
+       id="text108610"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.1111px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';fill:#1e3765;fill-opacity:1;stroke-width:0.264583"
+         x="308.30167"
+         y="1209.9281"
+         id="tspan110624">Aniket Kali &amp; Jeff Allen</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer5"
-     inkscape:label="legend" />
+     inkscape:label="legend">
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke-width:7.36441;stroke-linejoin:round"
+       id="rect137875"
+       width="1"
+       height="62.500004"
+       x="45.000004"
+       y="75.000008" />
+    <rect
+       style="fill:#000000;fill-opacity:1;stroke-width:2.08297;stroke-linejoin:round"
+       id="rect137875-3"
+       width="1"
+       height="5.0000005"
+       x="75.000008"
+       y="-50.000004"
+       transform="rotate(90)" />
+    <text
+       xml:space="preserve"
+       style="font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
+       x="16.988749"
+       y="109.90836"
+       id="text141615"><tspan
+         sodipodi:role="line"
+         id="tspan141613"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';stroke-width:0.264583"
+         x="16.988749"
+         y="109.90836">50km</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';stroke-width:0.264583"
+       x="31.473459"
+       y="1176.2789"
+       id="text108610-5"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';fill:#1e3765;fill-opacity:1;stroke-width:0.264583"
+         x="31.473459"
+         y="1176.2789"
+         id="tspan110624-3">blurb: what is happening on this poster??</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';fill:#1e3765;fill-opacity:1;stroke-width:0.264583"
+         x="31.473459"
+         y="1190.39"
+         id="tspan166303">link/QR to see the full website</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';stroke-width:0.264583"
+       x="530.88519"
+       y="1170.5669"
+       id="text108610-5-5"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';fill:#1e3765;fill-opacity:1;stroke-width:0.264583"
+         x="530.88519"
+         y="1170.5669"
+         id="tspan110624-3-6">blurb/arrows: explain the &quot;urban pop&quot; and</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';fill:#1e3765;fill-opacity:1;stroke-width:0.264583"
+         x="530.88519"
+         y="1184.678"
+         id="tspan163497">&quot;near transit&quot;, pointing to Mexico City above</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';fill:#1e3765;fill-opacity:1;stroke-width:0.264583"
+         x="530.88519"
+         y="1198.7892"
+         id="tspan163499">as a simple example</tspan></text>
+  </g>
 </svg>
