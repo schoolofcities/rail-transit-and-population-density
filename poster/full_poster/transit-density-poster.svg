@@ -9,7 +9,7 @@
    id="svg5"
    sodipodi:docname="transit-density-poster.svg"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
-   inkscape:export-filename="/home/aniket/Programming/poster-rail-transit-and-population-density/poster/transit-density-poster.png"
+   inkscape:export-filename="/home/aniket/Programming/rail-transit-and-population-density/poster/full_poster/transit-density-poster.png"
    inkscape:export-xdpi="500"
    inkscape:export-ydpi="500"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -30,14 +30,14 @@
      units="cm"
      width="30in"
      inkscape:zoom="0.25039645"
-     inkscape:cx="1433.7264"
-     inkscape:cy="2434.1399"
+     inkscape:cx="1222.062"
+     inkscape:cy="1495.6282"
      inkscape:window-width="1854"
      inkscape:window-height="1017"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="layer2"
      height="36in"
      showguides="false" />
   <defs
@@ -6278,6 +6278,27 @@
        height="1219.2001"
        x="0"
        y="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:8.46667px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
+       x="51.460484"
+       y="382.46356"
+       id="text180145"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:end;text-anchor:end;stroke-width:0.264583"
+         x="51.460487"
+         y="382.46356"
+         id="tspan180149">Population</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:end;text-anchor:end;stroke-width:0.264583"
+         x="51.460484"
+         y="393.04691"
+         id="tspan216232">density</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46667px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold Italic';text-align:end;text-anchor:end;stroke-width:0.264583"
+         x="51.460484"
+         y="403.63025"
+         id="tspan196729">(people/km²)</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
@@ -13087,7 +13108,7 @@
        id="rect137875"
        width="1"
        height="62.500004"
-       x="45.000004"
+       x="42.000004"
        y="75.000008" />
     <rect
        style="fill:#000000;fill-opacity:1;stroke-width:2.08297;stroke-linejoin:round"
@@ -13095,19 +13116,52 @@
        width="1"
        height="5.0000005"
        x="75.000008"
-       y="-50.000004"
+       y="-47.000004"
        transform="rotate(90)" />
     <text
        xml:space="preserve"
        style="font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
-       x="16.988749"
+       x="14.488749"
        y="109.90836"
        id="text141615"><tspan
          sodipodi:role="line"
          id="tspan141613"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';stroke-width:0.264583"
-         x="16.988749"
+         x="14.488749"
          y="109.90836">50km</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
+       x="15.248684"
+       y="253.51442"
+       id="text141615-2"><tspan
+         sodipodi:role="line"
+         id="tspan141613-9"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';stroke-width:0.264583"
+         x="15.248684"
+         y="253.51442">30K+</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
+       x="20.255096"
+       y="297.49548"
+       id="text141615-2-1"><tspan
+         sodipodi:role="line"
+         id="tspan141613-9-2"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';stroke-width:0.264583"
+         x="20.255096"
+         y="297.49548">20K</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:9.87778px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.264583"
+       x="20.255096"
+       y="341.56549"
+       id="text141615-2-1-9"><tspan
+         sodipodi:role="line"
+         id="tspan141613-9-2-3"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.87778px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';stroke-width:0.264583"
+         x="20.255096"
+         y="341.56549">10K</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';stroke-width:0.264583"
@@ -13145,5 +13199,25 @@
          x="530.88519"
          y="1198.7892"
          id="tspan163499">as a simple example</tspan></text>
+    <image
+       width="125.00001"
+       height="5.0000005"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABIsAAAAOCAYAAACvvZwWAAAABHNCSVQICAgIfAhkiAAAAidJREFU
+eJzt2EGW2yAMAFC59z/yvNBFMowxyAamu/6/6TOSFUGwM+Uor68SUSLiFRElSnnFcf43XhFlEDva
+64jyzjtKzW/uOwa1k/xrnXMv9b5f1h7lf9eZ6uVmDc59NrEY1L7Mq1v7Qf7dd/W+LtGol8fPUCmn
+8YvS5p5rHIPc68fd181rN30/5I5rr8xvsnb57qvP7dYiqz2a30PuU91aK+n5x33tdp3W+ziPl1La
+0YU+zuPNMj32car9OL+JPpLc8koauelj9KzUnjb7uOaO93m+Hlntufk91O72+dx6ZHXH74NT/tT8
+3rnp+2Bx7fp1WuujGb+d31rtUrIaSR/T87vJf+g5f9+N62bvjmY/bfTRpKb7fPg2/3x+191kLK8Z
+5Ui/rqdYRDLlidg4fvrOpmOD53Uz9nO5HnsP3bwft2KXdVyM1eGNWB/fie3s1TwW5bJWC7GI/X0+
+ju3s1TbWx+djbXznGdjdq1fH2k9PMtb1tfIn4OP451m52x6T493afS5/1+Pgnbjy343OeM9mj9Z2
+j5fQv+ix5i/Pf/AOGuVP74Gb37Dr+NT8+w9+rP24Bgs9nm6Z3teztdNn9e63fmK8a+e9Z/4k9wAA
+AADwH3JYBAAAAEDlsAgAAACAymERAAAAAJXDIgAAAAAqh0UAAAAAVA6LAAAAAKgcFgEAAABQOSwC
+AAAAoHJYBAAAAEDlsAgAAACAymERAAAAAJXDIgAAAACqv05c5Zk+wEC1AAAAAElFTkSuQmCC
+"
+       id="image169669"
+       x="-375.00003"
+       y="40.000004"
+       transform="rotate(-90)" />
   </g>
 </svg>
