@@ -4,171 +4,227 @@ import geopandas as gpd
 
 # cities, that for now, are outside the top 300 that are worth adding
 EXTRA_CITIES = [
-    "Calgary",
-    "Edmonton",
-    "Ottawa",
-    "Kuala Lumpur",
     "Almaty",
-    "Stockholm",
-    "Jerusalem",
-    "Marseille",
+    "Almaty",
+    "Amsterdam",
+    "Calgary",
+    "Cochabamba",
+    "Doha",
     "Dubai",
-    "Doha"
+    "Dushanbe",
+    "Edmonton",
+    "Jerusalem",
+    "Kuala Lumpur",
+    "Marseille",
+    "Ottawa",
+    "Panama City",
+    "Porto",
+    "San Jose",
+    "Stockholm",
+    "Tblisi",
 ]
 
 SUBURBS = [
-    "Long Beach",  # Los Angeles
-    "Irvine",  # Los Angeles
-    "Fort Lauderdale",  # Miami
-    "Santos",  # Sao Paolo
-    "El Giza",  # Cairo
-    "Omdurman",  # Khartoum
-    "Benoni",  # Johannesburg
-    "Haora",  # Kolkata
-    "Kalyan",  # Mumbai
     "Bekasi",  # Jakarta
-    "Quezon City",  # Manila
+    "Baltimore", # Washington (kindof)
+    "Benoni",  # Johannesburg
     "Dongguan",  # Guangzhou
-    "Zhangzhou",  # Xiamen
-    "Wuxi",  # Shanghai
-    "Xiangtan",  # Changsha
-    "Jianmen",  # Xiantao
-    "Taian",  # Jinan
-    "New Taipei",  # Taipei
-    "Zhongli",  # Taipei
-    "Tainan",  # Kaohsiung
+    "El Giza",  # Cairo
+    "Faridabad", # Delhi
+    "Fort Lauderdale",  # Miami
+    "Fushun", # Shenyang
+    "Ft. Worth", # Dallas
+    "Haora",  # Kolkata
     "Incheon",  # Seoul
+    "Irvine",  # Los Angeles
+    "Jianmen",  # Xiantao
+    "Kalyan",  # Mumbai
+    "Karaj", # Tehran
+    "Kawasaki", # Tokyo
     "Kobe",  # Osaka
     "Kyoto",  # Osaka
-    "Yokohama",  # Tokyo
+    "Long Beach",  # Los Angeles
+    "Makkah", # Saudi Arabia
+    "Neijiang", # Luzhou
+    "New Taipei",  # Taipei
+    "Niteroi", # Rio de Janeiro
+    "Oakland", # San Francisco
+    "Omdurman",  # Khartoum
+    "Quezon City",  # Manila
+    "Quanzhou", # Xiamen
+    "Santos",  # Sao Paolo
+    "Suining", # Nanchong
+    "Taian",  # Jinan
+    "Tainan",  # Kaohsiung
     "Tijuana", # San Diego
-    "Baltimore", # Washington (kindof)
+    "Wuxi",  # Shanghai
+    "Xiangtan",  # Changsha
+    "Yokohama",  # Tokyo
+    "Zhangzhou",  # Xiamen
+    "Zhongli",  # Taipei
 ]
 
 ERROR_CITIES = [
-    "Las Vegas", # USA, only has mini monorails
     "Asuncion", # Paraguay, stations are abandonded
+    "Bamako", # Mali, no transit
     "Barranquilla", # Colombia, no transit
-    "Bogota", # Colombia, no transit (is under construction)
-    "Kabul",  # Afghanistan
+    "Beirut",  # Lebanon
     "Belem",  # Brazil
+    "Bogota", # Colombia, no transit (is under construction)
     "Campinas", # Brazil
-    "Curitiba", # Brazil, no transit
     "Cincinnati", # USA, no transit
+    "Curitiba", # Brazil, no transit
+    "Davao", # Philippines, no transit
     "Detroit", # USA
     "Douala", # Cameroon, no transit
     "Goiania", # Brazil, no transit
     "Guayaquil", # Ecuador, no transit
-    "Sanaa",  # Yemen
-    "Hechi", # China
-    "Kano", # Nigeria, no transit
-    "Port-au-Prince",  # Haiti
-    "Beirut",  # Lebanon
-    "Manaus",  # Brazil
-    "Tashkent",  # Uzbekistan, due to geographic error
     "Haikou",  # China, processing error 
+    "Hechi", # China
+    "Indianapolis", # USA, no transit
+    "Kabul",  # Afghanistan
+    "Kano", # Nigeria, no transit
     "Kuwait City", # Kuwait, no transit
     "La Paz", # Bolivia, no transit
+    "Las Vegas", # USA, only has mini monorails
+    "Leon", # Mexico, no transit
+    "Lome", # Togo, no transit
+    "Manaus",  # Brazil
+    "Mianyang", # China, no transit
+    "Phnom Penh", # Cambodia, no transit
+    "Port-au-Prince",  # Haiti
     "Puebla", # Mexico, no transit
     "Qiqihar", # China, no transit
     "Saidu", # Pakistan, no transit
+    "Sanaa",  # Yemen
+    "San Antonio", # USA, no transit
+    "San Salvador", # El Salvador, no transit
+    "Santa Cruz", #Bolivia, no data
     "Tampa", # USA, no transit
+    # "Tashkent",  # Uzbekistan, due to geographic error
     "Tripoli", #Libya, no transit
+    "Virginia Beach", # USA
     "Weifang", #China, no transit
     "Xiantao", #China, odd data
     "Xinyang", #China, odd data
-    "Santa Cruz", #Bolivia, no data
 ]
 
 REGIONS = {
-    'Japan': 'East Asia',
-    'United States': 'US & Canada',
-    'Mexico': 'Latin America & Caribbean',
-    'India': 'South & Central Asia',
-    'Brazil': 'Latin America & Caribbean',
+    # East Asia
     'China': 'East Asia',
-    'Bangladesh': 'South & Central Asia',
-    'Argentina': 'Latin America & Caribbean',
-    'Chile': 'Latin America & Caribbean',
-    'Pakistan': 'South & Central Asia',
-    'Egypt': 'Middle East & North Africa',
-    'Philippines': 'South East Asia & Oceania',
-    'Russia': 'Europe',
-    'Turkey': 'Middle East & North Africa',
-    'French Republic': 'Europe',
-    'Korea, South': 'East Asia',
-    'Nigeria': 'Sub Saharan Africa',
-    'Indonesia': 'South East Asia & Oceania',
-    'Iran': 'Middle East & North Africa',
-    'Congo (Kinshasa)': 'Sub Saharan Africa',
-    'Colombia': 'Latin America & Caribbean',
-    'Taiwan': 'East Asia',
-    'Thailand': 'South East Asia & Oceania',
-    'Peru': 'Latin America & Caribbean',
-    'Bolivia': 'Latin America & Caribbean',
-    'Kingdom of Spain': 'Europe',
-    'Vietnam': 'South East Asia & Oceania',
-    'Canada': 'US & Canada',
-    'Singapore': 'South East Asia & Oceania',
-    'Angola': 'Sub Saharan Africa',
-    'Iraq': 'Middle East & North Africa',
-    'Venezuela': 'Latin America & Caribbean',
-    'Sudan': 'Middle East & North Africa',
-    'Saudi Arabia': 'Middle East & North Africa',
-    'Romania': 'Europe',
-    'Myanmar': 'South East Asia & Oceania',
-    'Ivory Coast': 'Sub Saharan Africa',
-    'South Africa': 'Sub Saharan Africa',
-    'Germany': 'Europe',
-    'Algeria': 'Middle East & North Africa',
-    'Italy': 'Europe',
+    'Japan': 'East Asia',
     'Korea, North': 'East Asia',
-    'Afghanistan': 'South & Central Asia',
-    'Morocco': 'Middle East & North Africa',
-    'Israel': 'Middle East & North Africa',
-    'Ethiopia': 'Sub Saharan Africa',
-    'Kenya': 'Sub Saharan Africa',
-    'United Republic of Tanzania': 'Sub Saharan Africa',
-    'Portugal': 'Europe',
-    'Poland': 'Europe',
-    'Syria': 'Middle East & North Africa',
-    'Ukraine': 'Europe',
-    'Senegal': 'Sub Saharan Africa',
-    'Ecuador': 'Latin America & Caribbean',
-    'United Kingdom': 'Europe',
-    'Dominican Republic': 'Latin America & Caribbean',
-    'Tunisia': 'Middle East & North Africa',
+    'Korea, South': 'East Asia',
+    'Taiwan': 'East Asia',
+    
+    # Europe
     'Austria': 'Europe',
-    'Greece': 'Europe',
-    'Uzbekistan': 'South & Central Asia',
-    'Kazakhstan': 'South & Central Asia',
-    'Cuba': 'Latin America & Caribbean',
-    'Azerbaijan': 'Middle East & North Africa',
-    'Ghana': 'Sub Saharan Africa',
-    'Kuwait': 'Middle East & North Africa',
-    'Yemen': 'Middle East & North Africa',
-    'Haiti': 'Latin America & Caribbean',
-    'Cameroon': 'Sub Saharan Africa',
-    'Paraguay': 'Latin America & Caribbean',
-    'Australia': 'South East Asia & Oceania',
-    'Lebanon': 'Middle East & North Africa',
-    'Libya': 'Middle East & North Africa',
     'Belarus': 'Europe',
     'Belgium': 'Europe',
-    'Madagascar': 'Sub Saharan Africa',
+    'French Republic': 'Europe',
+    'Germany': 'Europe',
+    'Georgia': 'Europe',
+    'Greece': 'Europe',
     'Hungary': 'Europe',
+    'Italy': 'Europe',
+    'Kingdom of Spain': 'Europe',
+    'Kingdom of the Netherlands': 'Europe',
+    'Poland': 'Europe',
+    'Portugal': 'Europe',
+    'Romania': 'Europe',
+    'Russia': 'Europe',
+    'Sweden': 'Europe',
+    'Ukraine': 'Europe',
+    'United Kingdom': 'Europe',
+    
+    # Latin America & Caribbean
+    'Argentina': 'Latin America & Caribbean',
+    'Bolivia': 'Latin America & Caribbean',
+    'Brazil': 'Latin America & Caribbean',
+    'Chile': 'Latin America & Caribbean',
+    'Colombia': 'Latin America & Caribbean',
+    'Costa Rica': 'Latin America & Caribbean',
+    'Cuba': 'Latin America & Caribbean',
+    'Dominican Republic': 'Latin America & Caribbean',
+    'Ecuador': 'Latin America & Caribbean',
+    'El Salvador': 'Latin America & Caribbean',
     'Guatemala': 'Latin America & Caribbean',
+    'Haiti': 'Latin America & Caribbean',
     'Honduras': 'Latin America & Caribbean',
-    'Zimbabwe': 'Sub Saharan Africa',
+    'Mexico': 'Latin America & Caribbean',
+    'Panama': 'Latin America & Caribbean',
+    'Paraguay': 'Latin America & Caribbean',
+    'Peru': 'Latin America & Caribbean',
     'Uruguay': 'Latin America & Caribbean',
-    'Malaysia': 'South East Asia & Oceania',
+    'Venezuela': 'Latin America & Caribbean',
+    
+    # Middle East & North Africa
+    'Algeria': 'Middle East & North Africa',
+    'Azerbaijan': 'Middle East & North Africa',
+    'Egypt': 'Middle East & North Africa',
+    'Iran': 'Middle East & North Africa',
+    'Iraq': 'Middle East & North Africa',
+    'Israel': 'Middle East & North Africa',
+    'Kuwait': 'Middle East & North Africa',
+    'Lebanon': 'Middle East & North Africa',
+    'Libya': 'Middle East & North Africa',
+    'Morocco': 'Middle East & North Africa',
     'Qatar': 'Middle East & North Africa',
+    'Saudi Arabia': 'Middle East & North Africa',
+    'Sudan': 'Middle East & North Africa',
+    'Syria': 'Middle East & North Africa',
+    'Tunisia': 'Middle East & North Africa',
+    'Turkey': 'Middle East & North Africa',
     'United Arab Emirates': 'Middle East & North Africa',
-    'Sweden': 'Europe'
+    'Yemen': 'Middle East & North Africa',
+    
+    # South & Central Asia
+    'Afghanistan': 'South & Central Asia',
+    'Bangladesh': 'South & Central Asia',
+    'India': 'South & Central Asia',
+    'Kazakhstan': 'South & Central Asia',
+    'Pakistan': 'South & Central Asia',
+    'Tajikistan': 'South & Central Asia',
+    'Uzbekistan': 'South & Central Asia',
+    
+    # South East Asia & Oceania
+    'Australia': 'South East Asia & Oceania',
+    'Cambodia': 'South East Asia & Oceania',
+    'Indonesia': 'South East Asia & Oceania',
+    'Malaysia': 'South East Asia & Oceania',
+    'Myanmar': 'South East Asia & Oceania',
+    'Philippines': 'South East Asia & Oceania',
+    'Singapore': 'South East Asia & Oceania',
+    'Thailand': 'South East Asia & Oceania',
+    'Vietnam': 'South East Asia & Oceania',
+    
+    # Sub Saharan Africa
+    'Angola': 'Sub Saharan Africa',
+    'Cameroon': 'Sub Saharan Africa',
+    'Congo (Kinshasa)': 'Sub Saharan Africa',
+    'Ethiopia': 'Sub Saharan Africa',
+    'Ghana': 'Sub Saharan Africa',
+    'Guinea': 'Sub Saharan Africa',
+    'Ivory Coast': 'Sub Saharan Africa',
+    'Kenya': 'Sub Saharan Africa',
+    'Madagascar': 'Sub Saharan Africa',
+    'Mali': 'Sub Saharan Africa',
+    'Mozambique': 'Sub Saharan Africa',
+    'Nigeria': 'Sub Saharan Africa',
+    'Senegal': 'Sub Saharan Africa',
+    'South Africa': 'Sub Saharan Africa',
+    'Togo': 'Sub Saharan Africa',
+    'Uganda': 'Sub Saharan Africa',
+    'United Republic of Tanzania': 'Sub Saharan Africa',
+    'Zimbabwe': 'Sub Saharan Africa',
+    
+    # US & Canada
+    'Canada': 'US & Canada',
+    'United States': 'US & Canada',
 }
 
 
-def get_city_list(N=300):
+def get_city_list(N=350):
     """ Save a GPKG of the top N cities, ranked by the population. Include the
     geometric points for those cities and other relevant information (country,
     country code, region, etc).
@@ -195,6 +251,9 @@ def get_city_list(N=300):
 
     # Add regional classifier
     gdf_places['REGION'] = gdf_places['SOV0NAME'].apply(lambda x: REGIONS[x])
+
+    # Fix coordinates
+    gdf_places.loc[gdf_places['NAME'] == 'Suzhou', 'geometry'] = gpd.points_from_xy([120.649], [31.406])[0]
 
     # Fix columns and save
     gdf_places = gdf_places.rename(columns={'SOV0NAME': 'COUNTRY', 'SOV_A3': 'COUNTRY_CODE', 'POP_MAX': 'SRC_POP'})
