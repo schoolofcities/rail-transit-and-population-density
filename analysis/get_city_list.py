@@ -90,6 +90,7 @@ ERROR_CITIES = [
     "Leon", # Mexico, no transit
     "Lome", # Togo, no transit
     "Manaus",  # Brazil
+    "Montevideo",  # Uruguay
     "Mianyang", # China, no transit
     "Phnom Penh", # Cambodia, no transit
     "Port-au-Prince",  # Haiti
