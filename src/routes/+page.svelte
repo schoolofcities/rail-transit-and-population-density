@@ -203,7 +203,7 @@
 		<h3>Data & Methods</h3>
 
 		<p>
-			Our list of cities came from a dataset from <a href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/" target="_blank">Natural Earth</a>. We started with a list of the 300 most populated cities, but then manually removed cases where one city was essentially the suburb of another city at our scale (e.g. Howrah was removed since it is very close to Kolkata), as well as removed cities without any rail transit.
+			Our list of cities came from a dataset from <a href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/" target="_blank">Natural Earth</a>. We started with a list of the 350 most populated cities, but then manually removed cases where one city was essentially the suburb of another city at our scale (e.g. Howrah was removed since it is very close to Kolkata), as well as removed cities without any rail transit. We manually added a few cities we personally thought should be included (e.g. Canadian cities).
 		</p>
 		<p>
 			For each city, we then defined the urban region shown on the maps as a circle with a 50km radius from the centre point noted in the Natural Earth dataset. We chose to use a standard circle size for all regions to account for idiosyncrasies in how different parts of the world define metro areas. 50km is approximately the outer range that someone would commute to/from a city centre along a major rail corridor.
