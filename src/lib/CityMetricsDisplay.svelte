@@ -4,7 +4,9 @@
     export let cityTwo;
 
     export let metrics;
+    export let metricsFr;
     export let metricsKeys;
+    export let lang = 'en';
 
     let width;
 
@@ -46,7 +48,7 @@
                         {/if}
                     </div>
                     <div class="table-body-cell-header">
-                        {metric}
+                        {lang === 'fr' ? metricsFr[i] : metric}
                     </div>
                     <div class="table-body-cell-value">
                         {#if metric.includes('Concentration')}

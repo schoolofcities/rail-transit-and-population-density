@@ -7,6 +7,8 @@
 
     export let data;
     export let classifierColours;
+    export let regionNamesFr = {};
+    export let lang = 'en';
 
     function numberWithCommas(n) {  // https://stackoverflow.com/a/10899795
         var parts=n.toString().split(".");
@@ -55,7 +57,7 @@
 </script>
 
 <div id="chart-wrapper" bind:offsetWidth={chartWidth}>
-    <SelectClassifiers bind:classifiers={classifiers} classifierColours={classifierColours} />
+    <SelectClassifiers bind:classifiers={classifiers} classifierColours={classifierColours} regionNamesFr={regionNamesFr} {lang} />
 
     <svg height={chartHeight} width={chartWidth} id="chart">
         <!-- <polygon id="diamond" points="0,-6 6,0 0,6 -6,0" fill="black" stroke="white" stroke-width="2" /> -->

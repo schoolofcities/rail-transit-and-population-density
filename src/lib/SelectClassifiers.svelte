@@ -1,6 +1,8 @@
 <script>
 	export let classifiers;
 	export let classifierColours;
+	export let regionNamesFr = {};
+	export let lang = 'en';
 
 	function handleClick(name) {
 		if (classifiers.includes(name)) {
@@ -21,7 +23,7 @@
 		>
 			<div class="box" style="background-color: {colour}"></div>
 			<div class="name">
-				{classifier}
+				{lang === 'fr' ? (regionNamesFr[classifier] ?? classifier) : classifier}
 			</div>
 		</div>
 	{/each}
